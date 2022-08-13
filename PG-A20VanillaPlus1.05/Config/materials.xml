@@ -1,0 +1,263 @@
+<VanillaPlus>
+ 
+			
+<!--Tougher Blade Traps-->
+<set xpath="/materials/material[@id='MmetalBladeTrap']/property[@name='MaxDamage']/@value">8000</set>
+<set xpath="/materials/material[@id='MbarbedFence']/property[@name='MaxDamage']/@value">800</set> 
+
+<append xpath="/materials">
+<material id="Mwood_regularbutmetal">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="wood"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="40"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="Experience" value="2"/>
+</material>
+</append>
+
+
+
+
+<!--Section 1 = SCRAPPING PLUS-->
+	<append xpath="/materials">
+		<material id="Mammo9mmBulletBall">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo9mmBulletBall"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="Mammo9mmBulletHP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo9mmBulletHP"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="Mammo9mmBulletAP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo9mmBulletAP"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="Mammo762mmBulletBall">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo762mmBulletBall"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="Mammo762mmBulletHP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo762mmBulletHP"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="Mammo762mmBulletAP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo762mmBulletAP"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="Mammo44MagnumBulletBall">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo44MagnumBulletBall"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="Mammo44MagnumBulletHP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo44MagnumBulletHP"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="Mammo44MagnumBulletAP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammo44MagnumBulletAP"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoBlunderbuss">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoBlunderbuss"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoShotgunShell">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoShotgunShell"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoShotgunSlug">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoShotgunSlug"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoShotgunBreachingSlug">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoShotgunBreachingSlug"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoRocketFrag">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoRocketFrag"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoRocketHE">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoRocketHE"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoArrowFlaming">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoArrowFlaming"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoCrossbowBoltFlaming">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoCrossbowBoltFlaming"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoArrowExploding">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoArrowExploding"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoCrossbowBoltExploding">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoCrossbowBoltExploding"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoArrowIron">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoArrowIron"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoCrossbowBoltIron">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoCrossbowBoltIron"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoArrowSteelAP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoArrowSteelAP"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoCrossbowBoltSteelAP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoCrossbowBoltSteelAP"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MammoArrowStone">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoArrowStone"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<material id="MammoCrossbowBoltStone">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoCrossbowBoltStone"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MthrownAmmoPipeBomb">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dthrownAmmoPipeBomb"/>
+			<property name="Experience" value="2"/>
+		</material>		
+		<material id="MthrownGrenadeContact">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dthrownGrenadeContact"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MthrownGrenade">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dthrownGrenade"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MthrownTimedCharge">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dthrownTimedCharge"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MthrownDynamite">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dthrownDynamite"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MthrownAmmoMolotovCocktail">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dthrownAmmoMolotovCocktail"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MammoDartIron">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoDartIron"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MammoJunkTurretRegular">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoJunkTurretRegular"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MammoJunkTurretAP">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoJunkTurretAP"/>
+			<property name="Experience" value="2"/>
+		</material>			
+		<material id="MammoJunkTurretShell">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="dammoJunkTurretShell"/>
+			<property name="Experience" value="2"/>
+		</material>	
+		<material id="MorganicExploding">
+			<property name="damage_category" value="organic"/>
+			<property name="surface_category" value="organic"/>
+			<property name="particle_category" value="organic"/>
+			<property name="forge_category" value="dorganicExploding"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="organic"/>
+			<property name="fertile_level" value="1"/>
+			<property name="stability_glue" value="0"/>
+			<property name="Mass" type="int" value="1"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="movement_factor" value="0.5"/>
+			<property name="MaxDamage" value="30"/>
+			<property name="Experience" value="2"/>
+		</material>	
+
+		
+	</append>
+	
+	
+	<!--Batteries to Acid-->
+	<set xpath="/materials/material[@id='MresourceAcid']/property[@name='forge_category']/@value">resourceAcid</set>
+	
+
+
+	
+</VanillaPlus>

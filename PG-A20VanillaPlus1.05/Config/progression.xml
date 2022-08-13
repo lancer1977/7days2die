@@ -1,0 +1,45 @@
+<PGVanillaPlus>
+
+
+TABLE OF CONTENTS
+Section 1 = SCHEMATICS PLUS
+Section 2 = BUNDLES PLUS
+Section 3 = FARMING PLUS
+Section 4 = MASTERY
+
+	<append xpath="/progression/perks/perk[@name='perkFiremansAlmanacComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookFiremansAlmanacCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookNeedleAndThreadCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkNightStalkerComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookNightStalkerCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkLuckyLooterComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookLuckyLooterCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkEnforcerComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookEnforcerCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkBatterUpComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookBatterUpCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkGreatHeistComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookGreatHeistCollection"/></effect_group></append>
+		<append xpath="/progression/perks/perk[@name='perkWasteTreasuresComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookWasteTreasuresCollection"/></effect_group></append>			
+		<append xpath="/progression/perks/perk[@name='perkHuntingJournalComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookHuntingJournalCollection"/></effect_group></append>			
+		<append xpath="/progression/perks/perk[@name='perkArtOfMiningComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookArtOfMiningCollection"/></effect_group></append>				
+		<append xpath="/progression/perks/perk[@name='perkRangersComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookRangersCollection"/></effect_group></append>						
+		<append xpath="/progression/perks/perk[@name='perkPistolPeteComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookPistolPeteCollection"/></effect_group></append>					
+		<append xpath="/progression/perks/perk[@name='perkShotgunMessiahComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookShotgunMessiahCollection"/></effect_group></append>			
+		<append xpath="/progression/perks/perk[@name='perkSniperComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookSniperCollection"/></effect_group></append>							
+		<append xpath="/progression/perks/perk[@name='perkAutoWeaponsComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookAutoWeaponsCollection"/></effect_group></append>				
+		<append xpath="/progression/perks/perk[@name='perkUrbanCombatComplete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookUrbanCombatCollection"/></effect_group></append>				
+		<append xpath="/progression/perks/perk[@name='perkTechJunkie8Complete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookTechJunkieCollection"/></effect_group></append>					
+		<append xpath="/progression/perks/perk[@name='perkBarBrawling8Complete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookBarBrawlingCollection"/></effect_group></append>				
+		<append xpath="/progression/perks/perk[@name='perkSpearHunter8Complete']"><effect_group><passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bookSpearHunterCollection"/></effect_group></append>				
+
+
+<!--Section 2 = BUNDLES PLUS-->
+		<append xpath="/progression/perks/perk[@name='perkArtOfMiningPallets']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,resourceClayLumpBundle,resourceCrushedSandBundle</append>
+
+
+<!--Section 3 = FARMING PLUS-->
+		<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3" value="1" tags="birdsNestEmpty,beeFlower"/>
+		</append>
+		
+
+
+
+</PGVanillaPlus>
+
+ 

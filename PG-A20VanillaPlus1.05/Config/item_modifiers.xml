@@ -1,0 +1,534 @@
+<VanillaPlus>
+<!--NOTES:
+FEATURE = explanation of what this section provides to gameplay
+VANILLA = describes the default of the original game version A19.
+REMOVABILITY = explains how to remove a section without crashing your game (If you are starting a FRESH game, it is always safe to remove a section entirely)
+XMLs = lets you know all the other xml files that is part of this feature (I recommend using "search and find" if you are looking to edit in other files as well)
+WISHES = where I describe things I WISH the feature could do through xml edits only... Know something I don't? please share!!!
+-->
+
+
+
+
+TABLE OF CONTENTS
+Section 1 = ARMOR VISION
+Section 2 = COSMETICS PLUS
+
+
+
+
+<!--Section 1 = ARMOR VISION
+		a. Night Vision Goggles as a mod
+		b. Helmet Light Mod installable into chest armor-->
+		
+	<!--NOTES:
+		FEATURE = 
+			1. Night Vision Goggles may be turned into a mod to install in either your helmet or chest armor. 
+			2. Helmet Light Mod may be installed in either your helmet or chest armor as well.
+			3. To use both on your character, you must put one in a HELMET and the other in the CHEST ARMOR. Will NOT work if both mods are on the same armor piece.
+			4. Hold "f" to select a different light source.
+		
+		VANILLA = Night Vision Goggles Mod does not exist. Helmet Light Mod ONLY goes into your helmet.
+		REMOVABILITY = Please refer to each section.
+		XMLs = items.xml, loot.xml, traders.xml, recipes.xml, and localization.txt	
+		WISHES = 
+			1. Being able to have the nightvision mod AND the helmet light mod in the same armor piece... but noooo. lol-->
+
+		<!--a. Night Vision Goggles as a mod-->
+			<!--REMOVABILITY = DO NOT delete this section. To remove, delete Armor Nightvision sections in loot.xml, traders.xml, and recipes.xml.-->
+			<append xpath="/item_modifiers">
+				<item_modifier name="modArmorHelmetNightvision" installable_tags="head,armorChest" blocked_tags="clothing" modifier_tags="misc,modArmorHelmetLight" type="attachment">
+					<property name="UnlockedBy" value="modArmorHelmetNightvisionSchematic"/>		
+					<property name="DescriptionKey" value="modArmorHelmetNightvisionDesc"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="Material" value="Msteel"/>
+					<property name="CustomIcon" value="apparelNightvisionGoggles"/>
+				
+					<effect_group tiered="false">
+						<requirement name="IsLocalPlayer"/>
+						<triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="1" fade="0"/>
+						<triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
+						<triggered_effect trigger="onSelfEquipStop" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
+
+						<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightTPV" prefab="ScreenEffects/DeferredNV/NVGLight" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
+						<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightFPV" prefab="ScreenEffects/DeferredNV/NVGLight" parentTransform="CameraNode" localPos="0,0,.1" localRot="-90,0,0"/>
+						<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightTPV"/>
+						<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightFPV"/>
+						<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
+						<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
+						<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightTPV" active="false"/>
+						<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightFPV" active="false"/>
+						<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
+						<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
+					</effect_group>
+				</item_modifier>
+			</append>
+		
+		<!--b. Helmet Light Mod installable into chest armor--> 
+			<!--REMOVABILITY = This section is safe to delete-->
+			<append xpath="item_modifiers/item_modifier[@name='modArmorHelmetLight']/@installable_tags">,armorChest</append>
+		
+
+
+
+<!--Section 2 = COSMETICS PLUS
+		a. Cosmetic Mods
+		b. update existing hat mod descriptions
+		c. High Performance Running Soles
+		d. Invisible dye-->
+		
+	<!--NOTES:
+		FEATURE = 
+			1. You may cosmetically appear as you wish without sacrificing armor or bonuses. (-I recommend utilizing the extra "mod slots feature" that is part of VanillaPlus)
+			2. Use invisible dye to make the "color" of the worn item simply be invisible! (Only works on WORN items.)
+			3. All dyes including the invisible dye are easily craftable.
+			4. Any cosmetic piece may be turned into a mod to replace ONLY its appearance. (i.e. Keep the bonus of a cigar, but make it appear as a bandana.)
+				a. Make any helmet piece appear as ghillie suit hood, hazmat mask, or one of the hats.
+				b. Make your gloves appear as hazmat gloves to complete the hazmet look.
+				c. Make your armored boots appear like any of the other shoes.
+				d. Make your face appear to have a bandana, facial piercing, or cigar.
+				e. Make any of your glasses/goggles appear like a different pair.
+			5. Cosmetic mods are made from finding an original, no longer buyable at traders.
+			6. The benefits of the HP Running Shoes is available as a mod for your boots.
+		
+		VANILLA = 
+			1. You look like whatever you are wearing (except for the few hats into helmt). 
+			2. Invisible dye doesn't exist. 
+			3. You cannot craft your own dyes, have to purchase or find them. 
+			4. You have to buy the cosmetic hats from traders or find them in loot. 
+		REMOVABILITY = Please refer to each section.
+		XMLs = loot.xml, traders.xml, recipes.xml, and localization.txt	
+		WISHES =
+			1. Being able to hide the backpack, but may be able to in A21-->
+
+		<!--a. Cosmetic Mods-->
+			<append xpath="/item_modifiers">
+				<item_modifier name="modGhillieSuitHood" installable_tags="head" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelGhillieSuitHood"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="5"/>
+					<property name="DisplayType" value="clothingGhillieHood"/>
+					<property name="Material" value="Mplants"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="ghillie_suit_hat"/>
+						<property name="UMA.Overlay0" value="ghillie_suit"/>
+						<property name="UMA.Layer" value="2"/>
+						<property name="UMA.UISlot" value="Headgear"/>
+						<property name="UMA.Mask0" value="Head" param1="outer"/>
+						<property name="UMA.ShowAltHair" value="true"/>
+					</item_property_overrides>
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="1"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1,3.5"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modHazmatMask" installable_tags="head" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelHazmatMask"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="400"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="MmilitaryFiber"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="armor_hazmat_head"/>
+						<property name="UMA.Overlay0" value="armor_hazmat_hood"/>
+						<property name="UMA.Layer" value="middle"/>
+						<property name="UMA.UISlot" value="Headgear"/>
+						<property name="UMA.Mask1" value="Head" param1="inner"/>
+						<property name="UMA.Mask3" value="Face" param1="inner"/>
+						<property name="UMA.Mask4" value="Face" param1="middle"/>
+						<property name="UMA.Mask5" value="Face" param1="outer"/>
+						<property name="UMA.ShowAltHair" value="true"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modHazmatGloves" installable_tags="hands" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelHazmatGloves"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="400"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="MmilitaryFiber"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="armor_hazmat_hands"/>
+						<property name="UMA.Overlay0" value="armor_hazmat_gloves"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Gloves"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+					</effect_group>
+				</item_modifier>	
+				<item_modifier name="modHazmatBoots" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelHazmatBoots"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="400"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="MmilitaryFiber"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="armor_hazmat_feet"/>
+						<property name="UMA.Overlay0" value="armor_hazmat_boots"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Footwear"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modSuitDressShoes" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelSuitDressShoes"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="250"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mleather"/>
+					<property name="Weight" value="25"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="clothes_dress_shoes"/>
+						<property name="UMA.Overlay0" value="unisex_clothes_dress_shoes"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Footwear"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modWornBoots" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelWornBoots"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="60"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mcloth"/>
+					<property name="Weight" value="15"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="worn_boots"/>
+						<property name="UMA.Overlay0" value="worn_boots"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Footwear"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modRunningShoesRegular" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="250"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mleather"/>
+					<property name="Weight" value="25"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="running_shoes"/>
+						<property name="UMA.Overlay0" value="running_shoes"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Footwear"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modCowboyBoots" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelCowboyBoots"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="250"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mleather"/>
+					<property name="Weight" value="20"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="boot02"/>
+						<property name="UMA.Overlay0" value="boot02"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Footwear"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modGothBoots" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+					<property name="CustomIcon" value="apparelGothBoots"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="250"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mleather"/>
+					<property name="Weight" value="20"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="goth_boots"/>
+						<property name="UMA.Overlay0" value="goth_boots"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Footwear"/>
+					</item_property_overrides>	
+					<effect_group tiered="false">
+						<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+						<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
+					</effect_group>
+				</item_modifier>
+				<item_modifier name="modBandana" installable_tags="face" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelBandana"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="10"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mcloth"/>
+					<property name="Weight" value="15"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="gear_bandana"/>
+						<property name="UMA.Overlay0" value="gear_bandana"/>
+						<property name="UMA.Layer" value="0"/>
+						<property name="UMA.UISlot" value="Face"/>
+						<property name="UMA.Mask0" value="Face"  param1="base"/>
+					</item_property_overrides>	
+				</item_modifier>
+				<item_modifier name="modFacialPiercings" installable_tags="face" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelFacialPiercings"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="50"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mmetal"/>
+					<property name="Weight" value="1"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="piercings"/>
+						<property name="UMA.Overlay0" value="piercings"/>
+						<property name="UMA.Layer" value="1"/>
+						<property name="UMA.UISlot" value="Face"/>
+					</item_property_overrides>	
+				</item_modifier>
+				<item_modifier name="modCigar" installable_tags="face" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelCigar"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="50"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mplants"/>
+					<property name="Weight" value="1"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="gear_cigar"/>
+						<property name="UMA.Overlay0" value="gear_cigar"/>
+						<property name="UMA.Layer" value="1"/>
+						<property name="UMA.UISlot" value="Face"/>
+					</item_property_overrides>	
+				</item_modifier>
+				<item_modifier name="modShades" installable_tags="eyes" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelShades"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="500"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mmetal"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="gear_shades"/>
+						<property name="UMA.Overlay0" value="gear_shades"/>
+						<property name="UMA.Layer" value="1"/>
+						<property name="UMA.UISlot" value="Eyewear"/>
+					</item_property_overrides>	
+				</item_modifier>			
+				<item_modifier name="modAviatorGoggles" installable_tags="eyes" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelAviatorGoggles"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="500"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mmetal"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="aviator_goggles"/>
+						<property name="UMA.Overlay0" value="aviator_goggles"/>
+						<property name="UMA.Layer" value="1"/>
+						<property name="UMA.UISlot" value="Eyewear"/>
+					</item_property_overrides>	
+				</item_modifier>		
+				<item_modifier name="modSkiGoggles" installable_tags="eyes" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelSkiGoggles"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="500"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mmetal"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="gear_goggles"/>
+						<property name="UMA.Overlay0" value="gear_goggles"/>
+						<property name="UMA.Layer" value="1"/>
+						<property name="UMA.UISlot" value="Eyewear"/>
+					</item_property_overrides>	
+				</item_modifier>		
+				<item_modifier name="modNerdGlasses" installable_tags="eyes" modifier_tags="rare" type="attachment">
+					<property name="CustomIcon" value="apparelNerdGlasses"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="500"/>
+					<property name="DisplayType" value="clothing"/>
+					<property name="Material" value="Mmetal"/>
+					<property name="Weight" value="5"/>
+					<property name="DescriptionKey" value="modCosmeticDesc"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value="specs"/>
+						<property name="UMA.Overlay0" value="specs"/>
+						<property name="UMA.Layer" value="1"/>
+						<property name="UMA.UISlot" value="Eyewear"/>
+					</item_property_overrides>	
+				</item_modifier>					
+			</append>
+
+		<!--b. update existing hat mod descriptions-->	
+			<append xpath="/item_modifiers/item_modifier[@name='modArmorBallCap']"><property name="DescriptionKey" value="modCosmeticDesc"/></append>
+			<append xpath="/item_modifiers/item_modifier[@name='modArmorPressboyCap']"><property name="DescriptionKey" value="modCosmeticDesc"/></append>
+			<append xpath="/item_modifiers/item_modifier[@name='modArmorSkullCap']"><property name="DescriptionKey" value="modCosmeticDesc"/></append>
+			<append xpath="/item_modifiers/item_modifier[@name='modArmorCowboyHat']"><property name="DescriptionKey" value="modCosmeticDesc"/></append>
+
+		<!--c. High Performance Running Soles-->
+			<append xpath="/item_modifiers">
+				<item_modifier name="modHPRunningSoles" installable_tags="armorFeet" modifier_tags="falldamage" blocked_tags="noMods" type="attachment">
+					<property name="UnlockedBy" value="modArmorImpactBracingSchematic"/>
+					<property name="CustomIcon" value="modArmorImpactBracing"/><property name="CustomIconTint" value="86,255,109"/>
+					<property name="Material" value="Mleather"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="DescriptionKey" value="modHPRunningSolesDesc"/>
+
+					<effect_group tiered="false">
+							<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/><display_value name="dStaminaRegen" value=".2"/>
+					</effect_group>
+				</item_modifier>		
+			</append>		
+		
+		<!--d. invisible dye-->
+			<append xpath="/item_modifiers">
+				<item_modifier name="modDyeInvisible" installable_tags="clothing,armor" modifier_tags="dye" type="attachment" cosmetic_install_chance="0">
+					<property name="DescriptionKey" value="modDyeInvisibleDesc"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="0,255,255"/>
+					<property name="Material" value="Mpaint"/>
+					<property name="Weight" value="20"/>
+
+					<item_property_overrides name="*">
+								<property name="UMA.Mesh" value=""/>
+								<property name="CustomIconTint" value="0,255,255"/>
+								<property name="UMA.ShowAltHair" value="false"/>
+					</item_property_overrides>
+							<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				</item_modifier>
+			</append>
+			
+		<!--e. orange dye-->		
+			<append xpath="/item_modifiers">	
+				<item_modifier name="modDyeOrange" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".1">
+					<property name="Extends" value="modGeneralMaster"/>
+					<property name="DescriptionKey" value="modDyeGroupDesc"/>
+					<property name="CustomIcon" value="modDyeWhite"/> 
+					<property name="CustomIconTint" value="220,125,15"/>
+					<property name="Material" value="Mpaint"/>
+					<property name="Weight" value="20"/>
+
+					<item_property_overrides name="*">
+						<property name="TintColor" value="220,125,15"/>
+						<property name="CustomIconTint" value="220,125,15"/>
+						<property name="UMA.Overlay0Tint" value="220,125,15"/> 
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelTankTop">
+						<property name="UMA.Overlay0Tint" value="skin"/>
+						<property name="UMA.Overlay1Tint" value="220,125,15"/>
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelTShirtPlain">
+						<property name="UMA.Overlay0Tint" value="skin"/>
+						<property name="UMA.Overlay1Tint" value="220,125,15"/>
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelTShirtZU">
+						<property name="UMA.Overlay0Tint" value="skin"/>
+						<property name="UMA.Overlay1Tint" value="220,125,15"/>
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelCoatJacketLetterZU">
+						<property name="UMA.Overlay0Tint" value="220,125,15"/>
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelDenimShortsPants">
+						<property name="UMA.Overlay0Tint" value="skin"/>
+						<property name="UMA.Overlay1Tint" value="220,125,15"/>
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelSuitPants">
+						<property name="UMA.Overlay0Tint" value="100,50,0"/>
+					</item_property_overrides>
+
+					<item_property_overrides name="apparelSuitJacket">
+						<property name="UMA.Overlay0Tint" value="100,50,0"/>
+						<property name="UMA.Overlay1Tint" value="27,27,27"/>
+					</item_property_overrides>
+					
+					<item_property_overrides name="apparelSuitDressShoes">
+						<property name="UMA.Overlay0Tint" value="100,50,0"/>
+					</item_property_overrides>
+				</item_modifier>				
+				
+				
+			</append>				
+				
+			<!--This is to make your backpack disappear.... BUT have to wait till A20 or A21? There isn't a BACKPACK UISlot yet.
+				<item_modifier name="modBackpackInvisible" installable_tags="clothing,armor" modifier_tags="hide" blocked_tags="noMods" type="attachment">
+					<property name="CustomIcon" value="backpackMedium"/><property name="CustomIconTint" value="0,255,255"/>
+					<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="EconomicValue" value="440"/>
+					<item_property_overrides name="*">
+						<property name="UMA.Mesh" value=""/>
+						<property name="UMA.Overlay0" value=""/>
+						<property name="UMA.Layer" value="3"/>
+						<property name="UMA.UISlot" value="Backpack"/>
+					</item_property_overrides>
+
+				</item_modifier>
+			-->
+			
+
+
+		<!--this part is me messing around with "activating" random objects on my head... LOL! Like I hit "f" and a toilet appears on my head. LOL!
+
+			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="Entities/Lighting/lanternPlayerPrefab" parentTransform="Spotlight"     localPos="-.5,0,-.2" localRot="0,0,90"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="Entities/Lighting/lanternPlayerPrefab" parentTransform="CameraNode" localPos="0,0,0" localRot="0,0,0"/>
+			-->
+	
+
+
+
+</VanillaPlus>

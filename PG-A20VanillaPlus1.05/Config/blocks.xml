@@ -1,0 +1,650 @@
+<VanillaPlus>
+<!--Note about adding/removing block codes... It could crash you game or do weird replacement of any blocks you have placed in your world.-->
+<!--If wishing to remove blocks from your game WITHOUT crashing, there are 2 ways to remove them. 
+	A. If they are part of a variant block, delete the name of the block(s) from those lists.
+	B. If they exist under recipes.xml, delete those-->
+
+
+
+ <!--Better Blade Traps --> 
+
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='MaxDamage']/@value">3000</set> 
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Damage']/@value">25</set> 
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='DamageReceived']/@value">1</set> 
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='BrokenPercentage']/@value">.10</set>  
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Collide']/@value">movement,melee,rocket</set>   
+<set xpath="/blocks/block[@name='barbedFence']/property[@name='Damage_received']/@value">1</set>   
+ 
+<!--Section 1 = FARMING PLUS-->
+		<!--Plantable Birdnest--><!--NOTE: Do not delete this to remove. To remove, delete under recipes.xml-->
+		<append xpath="/blocks">
+			<block name="birdsNestEmpty">
+				<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+				<property name="DescriptionKey" value="birdsNestEmptydesc"/>	
+				<property name="CustomIcon" value="cntBirdnest"/>
+				<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+				<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="Entities/Sandbags/sandbag_single_01Prefab"/>
+				<property name="CanMobsSpawnOn" value="false"/>
+				<property name="OnlySimpleRotations" value="true"/>
+				<property name="PlantGrowing.Next" value="birdsNestLaying"/>
+				<property name="PlantGrowing.LightLevelGrow" value="0"/>
+				<property name="PlantGrowing.LightLevelStay" value="0"/>
+				<property name="PlantGrowing.FertileLevel" value="0"/>
+				<property name="Group" value="Food/Cooking"/>
+				<drop event="Destroy" name="birdsNestEmpty" count="1"/>
+			</block>
+			<block name="birdsNestLaying">
+				<property name="Extends" value="cropsGrowingMaster"/>
+				<property name="CreativeMode" value="None"/>
+				<property name="CustomIcon" value="cntBirdnest"/>
+				<property name="Model" value="Entities/Sandbags/sandbag_pile_01Prefab"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="PlantGrowing.LightLevelGrow" value="0"/>
+				<property name="PlantGrowing.LightLevelStay" value="0"/>
+				<property name="PlantGrowing.FertileLevel" value="0"/>
+				<property name="CanMobsSpawnOn" value="false"/>
+				<property name="PlantGrowing.Next" value="birdsNestFull"/>
+				<drop event="Destroy" name="birdsNestEmpty" count="1"/>
+			</block>
+			<block name="birdsNestFull">
+				<property name="CustomIcon" value="cntBirdnest"/>
+				<property name="Extends" value="cropsHarvestableMaster"/>
+				<property name="DescriptionKey" value="birdsNestFulldesc"/>
+				<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+				<property name="Model" value="#Entities/LootContainers?birdnestPrefab.prefab"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Harvest" name="foodEgg" count="2" tag="cropHarvest"/>
+				<drop event="Harvest" name="foodEgg" count="1" prob="0.5" tag="bonusCropHarvest"/>
+				<drop event="Harvest" name="resourceFeather" count="1,2" tag="cropHarvest"/>
+				<drop event="Destroy" name="birdsNestEmpty" count="1"  prob="0.5"/>
+				<property name="PlantGrowing.LightLevelGrow" value="0"/>
+				<property name="PlantGrowing.LightLevelStay" value="0"/>
+				<property name="PlantGrowing.FertileLevel" value="0"/>
+			</block>
+		</append>
+
+		<!--Beehive/honey--><!--NOTE: Do not delete this to remove. To remove, delete under recipes.xml-->
+		<append xpath="/blocks">
+			<block name="beeFlower"><!--seed-->
+				<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+				<property name="DescriptionKey" value="beeFlowerdesc"/>	
+				<property name="CustomIcon" value="forestFlower"/><property name="CustomIconTint" value="A2A41B"/>
+				<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+				<property name="Texture" value="567"/>
+				<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+				<property name="OnlySimpleRotations" value="true"/>
+				<property name="PlantGrowing.Next" value="beeLog"/>
+				<property name="Group" value="Food/Cooking"/>
+				<drop event="Destroy" name="beeFlower" count="1"/>
+			</block>
+			<block name="beeLog"><!--growing-->
+				<property name="Extends" value="cropsGrowingMaster" param1="Mesh"/>
+				<property name="CreativeMode" value="None"/>
+				<property name="CustomIcon" value="driftwood"/>
+				<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+				<property name="Mesh" value="models"/>
+				<property name="Model" value="Plants/driftwood" param1="main_mesh"/>
+				<property name="PlantGrowing.Next" value="beeHive"/>
+				<property name="PlantGrowing.FertileLevel" value="1"/>
+				<drop event="Destroy" name="beeFlower" count="1"/>
+			</block>
+			<block name="beeHive"><!--harvest-->
+				<property name="Extends" value="cropsHarvestableMaster" param1="Mesh"/>
+				<property name="CustomIcon" value="treeStump"/><property name="CustomIconTint" value="A2A41B"/>
+				<property name="DescriptionKey" value="beeHivedesc"/>
+				<property name="Shape" value="New"/>
+				<property name="Model" value="Pole0.5m"/>
+				<property name="Texture" value="21,21,116,116,116,116"/>
+				<drop event="Harvest" name="foodHoney" count="2" tag="cropHarvest"/>
+				<drop event="Harvest" name="foodHoney" count="1" prob="0.5" tag="bonusCropHarvest"/>
+				<drop event="Destroy" name="beeFlower" count="1" prob="0.5"/>
+				<property name="FilterTags" value="foutdoor,ftrees"/>
+				<property name="SortOrder1" value="a0d0"/>
+			</block>
+		</append>
+	 
+
+<!--Section 2 = STACK SIZES PLUS--><!--other xml parts: items, recipes-->
+		<!--Stack size increase that is more of an increase from vanilla proportionally and play style reasons-->
+		<!--blocks now stacks of 500--> 
+			<set xpath="/blocks/block[@name='bedroll']/property[@name='MultiBlockDim']/@value">2,1,1</set><!--Default = 20-->
+			<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Stacknumber']/@value">500</set><!--Default = 20-->
+			<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->			
+			<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Stacknumber']/@value">500</set><!--Default = 25-->		
+			<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Stacknumber']/@value">500</set><!--Default = 25-->		
+			<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Stacknumber']/@value">500</set><!--Default = 25-->		
+			<set xpath="/blocks/block[@name='bedroll']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='dartTrap']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='flamethrowerTrap']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+ 
+			<set xpath="/blocks/block[@name='barracksChair']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->
+			<set xpath="/blocks/block[@name='oldChair1']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->		
+			<set xpath="/blocks/block[@name='oldChair1Broken']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='barStool']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='woodChair1']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='officeChair01']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='batterybank']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='solarbank']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='generatorbank']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='autoTurret']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='workbench']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='forge']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='campfire']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='cementMixer']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='chemistryStation']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block/property[@name='Stacknumber' and @value='33']/@value">500</set><!--Default = 33-->	
+			
+		<!--blocks now stacks of 5000-->
+			<append xpath="/blocks/block[@name='cropsGrowingMaster']"><property name="Stacknumber" value="500"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='treePlantedMountainPine1m']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='treePlantedWinterPine1m']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='treePlantedOak1m']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='plantedtreeGrassSeed1']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+
+
+<!--Section 3 = FIXES and MODIFICATIONS-->
+	
+	<!--a. Pick up lanterns and such--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<append xpath="/blocks/block[@name='lanternDecorLight']">
+			<property name="CanPickup" value="true" param1="lanternLight_player"/>
+			<property name="TakeDelay" value="2"/>		
+			<property name="Class" value=""/>
+		</append>
+		<append xpath="/blocks/block[@name='flashlightDecor']"><!--yellow flashlight as a block does not work code wise at this time (A19)-->
+			<property name="CanPickup" value="true" param1="meleeToolFlashlight02"/>
+			<property name="TakeDelay" value="2"/>	
+			<property name="Class" value=""/>
+		</append>
+		<append xpath="/blocks/block[@name='burningBarrel']"> 
+			<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
+			<property name="TakeDelay" value="2"/>		
+			<property name="Class" value=""/>
+		</append>	
+			
+	<!--b. FIX of car salvaging. Removed pass through damage on vehicles as it negates harvesting potential.--><!--NOTE: This is a FIX, don't delete unless you have something to replace it-->
+		<set xpath="/blocks/block[@name='cntCar03SedanDamage0Master']/property[@name='PassThroughDamage']/@value">false</set>
+		<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/property[@name='PassThroughDamage']/@value">false</set>
+
+	<!--c. A bit more sand harvesting. A little sand during the harvesting of stone and gravel.--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<append xpath="/blocks/block[@name='terrStone']">
+			<property name="Tags" value="ore"/>
+			<drop event="Harvest" name="resourceCrushedSand" count="2" tag="oreWoodHarvest"/>
+		</append>
+		<set xpath="/blocks/block[@name='terrGravel']/drop[@name='resourceCrushedSand']/@count">11</set>
+
+	<!--d. Electricity Plus, getting more out of single banks, GOOD FOR SERVERS to have less wires--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">2000</set>
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='MaxPower']/@value">2000</set>
+		<set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">250</set>
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='OutputPerStack']/@value">250</set>
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='ChargePerInput']/@value">5</set>
+
+		<set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">1000</set>
+		<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">10000</set>
+		<!--also edited the windows.xml for easier veiwing of the gas amount in the generator bank-->
+
+	<!--e. Drawbridge Placement Plus, can now be placed in all sorts of directions, including upside down--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='OnlySimpleRotations']/@value">false</set>
+
+
+	<!--f. Repair the Unrepairable!-->
+		<append xpath="/blocks/block[@name='terrGravel']">
+			<property class="RepairItems"><property name="resourceRockSmall" value="10"/></property>
+		</append>
+		<append xpath="/blocks/block[@name='jailBars' or @name='jailDoorStatic' or @name='jailDoorStaticCentered']">
+			<property class="RepairItems"> 
+				<property name="resourceForgedSteel" value="10"/>
+			</property>
+		</append>
+
+
+
+<!--Section 4 = VARIANTS PLUS-->
+		<!--Door Variants-->				
+				<append xpath="/blocks/block[@name='woodHatch1_v1']"><property name="MaxDamage" value="250"/></append>
+				<append xpath="/blocks/block[@name='woodHatch1_v3']"><property name="MaxDamage" value="300"/></append>
+				
+				<append xpath="/blocks/block[@name='cellarDoorDoubleWood']">
+						<property name="MaxDamage" value="250"/>
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="0600"/>
+				</append>
+				<set xpath="/blocks/block[@name='cellarDoorDoubleWood']/property[@name='MeshDamage']/@value">
+							DMG0, 250,
+							DMG1, 175,
+							DMG2, 125,
+							DMG3, 75,
+							</set>
+				<append xpath="/blocks/block[@name='cellarDoorDoubleIron']">
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="0600"/>
+				</append>			
+				<append xpath="/blocks/block[@name='cellarDoorDoubleSteel']">
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="600"/>
+				</append>
+			<!--non brass mining doors-->
+				<append xpath="/blocks">
+					<block name="commercialDoor1_v1NoBrass">
+						<property name="DescriptionKey" value="doorGroupDesc"/>
+						<property name="CustomIcon" value="commercialDoor1_v1"/>
+						<property name="Class" value="DoorSecure"/>
+						<property name="Material" value="Mwood_regularbutmetal"/>
+						<property name="PassThroughDamage" value="true"/>
+						<property name="LightOpacity" value="1"/>
+						<property name="TintColor" value="FFFFFF"/>
+						<property name="Shape" value="ModelEntity"/>
+						<property name="Tags" value="door"/>
+						<property name="BlockTag" value="Door"/>
+						<property name="Model" value="Entities/Doors/commercial_door_1_v1Prefab"/>
+						<property name="Place" value="Door"/> <!-- build restriction -->
+						<property name="PlaceEverywhere" value="true"/>
+						<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+						<property name="ModelOffset" value="0,0,0"/>
+						<property name="DisplayType" value="blockMulti"/>
+						<property name="MultiBlockDim" value="1,2,1"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="9"/>						
+						<property name="MaxDamage" value="250"/>
+						<property name="MeshDamage" value="
+							Door/Door_DMG0, 250,
+							Door/Door_DMG1, 200,
+							Door/Door_DMG2, 150,
+							Door/Door_DMG3, 100,
+							Door/Door_DMG4, 50
+							"/>
+						<property name="OpenSound" value="door_metal_open"/>
+						<property name="CloseSound" value="door_metal_close"/>
+						<property class="RepairItems">
+							<property name="resourceWood" value="3"/>
+						</property>
+						<property class="UpgradeBlock">
+							<property name="ToBlock" value="commercialDoor1_v2NoBrass"/>
+							<property name="Item" value="resourceWood"/>
+							<property name="ItemCount" value="4"/>
+							<property name="UpgradeHitCount" value="4"/>
+						</property>
+						<property name="CustomUpgradeSound" value="place_block_wood"/>
+						<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+						<drop event="Destroy" count="0"/>
+						<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+						<property name="Group" value="Building,advBuilding"/>
+						<property name="FilterTags" value="MC_building,SC_doors"/>
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="0200"/>
+					</block>
+
+					<block name="commercialDoor1_v2NoBrass">
+						<property name="Extends" value="commercialDoor1_v1NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor1_v2"/>
+						<property name="Material" value="MwoodReinforced"/>
+						<property name="PassThroughDamage" value="true"/>
+						<property name="Texture" value="241"/>
+						<property name="Model" value="Entities/Doors/commercial_door_1_v2Prefab"/>
+						<property name="ModelOffset" value="0,0,0"/>					
+						<property name="MaxDamage" value="250"/>
+						<property name="MeshDamage" value="
+							Door/Door_DMG0, 250,
+							Door/Door_DMG1, 200,
+							Door/Door_DMG2, 150,
+							Door/Door_DMG3, 100,
+							Door/Door_DMG4, 50
+							"/>
+						<property class="UpgradeBlock">
+							<property name="ToBlock" value="commercialDoor1_v3NoBrass"/>
+							<property name="Item" value="resourceScrapIron"/>
+							<property name="ItemCount" value="12"/>
+							<property name="UpgradeHitCount" value="4"/>
+						</property>
+						<property name="CustomUpgradeSound" value="place_block_metal"/>
+						<property name="DowngradeBlock" value="commercialDoor1_v1NoBrass"/>
+						<property class="RepairItems">
+							<property name="resourceWood" value="3"/>
+						</property>
+						<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+						<drop event="Destroy" count="0"/>
+						<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+						<property name="SortOrder2" value="0205"/>
+					</block>
+
+					<block name="commercialDoor1_v3NoBrass">
+						<property name="DescriptionKey" value="doorGroupDesc"/>
+						<property name="CustomIcon" value="commercialDoor1_v3"/>
+						<property name="Class" value="DoorSecure"/>
+						<property name="Material" value="MwoodMetal"/>
+						<property name="PassThroughDamage" value="true"/>
+						<property name="LightOpacity" value="1"/>
+						<property name="TintColor" value="FFFFFF"/>
+						<property name="Shape" value="ModelEntity"/>
+						<property name="Tags" value="door"/>
+						<property name="BlockTag" value="Door"/>
+						<property name="Model" value="Entities/Doors/commercial_door_1_v3Prefab"/>
+						<property name="Place" value="Door"/> <!-- build restriction -->
+						<property name="PlaceEverywhere" value="true"/>
+						<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+						<property name="ModelOffset" value="0,0,0"/>
+						<property name="DisplayType" value="blockMulti"/>
+						<property name="MultiBlockDim" value="1,2,1"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="9"/>					
+						<property name="MaxDamage" value="300"/>
+						<property name="MeshDamage" value="
+							Door/Door_DMG0, 300,
+							Door/Door_DMG1, 220,
+							Door/Door_DMG2, 170,
+							Door/Door_DMG3, 120,
+							Door/Door_DMG4, 70
+							"/>
+						<property name="OpenSound" value="door_metal_open"/>
+						<property name="CloseSound" value="door_metal_close"/>
+						<property class="RepairItems">
+							<property name="resourceScrapIron" value="10"/>
+						</property>
+						<property class="UpgradeBlock">
+							<property name="ToBlock" value="ironDoor1_v1"/>
+							<property name="Item" value="miscironDoorVariantHelper"/>
+							<property name="ItemCount" value="1"/>
+							<property name="UpgradeHitCount" value="5"/>
+						</property>
+						<property name="CustomUpgradeSound" value="place_block_metal"/>
+						<property name="DowngradeBlock" value="commercialDoor1_v2NoBrass"/>
+						<drop event="Harvest" name="resourceScrapIron" count="6" tag="allHarvest"/>
+						<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+						<drop event="Destroy" count="0"/>
+						<property name="FilterTags" value="MC_building,SC_doors"/>
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="0210"/>
+					</block>
+
+					<block name="commercialDoor2_v1NoBrass">
+						<property name="Extends" value="commercialDoor1_v1NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor2_v1"/>
+						<property name="Model" value="Entities/Doors/commercial_door_2_v1Prefab"/>
+						<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor2_v2NoBrass"/> </property>
+						<property name="SortOrder2" value="0220"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="commercialDoor2_v2NoBrass">
+						<property name="Extends" value="commercialDoor1_v2NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor2_v2"/>
+						<property name="Model" value="Entities/Doors/commercial_door_2_v2Prefab"/>
+						<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor2_v3NoBrass"/> </property>
+						<property name="DowngradeBlock" value="commercialDoor2_v1NoBrass"/>
+						<property name="SortOrder2" value="0225"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="commercialDoor2_v3NoBrass">
+						<property name="Extends" value="commercialDoor1_v3NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor2_v3"/>
+						<property name="Model" value="Entities/Doors/commercial_door_2_v3Prefab"/>
+						<property name="DowngradeBlock" value="commercialDoor2_v2NoBrass"/>
+						<property name="SortOrder2" value="0230"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="commercialDoor4_v1NoBrass">
+						<property name="Extends" value="commercialDoor1_v1NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor4_v1"/>
+						<property name="Model" value="Entities/Doors/commercial_door_4_v1Prefab"/>
+						<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor4_v2NoBrass"/> </property>
+						<property name="SortOrder2" value="0260"/>
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="commercialDoor4_v2NoBrass">
+						<property name="Extends" value="commercialDoor1_v2NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor4_v2"/>
+						<property name="Model" value="Entities/Doors/commercial_door_4_v2Prefab"/>
+						<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor4_v3NoBrass"/> </property>
+						<property name="DowngradeBlock" value="commercialDoor4_v1NoBrass"/>
+						<property name="SortOrder2" value="0265"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="commercialDoor4_v3NoBrass">
+						<property name="Extends" value="commercialDoor1_v3NoBrass"/>
+						<property name="CustomIcon" value="commercialDoor4_v3"/>
+						<property name="Model" value="Entities/Doors/commercial_door_4_v3Prefab"/>
+						<property name="DowngradeBlock" value="commercialDoor4_v2NoBrass"/>
+						<property name="SortOrder2" value="0270"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="houseFrontDoor1_v1NoBrass">
+						<property name="DescriptionKey" value="doorGroupDesc"/>
+						<property name="CustomIcon" value="houseFrontDoor1_v1"/>
+						<property name="Class" value="DoorSecure"/>
+						<property name="Material" value="Mwood_regular"/>
+						<property name="PassThroughDamage" value="true"/>
+						<property name="LightOpacity" value="1"/>
+						<property name="Shape" value="ModelEntity"/>
+						<property name="Model" value="Entities/Doors/house_frontDoor1_v1Prefab"/>
+						<property name="Place" value="Door"/> <!-- build restriction -->
+						<property name="ModelOffset" value="0,0,0"/>
+						<property name="DisplayType" value="blockMulti"/>
+						<property name="MultiBlockDim" value="1,2,1"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+						<property name="Tags" value="door"/>
+						<property name="BlockTag" value="Door"/>
+						<property name="PlaceEverywhere" value="true"/>
+						<property name="AllowAllRotations" value="true"/> 					
+						<property name="MaxDamage" value="250"/>
+						<property name="MeshDamage" value="
+							Door/Door_DMG0, 250,
+							Door/Door_DMG1, 200,
+							Door/Door_DMG2, 150,
+							Door/Door_DMG3, 100,
+							Door/Door_DMG4, 50
+							"/>
+						<property name="OpenSound" value="door_wood_open"/>
+						<property name="CloseSound" value="door_wood_close"/>
+						<property class="RepairItems">
+							<property name="resourceWood" value="3"/>
+						</property>
+						<property class="UpgradeBlock">
+							<property name="ToBlock" value="houseFrontDoor1_v2NoBrass"/>
+							<property name="Item" value="resourceWood"/>
+							<property name="ItemCount" value="4"/>
+							<property name="UpgradeHitCount" value="4"/>
+						</property>
+						<property name="CustomUpgradeSound" value="place_block_wood"/>
+						<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+						<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+						<property name="FilterTags" value="MC_building,SC_doors"/>
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="0140"/>
+					</block>
+
+					<block name="houseFrontDoor1_v2NoBrass">
+						<property name="Extends" value="houseFrontDoor1_v1NoBrass"/>
+						<property name="CustomIcon" value="houseFrontDoor1_v2"/>
+						<property name="Material" value="Mwood_weak"/>
+						<property name="PassThroughDamage" value="true"/>
+						<property name="Texture" value="241"/>
+						<property name="Model" value="Entities/Doors/house_frontDoor1_v2Prefab"/>
+						<property name="ModelOffset" value="0,0,0"/>					
+						<property name="MaxDamage" value="250"/>
+						<property name="MeshDamage" value="
+							Door/Door_DMG0, 250,
+							Door/Door_DMG1, 200,
+							Door/Door_DMG2, 150,
+							Door/Door_DMG3, 100,
+							Door/Door_DMG4, 50
+							"/>
+						<property class="UpgradeBlock">
+							<property name="ToBlock" value="houseFrontDoor1_v3NoBrass"/>
+							<property name="Item" value="resourceScrapIron"/>
+							<property name="ItemCount" value="12"/>
+							<property name="UpgradeHitCount" value="4"/>
+						</property>
+						<property name="CustomUpgradeSound" value="place_block_metal"/>
+						<property name="DowngradeBlock" value="houseFrontDoor1_v1NoBrass"/>
+						<drop event="Destroy" name="resourceDoorKnob" count="0" prob="0" tag="WasteTreasuresDoorHarvest"/>
+						<drop event="Destroy" count="0"/>
+						<property name="SortOrder2" value="0145"/>
+					</block>
+
+					<block name="houseFrontDoor1_v3NoBrass">
+						<property name="Extends" value="metalReinforcedDoorWooden"/>
+						<property name="CustomIcon" value="houseFrontDoor1_v3"/>
+						<property name="Texture" value="241"/>
+						<property name="Model" value="Entities/Doors/house_frontDoor1_v3Prefab"/><property name="ModelOffset" value="0,0,0"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="25"/>					
+						<property name="MaxDamage" value="300"/>
+						<property name="MeshDamage" value="
+							Door/Door_DMG0, 300,
+							Door/Door_DMG1, 220,
+							Door/Door_DMG2, 170,
+							Door/Door_DMG3, 120,
+							Door/Door_DMG4, 70
+							"/>
+						<property class="UpgradeBlock">
+							<property name="ToBlock" value="ironDoor1_v1"/>
+							<property name="Item" value="miscironDoorVariantHelper"/>
+							<property name="ItemCount" value="1"/>
+							<property name="UpgradeHitCount" value="5"/>
+						</property>
+						<property class="RepairItems"> 
+							<property name="resourceScrapIron" value="10"/> 
+						</property>
+						<property name="OpenSound" value="open_door_wood"/>
+						<property name="CloseSound" value="close_door_wood"/>
+						<property name="DowngradeBlock" value="houseFrontDoor1_v2NoBrass"/>
+						<property name="SortOrder2" value="0150"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="houseFrontDoor2_v1NoBrass">
+						<property name="Extends" value="houseFrontDoor1_v1NoBrass"/>
+						<property name="CustomIcon" value="houseFrontDoor2_v1"/>
+						<property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+						<drop event="Destroy" count="0"/>
+						<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v2NoBrass"/> </property>
+						<property name="SortOrder2" value="0160"/> 
+					</block>
+
+					<block name="houseFrontDoor2_v2NoBrass">
+						<property name="Extends" value="houseFrontDoor1_v2NoBrass"/>
+						<property name="CustomIcon" value="houseFrontDoor2_v2"/>
+						<property name="Model" value="Entities/Doors/house_frontDoor2_v2Prefab"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+						<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v3NoBrass"/> </property>
+						<property name="DowngradeBlock" value="houseFrontDoor2_v1NoBrass"/>
+						<property name="SortOrder2" value="0165"/>
+						<drop event="Destroy" count="0"/>
+					</block>
+
+					<block name="houseFrontDoor2_v3NoBrass">
+						<property name="Extends" value="houseFrontDoor1_v3NoBrass"/>
+						<property name="CustomIcon" value="houseFrontDoor2_v3"/>
+						<property name="Model" value="Entities/Doors/house_frontDoor2_v3Prefab"/>
+						<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+						<property name="DowngradeBlock" value="houseFrontDoor2_v2NoBrass"/>
+						<property name="SortOrder2" value="0170"/> 
+						<drop event="Destroy" count="0"/>
+					</block>
+					
+					<block name="manholeHatchPlayer">
+						<property name="CustomIcon" value="manholeHatch"/>
+						<property name="Class" value="DoorSecure"/>
+						<property name="Material" value="Mmetal_hard"/>
+						<property name="LightOpacity" value="1"/>
+						<property name="Shape" value="ModelEntity"/>
+						<property name="Texture" value="241"/>
+						<property name="Model" value="Entities/Doors/manholeHatch/manholeHatchPrefab"/>
+						<property name="Place" value="TowardsPlacerInverted"/>
+						<property name="ModelOffset" value="0,0,0"/>
+						<property name="MultiBlockDim" value="1,1,1"/> <!-- we need to override the default door size of 2 blocks high -->
+						<property name="OnlySimpleRotations" value="true"/>
+						<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+						<property name="BlockTag" value="Door"/>
+						<property name="OpenSound" value="open_manhole"/>
+						<property name="CloseSound" value="close_manhole"/>
+						<property name="PlaceEverywhere" value="true"/>
+						<property class="RepairItems">
+							<property name="resourceForgedIron" value="10"/>
+						</property>
+						<drop event="Harvest" name="resourceScrapIron" count="40" tag="allHarvest"/>
+						<drop event="Destroy" count="0"/>
+						<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+						<property name="Stacknumber" value="1"/>
+						<property name="DescriptionKey" value="doorGroupDesc"/>
+						<property name="Group" value="Building,advBuilding"/>
+						<property name="FilterTags" value="MC_building,SC_doors"/>
+						<property name="SortOrder1" value="7060"/>
+						<property name="SortOrder2" value="0550"/>
+					</block>
+				</append>
+
+
+			<append xpath="/blocks">
+				<block name="miscwoodDoorVariantHelper">
+					<property name="Extends" value="secureDoorWooden"/>
+					<property name="CustomIcon" value="secureDoorWooden"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="DescriptionKey" value="afgMiscDesc"/>
+					<property name="ItemTypeIcon" value="all_blocks"/>
+					<property name="SelectAlternates" value="true"/>
+					<property name="PlaceAltBlockValue" value="secureDoorWooden,houseFrontDoor1_v1NoBrass,houseFrontDoor2_v1NoBrass,commercialDoor1_v1NoBrass,commercialDoor2_v1NoBrass,commercialDoor4_v1NoBrass,woodHatch1_v1,shuttersWood01,shuttersWood02,cellarDoorDoubleWood"/>
+					<property name="Group" value="Basics,Building,advBuilding"/>
+					<property name="PickupJournalEntry" value="shapeMenuTip"/>
+				</block>
+				<block name="miscironDoorVariantHelper">
+					<property name="Extends" value="ironDoor1_v1"/>
+					<property name="CustomIcon" value="ironDoor1_v1"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="DescriptionKey" value="afgMiscDesc"/>
+					<property name="ItemTypeIcon" value="all_blocks"/>
+					<property name="SelectAlternates" value="true"/>
+					<property name="PlaceAltBlockValue" value="ironDoor1_v1,scrapHatch_v1,shuttersIron01,shuttersIron02,cellarDoorDoubleIron,manholeHatchPlayer"/>
+					<property name="Group" value="Basics,Building,advBuilding"/>
+					<property name="PickupJournalEntry" value="shapeMenuTip"/>
+				</block>
+				<block name="miscsteelDoorVariantHelper">
+					<property name="Extends" value="vaultDoor01"/>
+					<property name="CustomIcon" value="vaultDoor01"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="DescriptionKey" value="afgMiscDesc"/>
+					<property name="ItemTypeIcon" value="all_blocks"/>
+					<property name="SelectAlternates" value="true"/>
+					<property name="PlaceAltBlockValue" value="vaultDoor01,vaultHatch_v1,shuttersSteel01,shuttersSteel02,cellarDoorDoubleSteel"/>
+					<property name="Group" value="Basics,Building,advBuilding"/>
+					<property name="PickupJournalEntry" value="shapeMenuTip"/>
+				</block>
+			</append>	
+
+
+				<set xpath="/blocks/block[@name='metalReinforcedDoorWooden']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscironDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='metalReinforcedDoorWooden']/property[@class='UpgradeBlock']/property[@name='ItemCount']/@value">1</set>
+				
+				<set xpath="/blocks/block[@name='woodHatch1_v3']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscironDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='woodHatch1_v3']/property[@class='UpgradeBlock']/property[@name='ItemCount']/@value">1</set>
+				
+				<set xpath="/blocks/block[@name='cellarDoorDoubleWood']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscironDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='shuttersWood01']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscironDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='shuttersWood02']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscironDoorVariantHelper</set>
+				
+				<set xpath="/blocks/block[@name='scrapHatch_v1']/property[@name='Material']/@value">Mmetal_hard</set>
+				<set xpath="/blocks/block[@name='scrapHatch_v1']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceForgedIron</set>
+				<set xpath="/blocks/block[@name='scrapHatch_v1']/property[@class='UpgradeBlock']/property[@name='ItemCount']/@value">10</set>				
+				<set xpath="/blocks/block[@name='scrapHatch_v1']/property[@class='RepairItems']/property[@name='resourceScrapIron']/@value">10</set>
+				<set xpath="/blocks/block[@name='scrapHatch_v1']/property[@class='RepairItems']/property[@name='resourceScrapIron']/@name">resourceForgedIron</set>
+
+
+
+				<set xpath="/blocks/block[@name='ironDoor1_v3']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscsteelDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='scrapHatch_v3']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscsteelDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='cellarDoorDoubleIron']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscsteelDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='shuttersIron01']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscsteelDoorVariantHelper</set>
+				<set xpath="/blocks/block[@name='shuttersIron02']/property[@class='UpgradeBlock']/property[@name='Item']/@value">miscsteelDoorVariantHelper</set>
+
+
+
+</VanillaPlus>

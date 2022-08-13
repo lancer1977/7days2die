@@ -1,0 +1,7 @@
+<WastelandPlus> 
+ 	<setattribute xpath="/item_modifiers/item_modifier[contains(@name, 'modPlasmaOverchargedCapacitor')]" name="installable_tags">plasmasniper</setattribute>
+	<setattribute xpath="/item_modifiers/item_modifier[contains(@name, 'modPlasmaBoostedEmitter')]" name="installable_tags">plasmasniper</setattribute>  
+		<!--<setattribute xpath="/recipes/recipe[contains(@name, 'T0Pipe')]" name="craft_area">workbench</setattribute>
+		-->
+</WastelandPlus>
+  

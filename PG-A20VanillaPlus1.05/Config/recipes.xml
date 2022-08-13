@@ -1,0 +1,605 @@
+<VanillaPlus>
+
+
+
+
+
+TABLE OF CONTENTS
+Section 1 = FARMING PLUS
+Section 2 = FIXES AND NEW THINGS
+			c. Armor Nightvision Mod
+			d. Wood Burning Enhancement
+			e. New Crafting Recipes
+			g. All Archery uses Feathers
+			h. Scrapping Plus
+Section 3 = BUNDLES PLUS  <!--must come after fixes and new things-->
+Section 4 = SCHEMATICS PLUS
+Section 5 = DOORS PLUS
+
+
+
+
+<!--Section 1 = FARMING PLUS-->
+		<!--plant birds nests-->
+		<append xpath="/recipes">
+			<recipe name="birdsNestEmpty" count="1" craft_time="20" tags="learnable,perkLivingOffTheLand">
+				<ingredient name="resourceYuccaFibers" count="10"/>
+				<ingredient name="foodCornMeal" count="5"/>
+			</recipe>
+		</append>
+		<!--plant bee flower for honey-->
+		<append xpath="/recipes">
+			<recipe name="beeFlower" count="1" craft_time="20" tags="learnable,perkLivingOffTheLand">
+				<ingredient name="plantedChrysanthemum1" count="5"/>
+				<ingredient name="plantedGoldenrod1" count="5"/>
+				<ingredient name="resourceYuccaFibers" count="5"/>
+			</recipe>
+		</append>
+
+	
+
+
+
+
+<!--Section 2 = FIXES AND NEW THINGS-->
+		<!--MASTERY Recipes-->
+			<append xpath="/recipes">
+				<recipe name="meleeMasterTool" count="1" craft_area="workbench" tags="learnable,perkMiner69r">
+					<ingredient name="resourceForgedSteel" count="20"/>
+					<ingredient name="resourceMechanicalParts" count="20"/>
+					<ingredient name="resourceDuctTape" count="2"/>
+					<ingredient name="meleeToolAxeT3ChainsawParts" count="5"/>
+					<ingredient name="resourceSpring" count="5"/>
+						<effect_group>
+							<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,5" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel"/>
+						</effect_group>
+				</recipe>
+			</append>
+
+
+
+
+		<!--COSMETICS PLUS-->
+			<append xpath="/recipes">
+				<recipe name="modGhillieSuitHood" count="1" craft_exp_gain="0">
+					<ingredient name="apparelGhillieSuitHood" count="1"/>
+				</recipe>
+				<recipe name="modHazmatMask" count="1" craft_exp_gain="0">
+					<ingredient name="apparelHazmatMask" count="1"/>
+				</recipe>
+				<recipe name="modHazmatGloves" count="1" craft_exp_gain="0">
+					<ingredient name="apparelHazmatGloves" count="1"/>
+				</recipe>
+				<recipe name="modHazmatBoots" count="1" craft_exp_gain="0">
+					<ingredient name="apparelHazmatBoots" count="1"/>
+				</recipe>
+				<recipe name="modSuitDressShoes" count="1" craft_exp_gain="0">
+					<ingredient name="apparelSuitDressShoes" count="1"/>
+				</recipe>
+				<recipe name="modWornBoots" count="1" craft_exp_gain="0">
+					<ingredient name="apparelWornBoots" count="1"/>
+				</recipe>
+				<recipe name="modRunningShoesRegular" count="1" craft_exp_gain="0">
+					<ingredient name="apparelRunningShoesRegular" count="1"/>
+				</recipe>
+				<recipe name="modCowboyBoots" count="1" craft_exp_gain="0">
+					<ingredient name="apparelCowboyBoots" count="1"/>
+				</recipe>
+				<recipe name="modGothBoots" count="1" craft_exp_gain="0">
+					<ingredient name="apparelGothBoots" count="1"/>
+				</recipe>
+				<recipe name="modArmorSkullCap" count="1" craft_exp_gain="0">
+					<ingredient name="apparelSkullCap" count="1"/>
+				</recipe>
+				<recipe name="modArmorPressboyCap" count="1" craft_exp_gain="0">
+					<ingredient name="apparelPressboyCap" count="1"/>
+				</recipe>
+				<recipe name="modArmorCowboyHat" count="1" craft_exp_gain="0">
+					<ingredient name="apparelCowboyHat" count="1"/>
+				</recipe>
+				<recipe name="modArmorBallCap" count="1" craft_exp_gain="0">
+					<ingredient name="apparelBallCap" count="1"/>
+				</recipe>
+
+				
+
+				<recipe name="modDyeInvisible" count="1" craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>		
+				<recipe name="modDyeRed" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>			
+				<recipe name="modDyeGreen" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>			
+				<recipe name="modDyeBlack" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>			
+				<recipe name="modDyeBlue" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>			
+				<recipe name="modDyeBrown" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>		
+				<recipe name="modDyePink" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>				
+				<recipe name="modDyePurple" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>				
+				<recipe name="modDyeYellow" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>	
+				<recipe name="modDyeOrange" count="1"  craft_area="chemistryStation">
+					<ingredient name="resourceOilShale" count="10"/>
+					<ingredient name="resourceGlue" count="2"/>
+				</recipe>
+				
+				
+				<recipe name="modDyeRedBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeRed" count="1"/>
+				</recipe>
+				<recipe name="modDyeGreenBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeGreen" count="1"/>
+				</recipe>
+				<recipe name="modDyeBlackBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeBlack" count="1"/>
+				</recipe>
+				<recipe name="modDyeBlueBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeBlue" count="1"/>
+				</recipe>
+				<recipe name="modDyeBrownBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeBrown" count="1"/>
+				</recipe>
+				<recipe name="modDyePinkBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyePink" count="1"/>
+				</recipe>
+				<recipe name="modDyePurpleBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyePurple" count="1"/>
+				</recipe>
+				<recipe name="modDyeYellowBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeYellow" count="1"/>
+				</recipe>
+				<recipe name="modDyeOrangeBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeOrange" count="1"/>
+				</recipe>	
+				<recipe name="modDyeInvisibleBundle" count="1" craft_time="0" craft_exp_gain="0">
+					<ingredient name="modDyeInvisible" count="1"/>
+				</recipe>
+				
+				
+				<recipe name="apparelFacialPiercings" count="1"  craft_area="workbench">
+					<ingredient name="resourceScrapIron" count="5"/>
+					<ingredient name="resourceGlue" count="1"/>
+				</recipe>	
+				<recipe name="modFacialPiercings" count="1" craft_exp_gain="0">
+					<ingredient name="apparelFacialPiercings" count="1"/>
+				</recipe>	
+				<recipe name="modCigar" count="1" craft_exp_gain="0">
+					<ingredient name="apparelCigar" count="1"/>
+				</recipe>
+				<recipe name="modBandana" count="1" craft_exp_gain="0">
+					<ingredient name="apparelBandana" count="1"/>
+				</recipe>	
+				<recipe name="modShades" count="1" craft_exp_gain="0">
+					<ingredient name="apparelShades" count="1"/>
+				</recipe>		
+				<recipe name="modShades" count="1" craft_exp_gain="0">
+					<ingredient name="apparelToughGuySunglasses" count="1"/>
+				</recipe>		
+				<recipe name="modAviatorGoggles" count="1" craft_exp_gain="0">
+					<ingredient name="apparelAviatorGoggles" count="1"/>
+				</recipe>		
+				<recipe name="modSkiGoggles" count="1" craft_exp_gain="0">
+					<ingredient name="apparelSkiGoggles" count="1"/>
+				</recipe>		
+				<recipe name="modNerdGlasses" count="1" craft_exp_gain="0">
+					<ingredient name="apparelNerdGlasses" count="1"/>
+				</recipe>					
+			</append>
+
+
+
+
+	
+		
+		<!--c. Armor Nightvision Mod Crafting Recipe-->
+			<append xpath="/recipes">
+				<recipe name="modArmorHelmetNightvision" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="armorMilitarySetParts" count="5"/>
+					<ingredient name="apparelNightvisionGoggles" count="1"/>
+					<ingredient name="resourceDuctTape" count="3"/>
+					<ingredient name="resourceScrapPolymers" count="5"/>
+					<ingredient name="resourceSewingKit" count="2"/>
+				</recipe>
+			</append>
+
+		<!--d. Wood Burning Enhancement--> <!--the number of wood is equal to the associated time-->
+			<append xpath="/recipes">
+				<recipe name="resourceWood10min" count="1" craft_time="2">
+					<ingredient name="resourceWood" count="12"/>
+				</recipe>
+				<recipe name="resourceWood60min" count="1" craft_time="5">
+					<ingredient name="resourceWood" count="72"/>
+				</recipe>
+				<recipe name="resourceWood" count="12" craft_time="2">
+					<ingredient name="resourceWood10min" count="1"/>
+				</recipe>
+				<recipe name="resourceWood" count="72" craft_time="5">
+					<ingredient name="resourceWood60min" count="1"/>
+				</recipe>	
+			</append>
+
+		<!--e. New Crafting Recipes-->
+			<append xpath="/recipes">
+				<recipe name="medicalFirstAidBandage" count="1" tags="learnable"><!--allows building first aid bandages directly from bandages-->
+					<ingredient name="medicalAloeCream" count="1"/>
+					<ingredient name="medicalBandage" count="1"/>
+				</recipe>
+				<recipe name="terrSnow" count="1" craft_time="3"><!--in case you want to put snow back on the ground-->
+					<ingredient name="resourceSnowBall" count="11"/>
+				</recipe>
+			</append>
+			<!--Murder Axe crafting recipe-->
+			<append xpath="/recipes">
+				<recipe name="meleeMurderAxe" count="1" craft_area="workbench" tags="learnable,perkDeepCuts">
+					<ingredient name="meleeWpnBladeT3MacheteParts" count="10"/>
+					<ingredient name="resourceForgedSteel" count="10"/>
+					<ingredient name="resourceWood" count="10"/>
+					<ingredient name="resourceLeather" count="3"/>
+					<ingredient name="resourceDuctTape" count="3"/>
+					<effect_group>
+						<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnBladeT3MacheteParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+					</effect_group>
+				</recipe>
+			</append>
+			<!--Mod High Performance Running Soles-->
+			<append xpath="/recipes">
+				<recipe name="modHPRunningSoles" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+					<ingredient name="resourceGlue" count="2"/>	
+					<ingredient name="resourceOil" count="3"/>
+					<ingredient name="resourceLeather" count="5"/>
+					<ingredient name="resourceCloth" count="10"/>
+					<ingredient name="resourceSewingKit" count="1"/>
+				</recipe>
+			</append>		
+		<!--g. All Archery uses Feathers AND feathers may be made from plastic.-->
+			<!--THESE LINES OF CODES MUST COME BEFORE BUNDLESPLUS-->
+			<remove xpath="/recipes/recipe[contains(@name,'Arrow')]/ingredient[@name='resourceScrapPolymers']"/>
+			<remove xpath="/recipes/recipe[contains(@name,'Bolt')]/ingredient[@name='resourceScrapPolymers']"/>
+			<append xpath="/recipes/recipe[@name='ammoArrowFlaming']"><ingredient name="resourceFeather" count="1"/></append>
+			<append xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']"><ingredient name="resourceFeather" count="80"/></append>
+			<append xpath="/recipes/recipe[@name='ammoArrowExploding']"><ingredient name="resourceFeather" count="1"/></append>
+			<append xpath="/recipes/recipe[@name='ammoBundleArrowExploding']"><ingredient name="resourceFeather" count="60"/></append>
+			<append xpath="/recipes/recipe[@name='ammoArrowSteelAP']"><ingredient name="resourceFeather" count="1"/></append>
+			<append xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']"><ingredient name="resourceFeather" count="80"/></append>
+			<append xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']"><ingredient name="resourceFeather" count="1"/></append>
+			<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']"><ingredient name="resourceFeather" count="80"/></append>
+			<append xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']"><ingredient name="resourceFeather" count="1"/></append>
+			<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']"><ingredient name="resourceFeather" count="60"/></append>
+			<append xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']"><ingredient name="resourceFeather" count="1"/></append>
+			<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']"><ingredient name="resourceFeather" count="80"/></append>
+			
+			<!--Make Feathers out of plastic!-->
+			<append xpath="/recipes">
+				<recipe name="resourceFeather" count="1" craft_time="1" craft_area="workbench">
+					<ingredient name="resourceScrapPolymers" count="2"/>
+				</recipe>	
+			</append>
+
+		<!--h. Scrapping Plus, more resources from scrapping ammo and things-->
+		<append xpath="/recipes">
+			<recipe name="dammo9mmBulletBall" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo9mmBulletHP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo9mmBulletAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo44MagnumBulletBall" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo44MagnumBulletHP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo44MagnumBulletAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo762mmBulletBall" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo762mmBulletHP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammo762mmBulletAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoShotgunShell" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoShotgunSlug" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoShotgunBreachingSlug" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoArrowFlaming" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoCrossbowBoltFlaming" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoArrowExploding" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoCrossbowBoltExploding" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoArrowIron" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoCrossbowBoltIron" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoArrowSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoCrossbowBoltSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoArrowStone" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoCrossbowBoltStone" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoRocketFrag" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoRocketHE" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dthrownAmmoPipeBomb" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dthrownGrenadeContact" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dthrownGrenade" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dthrownTimedCharge" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dthrownDynamite" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dthrownAmmoMolotovCocktail" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoDartIron" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoJunkTurretRegular" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoJunkTurretAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="dammoJunkTurretShell" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="resourceGunPowder" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+			<recipe name="resourceAcid" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+		</append>
+
+
+<!--Section 3 = BUNDLES PLUS-->
+		
+
+		<!--Bundle Engines-->
+		<append xpath="/recipes">
+			<recipe name="smallEngineBundle" count="1" craft_time="3" craft_exp_gain="0">
+				<ingredient name="smallEngine" count="1"/>
+			</recipe>	
+		</append>
+		
+		<!--Bundle Color Dyes-->	
+		<append xpath="/recipes">
+
+		</append>
+		
+		<!--Due to changes in stack sizes and an explotation, removed xp gain from Mining Pallet Bundling-->
+		<setattribute xpath="/recipes/recipe[@name='resourceRockSmallBundle']" name="craft_exp_gain">0</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceWoodBundle']" name="craft_exp_gain">0</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceScrapIronBundle']" name="craft_exp_gain">0</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourcePotassiumNitratePowderBundle']" name="craft_exp_gain">0</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceLeadBundle']" name="craft_exp_gain">0</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceCoalBundle']" name="craft_exp_gain">0</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceOilShaleBundle']" name="craft_exp_gain">0</setattribute>	
+		
+		<!--reduced bundling time from 10 seconds to 3-->
+		<setattribute xpath="/recipes/recipe[@name='resourceRockSmallBundle']" name="craft_time">3</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceWoodBundle']" name="craft_time">3</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceScrapIronBundle']" name="craft_time">3</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourcePotassiumNitratePowderBundle']" name="craft_time">3</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceLeadBundle']" name="craft_time">3</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceCoalBundle']" name="craft_time">3</setattribute>
+		<setattribute xpath="/recipes/recipe[@name='resourceOilShaleBundle']" name="craft_time">3</setattribute>	
+		
+		<!--perkArtOfMiningPallets to include Clay Soil and Crushed Sand-->
+		<append xpath="/recipes">
+			<recipe name="resourceClayLumpBundle" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="resourceClayLump" count="6000"/></recipe>
+			<recipe name="resourceCrushedSandBundle" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="resourceCrushedSand" count="6000"/></recipe>
+		</append>
+
+		<!--RebundleBundles-->
+		<append xpath="/recipes">
+			<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammo9mmBulletBall" count="500"/></recipe>
+			<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammo9mmBulletHP" count="500"/></recipe>
+			<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammo9mmBulletAP" count="500"/></recipe>
+			<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">		<ingredient name="ammo44MagnumBulletBall" count="500"/></recipe>
+			<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammo44MagnumBulletHP" count="500"/></recipe>	
+			<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammo44MagnumBulletAP" count="500"/></recipe>	
+			<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammo762mmBulletBall" count="500"/></recipe>	
+			<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammo762mmBulletHP" count="500"/></recipe>	
+			<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammo762mmBulletAP" count="500"/></recipe>	
+			<recipe name="ammoBundleShotgunShell" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoShotgunShell" count="500"/></recipe>
+			<recipe name="ammoBundleShotgunSlug" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoShotgunSlug" count="500"/></recipe>
+			<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">		<ingredient name="ammoShotgunBreachingSlug" count="500"/></recipe>
+			<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">		<ingredient name="ammoJunkTurretRegular" count="1000"/></recipe>	
+			<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammoJunkTurretShell" count="1000"/></recipe>
+			<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoJunkTurretAP" count="1000"/></recipe>	
+			<recipe name="ammoBundleArrowFlaming" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoArrowFlaming" count="500"/></recipe>	
+			<recipe name="ammoBundleArrowExploding" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammoArrowExploding" count="500"/></recipe>
+			<recipe name="ammoBundleArrowIron" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoArrowIron" count="500"/></recipe>
+			<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoArrowSteelAP" count="500"/></recipe>	
+			<recipe name="ammoBundleArrowStone" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="ammoArrowStone" count="500"/></recipe>	
+			<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">		<ingredient name="ammoCrossbowBoltFlaming" count="500"/></recipe>	
+			<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">	<ingredient name="ammoCrossbowBoltExploding" count="500"/></recipe>	
+			<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="ammoCrossbowBoltIron" count="500"/></recipe>	
+			<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">		<ingredient name="ammoCrossbowBoltSteelAP" count="500"/></recipe>
+			<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">		<ingredient name="ammoCrossbowBoltStone" count="500"/></recipe>
+			<recipe name="ammoGasCanBundle" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">					<ingredient name="ammoGasCan" count="30000"/></recipe>			
+			<recipe name="resourceGunPowderBundle" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">			<ingredient name="resourceGunPowder" count="1000"/></recipe>
+			<recipe name="resourceLockPickBundle" count="1" craft_time="3" craft_exp_gain="0" tags="learnable">				<ingredient name="resourceLockPick" count="50"/></recipe>
+		</append>
+
+		<!--BUNDLE INGREDIENT counts to represent stack size improvements-->
+		<set xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='resourceOilShale']/@count">2400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall']/ingredient[@name='resourceBulletTip']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall']/ingredient[@name='resourceGunPowder']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']/ingredient[@name='resourceBulletTip']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']/ingredient[@name='resourceGunPowder']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletAP']/ingredient[@name='resourceBulletTip']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletAP']/ingredient[@name='resourceGunPowder']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletAP']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']/ingredient[@name='resourceBulletTip']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']/ingredient[@name='resourceGunPowder']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']/ingredient[@name='resourceBulletTip']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']/ingredient[@name='resourceGunPowder']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletAP']/ingredient[@name='resourceBulletTip']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletAP']/ingredient[@name='resourceGunPowder']/@count">1200</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletAP']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletBall']/ingredient[@name='resourceBulletTip']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletBall']/ingredient[@name='resourceGunPowder']/@count">1200</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletBall']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']/ingredient[@name='resourceBulletTip']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']/ingredient[@name='resourceGunPowder']/@count">1200</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletAP']/ingredient[@name='resourceBulletTip']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletAP']/ingredient[@name='resourceGunPowder']/@count">2000</set>
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletAP']/ingredient[@name='resourceBulletCasing']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunShell']/ingredient[@name='resourceBuckshot']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunShell']/ingredient[@name='resourceGunPowder']/@count">1600</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunShell']/ingredient[@name='resourcePaper']/@count">400</set>	
+
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']/ingredient[@name='resourceBulletTip']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']/ingredient[@name='resourceGunPowder']/@count">1600</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']/ingredient[@name='resourceScrapPolymers']/@count">400</set>	
+
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']/ingredient[@name='resourceForgedSteel']/@count">1600</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']/ingredient[@name='resourceClayLump']/@count">800</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']/ingredient[@name='resourceGunPowder']/@count">1600</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']/ingredient[@name='resourceScrapPolymers']/@count">400</set>	
+			
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceArrowHeadSteelAP']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceFeather']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceGunPowder']/@count">800</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceCloth']/@count">400</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceAnimalFat']/@count">400</set>	
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/ingredient[@name='resourceArrowHeadSteelAP']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/ingredient[@name='resourceFeather']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/ingredient[@name='resourceGunPowder']/@count">2400</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/ingredient[@name='resourceDuctTape']/@count">400</set>	
+			
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowIron']/ingredient[@name='resourceArrowHeadIron']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowIron']/ingredient[@name='resourceWood']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowIron']/ingredient[@name='resourceFeather']/@count">400</set>	
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']/ingredient[@name='resourceArrowHeadSteelAP']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']/ingredient[@name='resourceFeather']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowStone']/ingredient[@name='resourceRockSmall']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowStone']/ingredient[@name='resourceWood']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowStone']/ingredient[@name='resourceFeather']/@count">400</set>
+			
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceArrowHeadSteelAP']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceFeather']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceGunPowder']/@count">800</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceCloth']/@count">400</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceAnimalFat']/@count">400</set>	
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/ingredient[@name='resourceArrowHeadSteelAP']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/ingredient[@name='resourceFeather']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/ingredient[@name='resourceGunPowder']/@count">3200</set>	
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/ingredient[@name='resourceDuctTape']/@count">400</set>	
+			
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/ingredient[@name='resourceArrowHeadIron']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/ingredient[@name='resourceWood']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/ingredient[@name='resourceFeather']/@count">400</set>	
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/ingredient[@name='resourceArrowHeadSteelAP']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/ingredient[@name='resourceFeather']/@count">400</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/ingredient[@name='resourceRockSmall']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/ingredient[@name='resourceWood']/@count">400</set>
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/ingredient[@name='resourceFeather']/@count">400</set>
+			
+
+
+<!--Section 4 = SCHEMATICS PLUS-->
+	<!--Bundle complete book collections-->
+		<append xpath="/recipes">
+			<recipe name="bookFiremansAlmanacCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookNightStalkerCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookLuckyLooterCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookEnforcerCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookBatterUpCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookGreatHeistCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookWasteTreasuresCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookNeedleAndThreadCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookHuntingJournalCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookArtOfMiningCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookRangersCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookPistolPeteCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookShotgunMessiahCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookSniperCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookAutoWeaponsCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookUrbanCombatCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookTechJunkieCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookBarBrawlingCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+			<recipe name="bookSpearHunterCollection" count="1" craft_time="2" tags="learnable" craft_exp_gain="0">
+				<ingredient name="resourcePaper" count="21"/><!--<ingredient name="resourcePaint" count="20"/>-->
+			</recipe>
+		</append>
+
+	
+<!--Section 5 = VARIANTS PLUS-->
+		<!--Door Variants-->
+		<append xpath="/recipes">
+			<recipe name="miscwoodDoorVariantHelper" count="1">
+				<ingredient name="resourceWood" count="5"/>
+			</recipe>
+			<recipe name="miscironDoorVariantHelper" count="1">
+				<ingredient name="resourceForgedIron" count="10"/>
+			</recipe>		
+			<recipe name="miscsteelDoorVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+				<ingredient name="resourceForgedSteel" count="12"/>
+				<ingredient name="resourceSpring" count="2"/>
+				<ingredient name="resourceMechanicalParts" count="4"/>
+			</recipe>		
+		</append>
+		
+			<remove xpath="/recipes/recipe[@name='vaultDoor01']"/>
+			<remove xpath="/recipes/recipe[@name='vaultHatch_v1']"/>
+			<remove xpath="/recipes/recipe[@name='secureDoorWooden']"/>
+			<remove xpath="/recipes/recipe[@name='cellarDoorDoubleWood']"/>
+			<remove xpath="/recipes/recipe[@name='cellarDoorDoubleIron']"/>
+			<remove xpath="/recipes/recipe[@name='cellarDoorDoubleSteel']"/>
+			<remove xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']"/>
+			<remove xpath="/recipes/recipe[@name='shuttersIronBlockVariantHelper']"/>
+			<remove xpath="/recipes/recipe[@name='shuttersSteelBlockVariantHelper']"/>
+			<remove xpath="/recipes/recipe[@name='ironDoor1_v1']"/>
+			<remove xpath="/recipes/recipe[@name='woodHatch1_v1']"/>
+			<remove xpath="/recipes/recipe[@name='scrapHatch_v1']"/>
+
+
+		
+</VanillaPlus>
+
+

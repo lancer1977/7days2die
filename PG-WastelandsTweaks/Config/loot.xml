@@ -1,0 +1,5 @@
+<WastelandsPlus> 	 
+		<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+			<item name="ammoIncineratorSchematic"/>	
+		</append> 
+</WastelandsPlus>

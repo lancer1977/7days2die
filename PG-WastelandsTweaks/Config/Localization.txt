@@ -1,0 +1,2 @@
+Key,English
+ammoIncineratorSchematic,"[DECEA3]Schematic [ddcdfa]Ammo [ffffff]Incinerator"

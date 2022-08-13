@@ -1,0 +1,1747 @@
+<VanillaPlus>
+<!--Note about removing items code. If someone is carrying an item in backpack/toolbelt it and you delete the code, may reset the player back to level 1. If in a storage, may reset an area around that storage back to its original.-->
+<!--There are ways to remove item features without causing game crashes/errors. Each section is noted with instructions-->
+
+
+
+
+TABLE OF CONTENTS
+Section 1 = STACKS PLUS
+Section 2 = BUNDLES PLUS
+Section 3 = SCRAPPING PLUS
+Section 4 = NEW ITEMS
+Section 5 = MODIFICATIONS
+Section 6 = MASTER ITEMS
+Section 7 = REUSEABLE SCHEMATICS
+
+
+
+
+
+<!--Section 1 = STACKS PLUS-->
+		<!--a. Bundles to represent larger stack sizes-->
+			<set xpath="/items/item[@name='ammoGasCanBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">30000</set><!--Default = 10000-->
+			
+			<set xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			<set xpath="/items/item[@name='ammoBundle9mmBulletHP']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			<set xpath="/items/item[@name='ammoBundle9mmBulletAP']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			<set xpath="/items/item[@name='ammoBundle44MagnumBulletBall']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			<set xpath="/items/item[@name='ammoBundle44MagnumBulletHP']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">50</set><!--Default = 5-->
+			<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">50</set><!--Default = 5-->
+			<set xpath="/items/item[@name='resourceLockPickBundle']/property[@name='Stacknumber']/@value">50</set><!--Default = 5-->
+		
+		<!--b. Stack Size changes for ease and convenience without destroying gameplay-->
+			<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">30000</set>
+			<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">30000</set>
+			<set xpath="/items/item[@name='resourceYuccaFibers']/property[@name='Stacknumber']/@value">30000</set>
+			<set xpath="/items/item[@name='resourceYuccaFibers']/property[@name='Stacknumber']/@value">30000</set>
+			<set xpath="/items/item[@name='resourceBone']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceBrokenGlass']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceCement']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceClayLump']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceCoal']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceCrushedSand']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceOilShale']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourcePotassiumNitratePowder']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceRockSmall']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceScrapBrass']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceScrapIron']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceScrapLead']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='resourceWood']/property[@name='Stacknumber']/@value">6000</set>
+			<set xpath="/items/item[@name='ammoDartIron']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='ammoJunkTurretRegular']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceAirFilter']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceArrowHeadIron']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceArrowHeadSteelAP']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceBuckshot']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceBulletCasing']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceBulletTip']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceCandyTin']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceDuctTape']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceElectricParts']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceFishingWeight']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceForgedIron']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceForgedSteel']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceGlue']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceGunPowder']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceHubcap']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceLeather']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceMechanicalParts']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceMetalPipe']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceMilitaryFiber']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceNail']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourcePaint']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceRocketCasing']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceRocketTip']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='resourceSpring']/property[@name='Stacknumber']/@value">1000</set>
+			<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='drinkCanEmpty']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCornMeal']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodEgg']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceAnimalFat']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCandleStick']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCropAloeLeaf']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCropChrysanthemumPlant']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCropCoffeeBeans']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCropCottonPlant']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceCropHopsFlower']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceDoorKnob']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceSilverNugget']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceTestosteroneExtract']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceTrophy1']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceTrophy2']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropPotato']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropMushrooms']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropCorn']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='foodCropBlueberries']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='resourceTrophy2']/property[@name='Stacknumber']/@value">500</set>
+			<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='bookFiremansAlmanacHeat']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='candle']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarBeer']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarCoffee']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarEmpty']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarRedTea']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drugAtomJunkies']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodShamSandwich']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodHoboStew']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drugRecog']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodBaconAndEggs']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodBakedPotato']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodBlueberryPie']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodBoiledMeat']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodCharredMeat']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodCornBread']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodCornOnTheCob']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodEggBoiled']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodFishTacos']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodGrilledMeat']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodGumboStew']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodHoney']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodMeatStew']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodPumpkinBread']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodPumpkinPie']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodShepardsPie']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodSpaghetti']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='foodVegetableStew']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='medicalAloeCream']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='meleeToolTorch']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='resourceAcid']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='resourceHeadlight']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='resourceLockPick']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='resourceOil']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='resourceRadiator']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='resourceRepairKit']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='thrownDynamite']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='toolBeaker']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='toolCookingGrill']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='toolCookingPot']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='partsMaster']/property[@name='Stacknumber']/@value">50</set>
+			<set xpath="/items/item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">50</set>	
+			<set xpath="/items/item[@name='foodCanBeef']/property[@name='Stacknumber']/@value">50</set>				
+			<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@name='Stacknumber']/@value">10</set>
+			<set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/property[@name='Stacknumber']/@value">10</set>
+			<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@name='Stacknumber']/@value">10</set>
+			<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='Stacknumber']/@value">10</set>
+			<set xpath="/items/item[@name='bucketEmpty']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='bucketRiverWater']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='meleeToolFlashlight02']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='meleeToolPaintTool']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='meleeToolWireTool']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='toolAnvil']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='toolBellows']/property[@name='Stacknumber']/@value">5</set>
+			<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Stacknumber']/@value">5</set>
+
+
+		<!--c. ammo BUNDLES adjusted to match new stack sizes-->
+			<append xpath="/items/item[contains(@name,'ammoBundle9mm')]/property[@class='Action0']"><property name="Create_item_count" value="500"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundle44Magnum')]/property[@class='Action0']"><property name="Create_item_count" value="500"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundle762mm')]/property[@class='Action0']"><property name="Create_item_count" value="500"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundleShotgun')]/property[@class='Action0']"><property name="Create_item_count" value="500"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundleArrow')]/property[@class='Action0']"><property name="Create_item_count" value="500"/></append><!--Default = 100-->
+			<set xpath="/items/item[contains(@name,'ammoBundleArrowExploding')]/property[@class='Action0']/property[@name='Create_item_count']/@value">500</set><!--Default = 75-->
+			<append xpath="/items/item[contains(@name,'ammoBundleCrossbowBolt')]/property[@class='Action0']"><property name="Create_item_count" value="500"/></append><!--Default = 100-->
+			<set xpath="/items/item[contains(@name,'ammoBundleCrossbowBoltExploding')]/property[@class='Action0']/property[@name='Create_item_count']/@value">500</set><!--Default = 75-->
+
+		<!--d. Make Unsellable in order to not break the game-->
+			<append xpath="/items/item[@name='resourceRocketTip']"> <property name="SellableToTrader" value="false"/></append>
+			<append xpath="/items/item[@name='resourceRocketCasing']"> <property name="SellableToTrader" value="false"/></append>
+			<append xpath="/items/item[@name='drinkJarRiverWater']"> <property name="SellableToTrader" value="false"/></append>
+
+
+
+
+<!--Section 2 = BUNDLES PLUS-->
+		<!--Bundle Rocks, etc, have custom icon color to more easily differentiate between non-bundled and bundled resources-->
+		<append xpath="/items/item[@name='resourceRockSmallBundle']"> 
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="DescriptionKey" value="resourceBundledDesc"/>
+		</append>
+
+		<!--Book Collections Bundles-->
+		<append xpath="/items">
+			<item name="bookFiremansAlmanacCollection">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="bookFiremansAlmanacHeat"/> <property name="CustomIconTint" value="930CF8"/>
+				<property name="ItemTypeIcon" value="book"/>
+				<property name="AltItemTypeIcon" value="book_read"/>
+				<property name="DescriptionKey" value="bookFullCollectionDesc"/>
+				<property name="EconomicValue" value="4000"/>
+				<property name="SellableToTrader" value="false"/>
+				<property name="Stacknumber" value="50"/>
+				<property name="HoldType" value="45"/>
+				<property name="Unlocks" value="perkFiremansAlmanacComplete"/>
+				<property name="Weight" value="35"/>
+				<property class="Action0">
+					<property name="Class" value="Eat"/>
+					<property name="Delay" value="1.0"/>
+					<property name="Use_time" value="..."/>
+					<property name="Sound_start" value="read_skillbook"/>
+					<property name="Create_item" value="bookFiremansAlmanacCollection"/>
+				</property>
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHeat" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacAxes" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacSpeed" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacMolotov" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacPrevention" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHarvest" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacEquipment" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillFiremansAlmanac" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillFiremansAlmanac" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookNightStalkerCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookNightStalkerStealthDamage"/>
+				<property name="Unlocks" value="perkNightStalkerComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookNightStalkerCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerStealthDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSilentNight" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerBlades" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerThiefAdrenaline" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerArchery" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerTwilightThief" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSlumberParty" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillNightStalker" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillNightStalker" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookLuckyLooterCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookLuckyLooterDukes"/>
+				<property name="Unlocks" value="perkLuckyLooterComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookLuckyLooterCollection"/>
+				</property>			
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterDukes" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterAmmunition" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBrass" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterLead" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBooks" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterFood" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterMedical" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillLuckyLooter" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillLuckyLooter" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookEnforcerCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookEnforcerDamage"/>
+				<property name="Unlocks" value="perkEnforcerComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookEnforcerCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerApparel" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerPunks" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerIntimidation" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerHPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerCriminalPursuit" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookBatterUpCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookBatterUpBigHits"/>
+				<property name="Unlocks" value="perkBatterUpComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookBatterUpCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpBigHits" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpGear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpSlowPitch" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpKnockdown" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpBaseballBats" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpMetalChain" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillBatterUp" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillBatterUp" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookGreatHeistCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookTheGreatHeistSafes"/>
+				<property name="Unlocks" value="perkGreatHeistComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookGreatHeistCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSafes" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistGems" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistTimedCharge" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistClaimed" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistAdrenalineFall" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSprintSneak" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistMotionDetection" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillGreatHeist" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillGreatHeist" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookWasteTreasuresCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookWasteTreasuresHoney"/>
+				<property name="Unlocks" value="perkWasteTreasuresComplete"/>
+				<property class="Action0">
+					<property name="Create_item" value="bookWasteTreasuresCollection"/>
+				</property>			
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresHoney" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresCoffins" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresAcid" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresWater" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresDoors" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresCloth" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresSinks" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillWasteTreasures" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillWasteTreasures" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookNeedleAndThreadCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookNeedleAndThreadWinterWear"/>
+				<property name="Unlocks" value="perkNeedleAndThreadComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookNeedleAndThreadCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadWinterWear" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadLegwear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadFootwear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadDusters" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadPufferCoats" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadPockets" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillNeedleAndThread" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillNeedleAndThread" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookHuntingJournalCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookHuntingJournalBears"/>
+				<property name="Unlocks" value="perkHuntingJournalComplete"/>
+				<property class="Action0">
+					<property name="Create_item" value="bookHuntingJournalCollection"/>
+				</property>			
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalBears" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalWolves" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalCoyotes" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalMountainLions" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalDeer" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalVultures" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalSelfDefense" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillHuntingJournal" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillHuntingJournal" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookArtOfMiningCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookArtOfMiningLuckyStrike"/>
+				<property name="Unlocks" value="perkArtOfMiningComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookArtOfMiningCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLuckyStrike" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningDiamondTools" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningCoffee" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningBlackStrap" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningPallets" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningAvalanche" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLantern" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillArtOfMining" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillArtOfMining" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookRangersCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookRangersArrowRecovery"/>
+				<property name="Unlocks" value="perkRangersComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookRangersCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersArrowRecovery" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersExplodingBolts" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersCripplingShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersFlamingArrows" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersForestGuide" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersKnockdown" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillArchery" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillArchery" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookPistolPeteCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookPistolPeteTakeAim"/>
+				<property name="Unlocks" value="perkPistolPeteComplete"/>
+				<property class="Action0">
+					<property name="Create_item" value="bookPistolPeteCollection"/>
+				</property>			
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteTakeAim" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteSwissKnees" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteSteadyHand" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteHPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteDamage" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillPistolPete" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillPistolPete" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookShotgunMessiahCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookShotgunMessiahDamage"/>
+				<property name="Unlocks" value="perkShotgunMessiahComplete"/>
+				<property class="Action0">
+					<property name="Create_item" value="bookShotgunMessiahCollection"/>
+				</property>			
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahBreachingSlugs" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahLimbShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahSlugs" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahMagazine" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahPartyStarter" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillShotguns" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillShotguns" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookSniperCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookSniperDamage"/>
+				<property name="Unlocks" value="perkSniperComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookSniperCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperCripplingShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHeadShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperReload" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperControlledBreathing" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHPAmmo" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillSniper" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillSniper" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookAutoWeaponsCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookAutoWeaponsDamage"/>
+				<property name="Unlocks" value="perkAutoWeaponsComplete"/>
+				<property class="Action0">
+					<property name="Create_item" value="bookAutoWeaponsCollection"/>
+				</property>			
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsUncontrolledBurst" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsDrumMag" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsRecoil" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsRagdoll" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillAutoWeapons" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillAutoWeapons" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookUrbanCombatCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookUrbanCombatLanding"/>
+				<property name="Unlocks" value="perkUrbanCombatComplete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookUrbanCombatCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatLanding" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatCigar" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatSneaking" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatJumping" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatLandMines" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatAdrenalineRush" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatRoomClearing" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatComplete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillUrbanCombat" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillUrbanCombat" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>	
+			</item>
+			<item name="bookTechJunkieCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookTechJunkie1Damage"/>
+				<property name="Unlocks" value="perkTechJunkie8Complete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookTechJunkieCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie1Damage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie2Maintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie3APAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie4Shells" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie5Repulsor" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie6BatonCharge" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie7Hydraulics" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie8Complete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillTechJunkie" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillTechJunkie" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookBarBrawlingCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookBarBrawling1BasicMoves"/>
+				<property name="Unlocks" value="perkBarBrawling8Complete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookBarBrawlingCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling1BasicMoves" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling2DropABomb" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling3KillerInstinct" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling4FinishingMoves" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling5AdrenalineHealing" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling6RageMode" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling7BoozedUp" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling8Complete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillBarBrawling" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillBarBrawling" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			<item name="bookSpearHunterCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection"/>
+				<property name="CustomIcon" value="bookSpearHunter1Damage"/>
+				<property name="Unlocks" value="perkSpearHunter8Complete"/>	
+				<property class="Action0">
+					<property name="Create_item" value="bookSpearHunterCollection"/>
+				</property>		
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter1Damage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter2Maintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter3SteelSpears" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter4StrongArm" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter5RapidStrike" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter6PuncturedLung" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter7QuickStrike" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter8Complete" level="-1">
+						<requirement name="PerksUnlocked" skill_name="skillSpearHunter" operation="GTE" value="7"/></triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+						<requirement name="PerksUnlocked" skill_name="skillSpearHunter" operation="GTE" value="7"/></triggered_effect>
+				</effect_group>
+			</item>
+			
+			<!--Encyclopedia. Contains ALL Books (Do not combine with ALL schematics, it will break your game)-->
+			<item name="bookCompleteCollection">
+				<property name="Extends" value="bookFiremansAlmanacCollection" param1="AltItemTypeIcon,CustomIconTint"/>
+				<property name="CustomIcon" value="cntBookPile01"/>	<property name="CustomIconTint" value="930CF8"/>
+				<property name="ItemTypeIcon" value="treasure"/>
+				<property name="DescriptionKey" value="bookCompleteCollectionDesc"/>
+				<property name="EconomicValue" value="220000"/>
+				<property name="Weight" value="665"/>
+				<property name="Unlocks" value="bookCompleteCollection"/>
+				<property class="Action0">
+					<property name="Create_item" value="bookCompleteCollection"/>
+				</property>
+				<effect_group tiered="false">				
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="keystone_placed" play_in_head="true"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perksCompleteCollection" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter1Damage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter2Maintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter3SteelSpears" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter4StrongArm" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter5RapidStrike" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter6PuncturedLung" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter7QuickStrike" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter8Complete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHeat" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacAxes" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacSpeed" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacMolotov" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacPrevention" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHarvest" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacEquipment" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerStealthDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSilentNight" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerBlades" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerThiefAdrenaline" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerArchery" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerTwilightThief" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSlumberParty" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterDukes" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterAmmunition" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBrass" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterLead" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBooks" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterFood" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterMedical" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerApparel" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerPunks" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerIntimidation" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerHPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerCriminalPursuit" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpBigHits" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpGear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpSlowPitch" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpKnockdown" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpBaseballBats" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpMetalChain" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSafes" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistGems" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistTimedCharge" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistClaimed" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistAdrenalineFall" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSprintSneak" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistMotionDetection" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresHoney" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresCoffins" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresAcid" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresWater" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresDoors" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresCloth" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresSinks" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadWinterWear" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadLegwear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadFootwear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadDusters" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadPufferCoats" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadPockets" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadComplete" level="-1"/>				
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalBears" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalWolves" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalCoyotes" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalMountainLions" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalDeer" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalVultures" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalSelfDefense" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLuckyStrike" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningDiamondTools" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningCoffee" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningBlackStrap" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningPallets" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningAvalanche" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLantern" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersArrowRecovery" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersExplodingBolts" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersCripplingShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersFlamingArrows" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersForestGuide" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersKnockdown" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteTakeAim" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteSwissKnees" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteSteadyHand" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteHPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteDamage" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahBreachingSlugs" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahLimbShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahSlugs" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahMagazine" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahPartyStarter" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperCripplingShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHeadShot" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperReload" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperControlledBreathing" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperAPAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHPAmmo" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsDamage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsUncontrolledBurst" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsMaintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsDrumMag" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsRecoil" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsRagdoll" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatLanding" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatCigar" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatSneaking" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatJumping" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatLandMines" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatAdrenalineRush" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatRoomClearing" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatComplete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie1Damage" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie2Maintenance" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie3APAmmo" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie4Shells" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie5Repulsor" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie6BatonCharge" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie7Hydraulics" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie8Complete" level="-1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling1BasicMoves" level="-1"/><!-- level="-1" sets a perk to max level -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling2DropABomb" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling3KillerInstinct" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling4FinishingMoves" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling5AdrenalineHealing" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling6RageMode" level="-1"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling7BoozedUp" level="-1"/>  
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling8Complete" level="-1"/>
+		
+				</effect_group>
+			</item>
+		</append>
+
+		<!--Color Dye Bundles--><!--NOTE: these work a little weird, in the sense that you can "craft" a bundle only 1 at a time.-->
+		<append xpath="/items">
+			<item name="modDyeRedBundle">
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="149,52,54"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="Morganic"/>
+				<property name="Stacknumber" value="50"/>
+				<property name="SellableToTrader" value="false"/>
+				<property name="Group" value="Resources"/>
+				<property class="Action0">
+					<property name="Class" value="OpenBundle"/>
+					<property name="Delay" value="0"/>
+					<property name="Use_time" value="0"/>
+					<property name="Sound_start" value="close_garbage"/>
+					<property name="Create_item" value="modDyeRed"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeGreenBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="128,152,120"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeGreen"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeBlackBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="47,47,47"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeBlack"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeBlueBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="74,93,134"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeBlue"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeBrownBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="132,105,84"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeBrown"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyePinkBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="240,162,251"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyePink"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyePurpleBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="113,97,129"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyePurple"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeYellowBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="218,200,135"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeYellow"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeInvisibleBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="0,255,255"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeInvisible"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+			<item name="modDyeOrangeBundle">
+				<property name="Extends" value="modDyeRedBundle"/>
+				<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="220,125,15"/>
+				<property class="Action0">
+					<property name="Create_item" value="modDyeOrange"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+		</append>
+
+		<!--Engine Bundles (Making them stackable can cause errors in which you loose your entire stack except 1 engine when using with generators)-->
+		<append xpath="/items">
+			<item name="smallEngineBundle">
+				<property name="CustomIcon" value="smallEngine"/> <property name="CustomIconTint" value="930CF8"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="smallEngineBundledDesc"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="Morganic"/>
+				<property name="Stacknumber" value="50"/>
+				<property name="SellableToTrader" value="false"/>
+				<property name="Group" value="Resources"/>
+				<property name="UnlockedBy" value="perkGreaseMonkey"/>
+				<property class="Action0">
+					<property name="Class" value="OpenBundle"/>
+					<property name="Delay" value="0"/>
+					<property name="Use_time" value="0"/>
+					<property name="Sound_start" value="close_garbage"/>
+					<property name="Create_item" value="smallEngine"/>
+					<property name="Create_item_count" value="1"/>
+				</property>
+			</item>
+		</append>		
+
+		<!--Mining Pallet Bundling includes Clay Soil and Crushed Sand--> <!--Includes STACK SIZE CHANGES-->
+		<append xpath="/items"> <item name="resourceClayLumpBundle">
+				<property name="DescriptionKey" value="resourceClayLumpBundleDesc"/>
+				<property name="Extends" value="resourceRockSmallBundle"/>
+				<property name="CustomIcon" value="resourceClayLump"/>
+				<property name="UnlockedBy" value="perkArtOfMiningPallets"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceClayLump"/>
+					<property name="Create_item_count" value="6000"/>
+				</property>
+			</item>
+		</append>
+		<append xpath="/items"> <item name="resourceCrushedSandBundle">
+				<property name="DescriptionKey" value="resourceCrushedSandBundledesc"/>
+				<property name="Extends" value="resourceRockSmallBundle"/>
+				<property name="CustomIcon" value="resourceCrushedSand"/>
+				<property name="UnlockedBy" value="perkArtOfMiningPallets"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceCrushedSand"/>
+					<property name="Create_item_count" value="6000"/>
+				</property>
+			</item>
+		</append>
+		
+
+
+
+
+<!--Section 3 = SCRAPPING PLUS-->
+		<!--scrap batteries into acid-->
+		<set xpath="/items/item[@name='carBattery']/property[@name='Material']/@value">MresourceAcid</set>
+		<set xpath="/items/item[@name='resourceAcid']/property[@name='Weight']/@value">1</set>
+		<set xpath="/items/item[@name='carBattery']/property[@name='Weight']/@value">3</set>
+		
+		<!--Ammo Disassembly, modifying the material of ammo to allow new scrapping-->
+		<append xpath="/items/item[@name='ammo9mmBulletBall']">
+			<property name="Material" value="Mammo9mmBulletBall"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo9mmBulletHP']">
+			<property name="Material" value="Mammo9mmBulletHP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo9mmBulletAP']">
+			<property name="Material" value="Mammo9mmBulletAP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo44MagnumBulletBall']">
+			<property name="Material" value="Mammo44MagnumBulletBall"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo44MagnumBulletHP']">
+			<property name="Material" value="Mammo44MagnumBulletHP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo44MagnumBulletAP']">
+			<property name="Material" value="Mammo44MagnumBulletAP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo762mmBulletBall']">
+			<property name="Material" value="Mammo762mmBulletBall"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo762mmBulletHP']">
+			<property name="Material" value="Mammo762mmBulletHP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammo762mmBulletAP']">
+			<property name="Material" value="Mammo762mmBulletAP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoShotgunShell']">
+			<property name="Material" value="MammoShotgunShell"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoShotgunSlug']">
+			<property name="Material" value="MammoShotgunSlug"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoShotgunBreachingSlug']">
+			<property name="Material" value="MammoShotgunBreachingSlug"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoRocketHE']">
+			<property name="Material" value="MammoRocketHE"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoRocketFrag']">
+			<property name="Material" value="MammoRocketFrag"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoArrowStone']">
+			<property name="Material" value="MammoArrowStone"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoArrowIron']">
+			<property name="Material" value="MammoArrowIron"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoArrowSteelAP']">
+			<property name="Material" value="MammoArrowSteelAP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoArrowFlaming']">
+			<property name="Material" value="MammoArrowFlaming"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoArrowExploding']">
+			<property name="Material" value="MammoArrowExploding"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoCrossbowBoltStone']">
+			<property name="Material" value="MammoCrossbowBoltStone"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoCrossbowBoltIron']">
+			<property name="Material" value="MammoCrossbowBoltIron"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']">
+			<property name="Material" value="MammoCrossbowBoltSteelAP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoCrossbowBoltFlaming']">
+			<property name="Material" value="MammoCrossbowBoltFlaming"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoCrossbowBoltExploding']">
+			<property name="Material" value="MammoCrossbowBoltExploding"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='thrownAmmoPipeBomb']">
+			<property name="Material" value="MthrownAmmoPipeBomb"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='thrownGrenade']">
+			<property name="Material" value="MthrownGrenade"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='thrownDynamite']">
+			<property name="Material" value="MthrownDynamite"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='thrownAmmoMolotovCocktail']">
+			<property name="Material" value="MthrownAmmoMolotovCocktail"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoDartIron']">
+			<property name="Material" value="MammoDartIron"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoJunkTurretRegular']">
+			<property name="Material" value="MammoJunkTurretRegular"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoJunkTurretAP']">
+			<property name="Material" value="MammoJunkTurretAP"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='ammoJunkTurretShell']">
+			<property name="Material" value="MammoJunkTurretShell"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='thrownGrenadeContact']">
+			<property name="Material" value="MthrownGrenadeContact"/> <property name="Weight" value="1"/>
+		</append>
+		<append xpath="/items/item[@name='thrownTimedCharge']">
+			<property name="Material" value="MthrownTimedCharge"/> <property name="Weight" value="1"/>
+		</append>
+		
+		<!--Ammo that is disassembled turns into these bundles, allowing you to obtain more of the resources than just one type. Also, follows the math used Vanilla Scrapping.-->
+		<append xpath="/items">
+			<item name="dammo9mmBulletBall">
+				<property name="DescriptionKey" value="dAmmodesc"/>
+				<property name="CustomIcon" value="cntMunitionsBox"/><property name="CustomIconTint" value="120,100,250"/>
+				<property name="ItemTypeIcon" value="treasure"/>
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="Mammo9mmBulletBall"/>
+				<property name="Stacknumber" value="500"/>
+				<property name="SellableToTrader" value="false"/>
+				<property name="Weight" value="1"/>
+				<property name="Group" value="Resources"/>
+				<property name="CraftingIngredientTime" value="0.2"/>
+				<property class="Action0">
+					<property name="Class" value="OpenBundle"/>
+					<property name="Delay" value="0"/>
+					<property name="Use_time" value="0"/>
+					<property name="Sound_start" value="close_garbage"/>
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+			</item>
+			<item name="dammo9mmBulletHP">
+			<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo9mmBulletHP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="2,1,1"/>
+				</property>
+			</item>
+			<item name="dammo9mmBulletAP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo9mmBulletAP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="1,2,1"/>
+				</property>
+			</item>
+			<item name="dammo44MagnumBulletBall">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo44MagnumBulletBall"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="1,2,1"/>
+				</property>
+			</item>
+			<item name="dammo44MagnumBulletHP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo44MagnumBulletHP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="2,2,1"/>
+				</property>
+			</item>
+			<item name="dammo44MagnumBulletAP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo44MagnumBulletAP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="1,3,1"/>
+				</property>
+			</item>
+			<item name="dammo762mmBulletBall">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo762mmBulletBall"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="1,3,1"/>
+				</property>
+			</item>
+			<item name="dammo762mmBulletHP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo762mmBulletHP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="2,3,1"/>
+				</property>
+			</item>
+			<item name="dammo762mmBulletAP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="Mammo762mmBulletAP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="1,5,1"/>
+				</property>
+			</item>
+			<item name="dammoShotgunShell">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoShotgunShell"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
+					<property name="Create_item_count" value="1,4,1"/>
+				</property>
+			</item>	
+			<item name="dammoShotgunSlug">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoShotgunSlug"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
+					<property name="Create_item_count" value="2,4,1"/>
+				</property>
+			</item>	
+			<item name="dammoShotgunBreachingSlug">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoShotgunBreachingSlug"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceForgedSteel,resourceClayLump,resourceGunPowder,resourceScrapPolymers"/>
+					<property name="Create_item_count" value="4,2,4,1"/>
+				</property>
+			</item>	
+			<item name="dammoRocketFrag">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoRocketFrag"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBuckshot,resourceGunPowder,ammoGasCan,resourceRocketCasing"/>
+					<property name="Create_item_count" value="25,15,500,1"/>
+				</property>
+			</item>	
+			<item name="dammoRocketHE">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoRocketHE"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceRocketTip,resourceGunPowder,ammoGasCan,resourceRocketCasing"/>
+					<property name="Create_item_count" value="1,15,500,1"/>
+				</property>
+			</item>
+			<item name="dammoArrowStone">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoArrowStone"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceFeather,resourceWood,resourceRockSmall"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+			</item>	
+			<item name="dammoCrossbowBoltStone">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoCrossbowBoltStone"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceFeather,resourceWood,resourceRockSmall"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+			</item>
+			<item name="dammoArrowIron">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoArrowIron"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceFeather,resourceWood,resourceArrowHeadIron"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+			</item>			
+			<item name="dammoCrossbowBoltIron">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoCrossbowBoltIron"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceFeather,resourceWood,resourceArrowHeadIron"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+			</item>
+			<item name="dammoArrowSteelAP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoArrowSteelAP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceFeather,resourceArrowHeadSteelAP"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+			</item>		
+			<item name="dammoCrossbowBoltSteelAP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoCrossbowBoltSteelAP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceFeather,resourceArrowHeadSteelAP"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+			</item>	
+			<item name="dammoArrowFlaming">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoArrowFlaming"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceArrowHeadSteelAP,resourceFeather,resourceGunPowder,resourceCloth"/>
+					<property name="Create_item_count" value="1,1,2,1"/>
+				</property>
+			</item>				
+			<item name="dammoCrossbowBoltFlaming">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoCrossbowBoltFlaming"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceArrowHeadSteelAP,resourceFeather,resourceGunPowder,resourceCloth"/>
+					<property name="Create_item_count" value="1,1,2,1"/>
+				</property>
+			</item>	
+			<item name="dammoArrowExploding">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoArrowExploding"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceArrowHeadSteelAP,resourceFeather,resourceGunPowder"/>
+					<property name="Create_item_count" value="1,1,6"/>
+				</property>
+			</item>
+			<item name="dammoCrossbowBoltExploding">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoCrossbowBoltExploding"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceArrowHeadSteelAP,resourceFeather,resourceGunPowder"/>
+					<property name="Create_item_count" value="1,1,8"/>
+				</property>
+			</item>	
+			<item name="dthrownAmmoPipeBomb">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MthrownAmmoPipeBomb"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceYuccaFibers,resourceGunPowder,resourceMetalPipe"/>
+					<property name="Create_item_count" value="1,12,1"/>
+				</property>
+			</item>	
+			<item name="dthrownGrenadeContact">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MthrownGrenadeContact"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceMechanicalParts,resourceGunPowder,resourceForgedIron,resourceSpring"/>
+					<property name="Create_item_count" value="2,14,4,1"/>
+				</property>
+			</item>	
+			<item name="dthrownGrenade">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MthrownGrenade"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceMechanicalParts,resourceGunPowder,resourceForgedIron,resourceSpring"/>
+					<property name="Create_item_count" value="1,14,4,1"/>
+				</property>
+			</item>	
+			<item name="dthrownTimedCharge">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MthrownTimedCharge"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceScrapIron,resourceGunPowder,resourceElectricParts"/>
+					<property name="Create_item_count" value="20,10,1"/>
+				</property>
+			</item>	
+			<item name="dthrownDynamite">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MthrownDynamite"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceYuccaFibers,resourceGunPowder,resourcePaper"/>
+					<property name="Create_item_count" value="1,20,10"/>
+				</property>
+			</item>	
+			<item name="dthrownAmmoMolotovCocktail">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MthrownAmmoMolotovCocktail"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceCloth,ammoGasCan,resourceOil,drinkJarEmpty"/>
+					<property name="Create_item_count" value="1,300,1,1"/>
+				</property>
+			</item>	
+			<item name="dammoDartIron">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoDartIron"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceScrapIron"/>
+					<property name="Create_item_count" value="3"/>
+				</property>
+			</item>	
+			<item name="dammoJunkTurretRegular">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoJunkTurretRegular"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceScrapIron"/>
+					<property name="Create_item_count" value="3"/>
+				</property>
+			</item>	
+			<item name="dammoJunkTurretAP">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoJunkTurretAP"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceScrapIron"/>
+					<property name="Create_item_count" value="5"/>
+				</property>
+			</item>	
+			<item name="dammoJunkTurretShell">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MammoJunkTurretShell"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceScrapIron,resourceBuckshot"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+			</item>	
+			<item name="dorganicExploding">
+				<property name="Extends" value="dammo9mmBulletBall"/>
+				<property name="Material" value="MorganicExploding"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceAcid,resourceGunPowder,resourceBone,foodRottingFlesh,resourceAnimalFat"/>
+					<property name="Create_item_count" value="1,14,3,3"/>
+				</property>
+			</item>	
+		</append>
+		
+
+
+
+
+<!--Section 4 = NEW ITEMS-->
+		<!--Murder Axe-->
+			<append xpath="/items">
+				<item name="meleeMurderAxe">
+					<property name="DescriptionKey" value="meleeMurderAxedesc"/>
+					<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/><property name="CustomIconTint" value="149,52,54"/>
+					<property name="Tags" value="melee,grunting,medium,weapon,meleeWeapon,machete,longShaft,perkFlurryOfBlows,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
+					<property name="DisplayType" value="melee"/>
+					<property name="HoldType" value="33"/>
+					<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+					<property name="RepairTools" value="resourceRepairKit"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="FuelValue" value="250"/>
+					<property name="EconomicValue" value="700"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property name="UnlockedBy" value="meleeMurderAxeSchematic"/>
+					<property name="ShowQuality" value="true"/>
+					<property name="Material" value="MmeleeWpnBladeParts"/> <property name="Weight" value="6"/>
+
+					<property class="Action0">
+						<property name="Class" value="DynamicMelee"/>
+						<property name="Damage_type" value="Slashing"/>
+						<property name="Sphere" value=".15"/>
+						<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+						<property name="GrazeStart" value=".515"/>
+						<property name="GrazeEnd" value=".52"/>
+						<property name="SwingDegrees" value="65"/>
+						<property name="UseGrazingHits" value="true"/>
+						<property name="SwingAngle" value="160"/>
+						<property class="HitSounds">
+							<property name="Override0" value="organic" param1="metalstaborganic"/>
+						</property>
+						<property class="GrazeSounds">
+							<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+						</property>
+						<property name="Sound_start" value="axe_swinglight"/>
+					</property>
+					<property class="Action1">
+					<property name="Class" value="DynamicMelee"/>
+						<property name="Sphere" value=".15"/>
+						<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+						<property name="UsePowerAttackAnimation" value="true"/>
+						<property name="GrazeStart" value=".515"/>
+						<property name="GrazeEnd" value=".52"/>
+						<property name="SwingDegrees" value="110"/>
+						<property name="UseGrazingHits" value="true"/>
+						<property name="SwingAngle" value="90"/>
+						<property class="HitSounds">
+							<property name="Override0" value="organic" param1="metalstaborganic"/>
+						</property>
+						<property class="GrazeSounds">
+							<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+						</property>
+						<property name="Sound_start" value="axe_swingheavy"/>
+					</property>
+
+					<effect_group name="meleeMurderAxe">
+						<passive_effect name="EntityDamage" operation="base_set" value="28.9" tags="perkDeepCuts"/>
+						<passive_effect name="BlockDamage" operation="base_set" value="27" tags="perkDeepCuts"/>
+						<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkDeepCuts,perkFlurryOfBlows"/>
+						<passive_effect name="StaminaLoss" operation="base_set" value="27.2" tags="primary"/>
+						<passive_effect name="DegradationMax" operation="base_set" value="207,581" tier="1,6" tags="perkDeepCuts"/>
+						<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
+						<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkDeepCuts"/>
+						<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
+						<passive_effect name="DismemberChance" operation="base_add" value=".1" tags="primary"/>
+
+						<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+						<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+						<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+						<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkDeepCuts"/> <!-- random EntityDmg -->
+						<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+						<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+						<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkDeepCuts"/> <!-- random BlockDmg -->
+						<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+						<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkDeepCuts"/> <!-- random DegMax -->
+
+						<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+						<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+						<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+						<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+					</effect_group>
+					<effect_group name="Power Attack">
+						<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+						<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+						<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+						<passive_effect name="StaminaLoss" operation="base_set" value="54.4" tags="secondary"/>
+						<passive_effect name="DismemberChance" operation="base_add" value=".3" tags="secondary"/>
+					</effect_group>
+					<property name="RepairExpMultiplier" value="5.5"/>
+				</item>
+			</append>
+			<append xpath="/items">
+				<item name="meleeMurderAxeSchematic">
+					<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/><property name="CustomIconTint" value="149,52,54"/>
+					<property name="Unlocks" value="meleeMurderAxe"/>
+					<property name="Group" value="Books,Mods"/>
+					<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeMurderAxe" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+					</effect_group>
+				</item>
+			</append>
+		<!--Wood Burning Items, one burns for 10 minutes, the other 60 minutes-->
+			<append xpath="/items">
+				<item name="resourceWood10min"> 
+					<property name="HoldType" value="45"/>
+					<property name="CustomIcon" value="modularFireWoodStackC"/> <property name="CustomIconTint" value="A42ACC"/>
+					<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="Material" value="MresourceWood"/>
+					<property name="DescriptionKey" value="resourceWood10mindesc"/>
+					<property name="Weight" value="5"/>
+					<property name="Stacknumber" value="500"/> <!-- STK resource -->
+					<property name="FuelValue" value="600"/>
+					<property name="EconomicValue" value="300"/>
+					<property name="EconomicBundleSize" value="50"/>
+					<property name="Group" value="Resources"/>
+					<property name="RepairAmount" value="100"/>
+					<property name="LootExpValue" value="1"/>
+					<property name="CraftingIngredientTime" value=".25"/>
+					<property name="SellableToTrader" value="false"/>
+				</item>
+				<item name="resourceWood60min"> 
+					<property name="HoldType" value="45"/>
+					<property name="CustomIcon" value="modularFireWoodStackA"/> <property name="CustomIconTint" value="A42ACC"/>
+					<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+					<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+					<property name="Material" value="MresourceWood"/>
+					<property name="DescriptionKey" value="resourceWood60mindesc"/>
+					<property name="Weight" value="5"/>
+					<property name="Stacknumber" value="500"/> <!-- STK resource -->
+					<property name="FuelValue" value="3600"/>
+					<property name="EconomicValue" value="1800"/>
+					<property name="EconomicBundleSize" value="50"/>
+					<property name="Group" value="Resources"/>
+					<property name="RepairAmount" value="100"/>
+					<property name="LootExpValue" value="1"/>
+					<property name="CraftingIngredientTime" value=".25"/>
+					<property name="SellableToTrader" value="false"/>
+				</item>
+			</append>	
+		<!--Schematics for things NOT in the items.xml list-->
+			<!--added schematics not in VANILLA system, must have before REUSABLE SCHEMATICS below-->
+			<append xpath="/items">	<item name="modArmorHelmetNightvisionSchematic">
+					<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="apparelNightvisionGoggles"/>
+					<property name="Unlocks" value="modArmorHelmetNightvision"/>
+					<property name="Group" value="Books,Mods"/>
+					<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorHelmetNightvision" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+					</effect_group>
+				</item>
+			</append>
+			<append xpath="/items">	<item name="birdsNestEmptySchematic">
+					<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="cntBirdnest"/>
+					<property name="Unlocks" value="birdsNestEmpty"/>
+					<property name="Group" value="Books,Mods"/>
+					<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="birdsNestEmpty" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+					</effect_group>
+				</item>
+			</append>
+			<append xpath="/items">	<item name="beeFlowerSchematic">
+					<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="forestFlower"/>
+					<property name="Unlocks" value="beeFlower"/>
+					<property name="Group" value="Books,Mods"/>
+					<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="beeFlower" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+					</effect_group>
+				</item>
+			</append>
+			<!--High Performance Running Soles for armored boots-->
+			<append xpath="/items"><item name="modHPRunningSolesSchematic">
+					<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="modArmorImpactBracing"/><property name="CustomIconTint" value="86,255,109"/>
+					<property name="Unlocks" value="modHPRunningSoles"/>
+					<property name="Group" value="Books,Mods"/>
+					<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modHPRunningSoles" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+					</effect_group>
+				</item>
+			</append>
+
+
+<!--Section 5 = MODIFICATIONS-->
+		<!--cosmetics system codes-->
+		<append xpath="/items/item[@name='apparelCigar']/property[@name='Tags']/@value">,canHaveCosmetic,face</append>
+		<append xpath="/items/item[@name='apparelFacialPiercings']/property[@name='Tags']/@value">,face</append>
+		<append xpath="/items/item[@name='apparelBandana']/property[@name='Tags']/@value">,face</append>
+		<append xpath="/items/item[@name='apparelShades']/property[@name='Tags']/@value">,eyes</append><!--this is extended to other eyewear-->
+		
+		<set xpath="/items/item[@name='apparelCigar']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>		
+		<set xpath="/items/item[@name='apparelFacialPiercings']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>		
+		<set xpath="/items/item[@name='apparelBandana']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>	
+		<set xpath="/items/item[@name='apparelShades']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>		
+		<set xpath="/items/item[@name='apparelAviatorGoggles']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>		
+		<set xpath="/items/item[@name='apparelSkiGoggles']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>		
+		<set xpath="/items/item[@name='apparelNerdGlasses']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>		
+		<set xpath="/items/item[@name='apparelToughGuySunglasses']/effect_group/passive_effect[@name='ModSlots']/@value">1</set>	
+		
+		<!--Admin Stuff, quicker Block Replace Tool action-->
+			<set xpath="/items/item[@name='meleeToolBlockReplaceTool']/property[@class='Action1']/property[@name='Delay']/@value">.1</set>
+	
+		<!--Better Painting!!! -->
+			<append xpath="/items/item[@name='meleeToolPaintTool']/property[@class='Action1']">
+				<property name="Infinite_ammo" value="true"/>	
+			</append>
+			<set xpath="/items/item[@name='meleeToolPaintTool']/property[@class='Action0']/property[@name='Delay']/@value">.3</set>
+			<set xpath="/items/item[@name='meleeToolPaintTool']/property[@class='Action1']/property[@name='Delay']/@value">.3</set>
+			<set xpath="/items/item[@name='meleeToolPaintTool']/property[@class='Action0']/property[@name='Range']/@value">6</set>
+			<set xpath="/items/item[@name='meleeToolPaintTool']/property[@class='Action1']/property[@name='Range']/@value">6</set>
+			<append xpath="/items/item[@name='meleeToolPaintTool']/effect_group">
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+			</append>
+	
+		<!--Tactical Assault Rifle... removed 3 round bursts and slightly improved magazine size-->
+			<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='BurstRoundCount']/@value">1000</set>
+			<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='MagazineSize'][@value='30']/@value">36</set>
+
+		<!--SORTING PLUS, just some group changes for AUTO SORTING purposes-->
+			<set xpath="/items/item[@name='foodCornMeal']/property[@name='Group']/@value">Food/Cooking,Resources,CFFood/Cooking</set>
+			<set xpath="/items/item[@name='drinkJarEmpty']/property[@name='Group']/@value">Food/Cooking,Resources,CFFood/Cooking</set>
+			<set xpath="/items/item[@name='resourceCropCottonPlant']/property[@name='Group']/@value">Food/Cooking,Resources,CFFood/Cooking</set>
+			<set xpath="/items/item[@name='resourceCropAloeLeaf']/property[@name='Group']/@value">Food/Cooking,Science</set>
+		
+		<!--TOOL IMPROVEMENTS-->
+				<!--repair/upgrade improvement-->
+					<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Delay']/@value">.5</set><!--slightly speeds up the upgrade/repair speed of original-->
+					<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">.59</set><!--slightly speeds up the upgrade/repair speed of original-->
+
+				<!--Salvage tools improvement-->
+					<!--wrench takes more stamina and is slowest, ratchet is medium stamina and speed, impact driver is least stamina and fastest speed-->
+					<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group/passive_effect[@name='StaminaLoss']/@value">24.7</set>
+					<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@value">41.9</set>
+
+					<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+
+					<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group/passive_effect[@name='StaminaLoss']/@value">18.3</set>
+					<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@value">31.1</set>
+					<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">70</set>
+
+		<!--eating super corn does something? Also under RECIPES, easier to make corn meal with them.-->
+			<set xpath="/items/item[@name='foodCropGraceCorn']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
+			<set xpath="/items/item[@name='foodCropGraceCorn']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">10</set>			
+			<!--<append xpath="/items/item[@name='foodCropGraceCorn']/effect_group">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+			</append>-->
+
+		<!--MASTER TOOL-->
+			<append xpath="/items">	
+				<item name="meleeMasterTool">
+					<property name="CustomIcon" value="meleeToolRepairT3Nailgun"/><property name="CustomIconTint" value="930CF8"/>
+					<property name="DisplayType" value="motorTool"/>
+					<property name="Tags" value="tool,melee,nailgun,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+					<property name="HoldType" value="37"/>
+					<property name="Meshfile" value="#Other/Items?Tools/nailgunPrefab.prefab"/>
+					<property name="RepairTools" value="resourceRepairKit"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="CrosshairUpAfterShot" value="true"/>
+					<property name="Stacknumber" value="1"/>
+					<property name="DescriptionKey" value="meleeMasterTooldesc"/>
+					<property name="UnlockedBy" value="perkMasterTool"/>
+					<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+					<property name="ShowQuality" value="true"/>
+					<property name="RepairExpMultiplier" value="10.8"/>
+					<property name="EconomicValue" value="2000"/>
+					<property class="Action0">
+						<property name="Class" value="Ranged"/>
+						<property name="Hitmask_override" value="Melee"/>
+						<property name="UseMeleeCrosshair" value="true"/>
+						<property name="Single_magazine_usage" value="false"/>
+						<property name="Magazine_items" value="ammoGasCan"/>
+						<property name="Bullet_material" value="metal"/>
+						<property name="Sound_start" value="nailgun_fire"/>
+						<property name="Sound_repeat" value=""/>
+						<property name="Sound_end" value=""/>
+						<property name="Sound_empty" value="dryfire"/>
+						<property name="Sound_reload" value=""/>
+						<property name="Particles_muzzle_fire" value="nailgunfire"/>
+						<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+						<property name="SupportHarvesting" value="true"/>
+						<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+						<property name="ToolCategory.Disassemble" value="1" param1="1"/>
+						<property name="ToolCategory.Butcher" value="0" param1="50"/>
+					</property>
+					<property class="Action1"> <!-- UseAction -->
+						<property name="Class" value="Repair"/>
+						<property name="Delay" value=".39"/> <!-- Repair actions still need the delay amount -->
+						<property name="Repair_amount" value="1000"/>
+						<property name="Upgrade_hit_offset" value="-5"/>
+						<property name="Repair_action_sound" value="nailgun_fire"/>
+						<property name="Upgrade_action_sound" value="nailgun_fire"/>
+						<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,miscwoodDoorVariantHelper,miscironDoorVariantHelper,miscsteelDoorVariantHelper"/>
+						<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
+					</property>
+					<property name="Group" value="Tools/Traps"/>
+					<effect_group name="meleeToolWrench">
+						<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest"/>
+					</effect_group>
+					<effect_group name="meleeMasterTool"> <!-- meleeToolRepairT3Nailgun -->
+						<passive_effect name="DamageFalloffRange" operation="base_set" value="4" tags="perkMiner69r"/>
+						<passive_effect name="MaxRange" operation="base_set" value="5" tags="perkMiner69r"/>
+
+						<display_value name="dBlockRepairAmount" value="1000"/>
+						<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
+												
+						<passive_effect name="EntityDamage" operation="base_set" value="1" tags="perkMiner69r"/>
+						<passive_effect name="BlockDamage" operation="base_set" value="35" tags="perkMiner69r,miningTool"/>
+						<passive_effect name="DegradationMax" operation="base_set" value="6000" tier="1,6" tags="perkMiner69r"/>
+						<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+						<passive_effect name="BlockRange" operation="base_set" value="5" tags="perkMiner69r"/>
+						<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+						<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="BlockDamage"/>
+						<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+						
+						<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
+
+						<passive_effect name="WeaponHandling" operation="perc_add" value=".08" tags="perkMiner69r"/> <!-- random WeaponHandling -->
+
+						<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkMiner69r"/>
+						<passive_effect name="MagazineSize" operation="base_set" value="1000"/>
+
+						<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" tags="perkMiner69r"/>
+						<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" tags="perkMiner69r"/>
+						<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.15" tags="perkMiner69r"/>
+						<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".15" tags="perkMiner69r"/>
+						<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.15" tags="perkMiner69r"/>
+						<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".15" tags="perkMiner69r"/>
+
+						<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1" tags="perkMiner69r"/>
+						<passive_effect name="WeaponHandling" operation="base_set" value="5" tags="perkMiner69r"/>		
+						<passive_effect name="HarvestCount" operation="base_set" value="1" tags="allHarvest"/>
+						<passive_effect name="HarvestCount" operation="base_set" value="1" tags="allToolsHarvest"/>
+						<passive_effect name="HarvestCount" operation="base_set" value="1" tags="oreWoodHarvest"/>
+						<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+					</effect_group>
+				</item>
+			</append>
+
+		<!--More MOD slots-->
+			<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots' and @value='1,1,2,2,3,4']/@value">1,2,3,4,5,6</set>
+
+
+		<!--Expanded Seating Mod for bicycles and gyrocopters! LOL!-->
+			<append xpath="/items/item[@name='vehicleBicyclePlaceable']/property[@name='Tags']/@value">,vseat</append>
+			<append xpath="/items/item[@name='vehicleGyrocopterPlaceable']/property[@name='Tags']/@value">,vseat</append>
+			
+
+		<!--Doors Plus!-->
+		<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,miscwoodDoorVariantHelper,miscironDoorVariantHelper,miscsteelDoorVariantHelper</append>
+
+
+ 
+
+	
+
+
+</VanillaPlus>

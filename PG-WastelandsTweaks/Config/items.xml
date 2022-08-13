@@ -1,0 +1,144 @@
+<WastelandPlus> 
+<!-- Stat books
+ 
+-->
+	<set xpath="/items/item[@name='bookSPIFSALLuck']/property[@class='Action0']/requirement[1]/@value">26</set>
+	<set xpath="/items/item[@name='bookSPIFSALSurvival']/property[@class='Action0']/requirement[1]/@value">26</set>
+	<set xpath="/items/item[@name='bookSPIFSALAgility']/property[@class='Action0']/requirement[1]/@value">26</set>
+	<set xpath="/items/item[@name='bookSPIFSALFortitude']/property[@class='Action0']/requirement[1]/@value">26</set>
+	<set xpath="/items/item[@name='bookSPIFSALIntellect']/property[@class='Action0']/requirement[1]/@value">26</set>
+	<set xpath="/items/item[@name='bookSPIFSALPerception']/property[@class='Action0']/requirement[1]/@value">26</set>
+	<set xpath="/items/item[@name='bookSPIFSALStength']/property[@class='Action0']/requirement[1]/@value">26</set>
+
+ 
+	<!--<append xpath="/items/item[@name='ammoIncinerator']"><property name="UnlockedBy" value=",ammoIncineratorSchematic"/></append>-->
+	<append xpath="/items/item[@name='ammoIncinerator']/property[@name='UnlockedBy']/@value">,ammoIncineratorSchematic</append>
+
+	<append xpath="/items">
+			 	<item name="ammoIncineratorSchematic">
+					<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="modGunMeleeFlammableOil"/>
+					<property name="Unlocks" value="ammoIncinerator"/>
+					<property name="Group" value="Books,Mods"/>
+					<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoIncinerator" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+					</effect_group>
+				</item>
+			</append> 
+	
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">32000</set>ceRe
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairTime']/@value">1</set>
+	<!--Lowering Tier RNG Overlap --> 
+	<set xpath="/items/item[@name='meleeGuitar']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeKatana1']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeRebarClub']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeSupaSledge']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeTireIron']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunCrossbowSemi']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gun10mmPistol']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gun10mmRev']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gun10mmSMG']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gun1911apoc']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gun1911worn']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunG19']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunMicroRoni']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gun1921Thompson']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunVectorSMG']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunTripleBarrelShotgun']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunHenryShotgun']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunAntiqueShotgun']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunCombatShotgun']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunServiceRifle']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunBAR1']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunSCAR']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunLAR']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunMiniG']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunIncinerator']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunRailwayRifle']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunFatMan']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunFlareGun']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunm79']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunHarpoonGun']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunLaserPistolScrap']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunLaserPistol']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunLaserRifle']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	
+	<set xpath="/items/item[@name='gunMaria']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunPipeShotgunSMSB_Legendary']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunPipePistol_Legendary']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunPipeRifle_Legendary']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunLAR_Legendary']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunPewPew']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunAERPrototype']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunAlienBlaster']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunCryolator']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunHeavySniperGobi']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunLeFusilTerribles']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunAshmaker']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='gunCrossbowSemiL']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeTheBreak']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeDukeSledge']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeMBC']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeNavSlugger']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeOpenBreaker']/property[@name='RepairTools']/@value">resourceRepairKit</set> 
+	<set xpath="/items/item[@name='meleeAlienBaton']/property[@name='RepairTools']/@value">resourceRepairKit</set>
+
+	<set xpath="/items/item[@name='ammo556b']/property[@name='Stacknumber']/@value">750</set>	
+	<set xpath="/items/item[@name='ammo556bHP']/property[@name='Stacknumber']/@value">750</set>
+	<set xpath="/items/item[@name='ammo556bAP']/property[@name='Stacknumber']/@value">750</set> 
+
+	<set xpath="/items/item[@name='ammo40mmAP']/property[@name='Stacknumber']/@value">750</set>	
+	<set xpath="/items/item[@name='ammo40mmHE']/property[@name='Stacknumber']/@value">750</set>
+	<set xpath="/items/item[@name='ammo40mmSmoke']/property[@name='Stacknumber']/@value">750</set> 
+
+	<set xpath="/items/item[@name='ammo45acpBullet']/property[@name='Stacknumber']/@value">750</set>	
+	<set xpath="/items/item[@name='ammo45acpBulletHP']/property[@name='Stacknumber']/@value">750</set>
+	<set xpath="/items/item[@name='ammo45acpBulletAP']/property[@name='Stacknumber']/@value">750</set> 
+	
+	<set xpath="/items/item[@name='ammo10mmBullet']/property[@name='Stacknumber']/@value">750</set>	
+	<set xpath="/items/item[@name='ammo10mmBulletHP']/property[@name='Stacknumber']/@value">750</set>
+	<set xpath="/items/item[@name='ammo10mmBulletAP']/property[@name='Stacknumber']/@value">750</set> 
+		<set xpath="/items/item[@name='ammoCMFC']/property[@name='Stacknumber']/@value">750</set> 
+		<set xpath="/items/item[@name='ammoAB']/property[@name='Stacknumber']/@value">750</set> 
+		<set xpath="/items/item[@name='ammoCMFC']/property[@name='Stacknumber']/@value">750</set> 
+		<set xpath="/items/item[@name='ammoAB']/property[@name='Stacknumber']/@value">750</set> 
+
+		<set xpath="/items/item[@name='ammoPMFC']/property[@name='Stacknumber']/@value">750</set> 
+		<set xpath="/items/item[@name='ammoPEC']/property[@name='Stacknumber']/@value">750</set> 
+	 	<set xpath="/items/item[@name='ammoMFC']/property[@name='Stacknumber']/@value">750</set> 
+		<set xpath="/items/item[@name='ammoSMFC']/property[@name='Stacknumber']/@value">750</set> 
+	 	<set xpath="/items/item[@name='ammoEC']/property[@name='Stacknumber']/@value">750</set> 
+	 
+	<set xpath="/items/item[@name='ammoIncinerator']/property[@name='Stacknumber']/@value">100</set>
+ 	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP</set>
+	 <!--
+
+	 <set xpath="/items/item[@name='meleeKatana1']/effect_group[@name='meleeKatana1']/passive_effect[@name='EntityDamage']/@value">23</set>
+	 <set xpath="/items/item[@name='meleeKatana1']/effect_group[@name='sneak damage bonus']/display_value[@name='dEntityDamageSneak']/@value">4</set>
+	 <set xpath="/items/item[@name='meleeKatana1']/effect_group[@name='sneak damage bonus']/passive_effect[@name='DamageBonus']/@value">4</set>
+	 <set xpath="/items/item[@name='meleeKatana1']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">4</set>
+
+	 -->
+
+<!-- drink stacks-->
+	 <set xpath="/items/item[@name='drinkSunsetSarsaparilla']/property[@name='Stacknumber']/@value">100</set>
+	  <set xpath="/items/item[@name='drinkNukaCola']/property[@name='Stacknumber']/@value">100</set>
+	   <set xpath="/items/item[@name='drinkNukaCherry']/property[@name='Stacknumber']/@value">100</set>
+	    <set xpath="/items/item[@name='drinkNukaQuantum']/property[@name='Stacknumber']/@value">100</set>
+		 <set xpath="/items/item[@name='drinkNukaQuartz']/property[@name='Stacknumber']/@value">100</set>
+		  <set xpath="/items/item[@name='drinkJarSnowberryJuice']/property[@name='Stacknumber']/@value">100</set>
+		   <set xpath="/items/item[@name='drinkSnowberrySmoothie']/property[@name='Stacknumber']/@value">100</set>
+		    <set xpath="/items/item[@name='drinkSunsetSarsaparilla']/property[@name='Stacknumber']/@value">100</set>
+ 
+<!-- Power Armor Mod SLots-->
+<set xpath="/items/item[@name='powerArmorHelmet_Base1']/effect_group[@name='power armor']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+ <set xpath="/items/item[@name='powerArmorChest_Base1']/effect_group[@name='power armor']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+ <set xpath="/items/item[@name='powerArmorArms_Base1']/effect_group[@name='power armor']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+ <set xpath="/items/item[@name='powerArmorLegs_Base1']/effect_group[@name='power armor']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+ <set xpath="/items/item[@name='powerArmorBoots_Base1']/effect_group[@name='power armor']/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+ 
+</WastelandPlus>
+  

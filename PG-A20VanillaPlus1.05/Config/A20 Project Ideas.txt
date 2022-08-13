@@ -1,0 +1,13 @@
+AGF Things to do for A20
+
+
+1. Decoration Blocks Return
+2. MISC block return?
+	a. For the doors
+	b. For traps?
+	c. Reinforced Storage Containers
+3. Schematic Bundling?
+4. Look at changing the ground's appearance? <--ANGER!!! Does it only in editor as well with the terrain filler (POI)
+5. Look at terrain blocks that are flush with blocks<--this is because of density... not sure how to change it WITHIN a game instead of in the editor...
+6. Relook at glass jars stack size
+7. Timed Charges statement about significant block damage IF it is a safe or door only.

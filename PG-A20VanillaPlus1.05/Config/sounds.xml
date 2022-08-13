@@ -1,0 +1,15 @@
+<PGVanillaPlus> 
+	<!-- auger sounds like dirt -->
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitmetal']/AudioClip[1]/@ClipName">Sounds/ImpactSurface/metalhitearth1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitmetal']/AudioClip[2]/@ClipName">Sounds/ImpactSurface/metalhitearth2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitmetal']/AudioClip[3]/@ClipName">Sounds/ImpactSurface/metalhitearth3</set>
+	<!-- metal hits wood -->
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitwood']/AudioClip[1]/@ClipName">Sounds/ImpactSurface/metalhitearth1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitwood']/AudioClip[2]/@ClipName">Sounds/ImpactSurface/metalhitearth2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitwood']/AudioClip[3]/@ClipName">Sounds/ImpactSurface/metalhitearth3</set>
+	<!-- metal hits stone -->
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitstone']/AudioClip[1]/@ClipName">Sounds/ImpactSurface/metalhitearth1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitstone']/AudioClip[2]/@ClipName">Sounds/ImpactSurface/metalhitearth2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='bullethitstone']/AudioClip[3]/@ClipName">Sounds/ImpactSurface/metalhitearth3</set> 
+ 
+</PGVanillaPlus>

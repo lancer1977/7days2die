@@ -1,0 +1,25 @@
+<PG-ContainerPlus>
+	
+    <!-- wallSafe / deskSafe -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='6']" name="size">7,5</setattribute>
+    <!-- Cabinets and cupboards -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='17']" name="size">7,5</setattribute>
+    <!-- military munitions ammo box -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='40']" name="size">7,5</setattribute>
+	<!-- Nightstands, dressers, and wooden desks -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='42']" name="size">7,5</setattribute>
+    <!-- lockers -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='43']" name="size">7,5</setattribute>
+    <!-- File Cabinets -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='44']" name="size">7,5</setattribute>
+    <!-- Bookcases -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='49']" name="size">7,5</setattribute>
+    <!-- Pillcases -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='51']" name="size">7,5</setattribute>
+    <!-- stove/oven, cooking pots and pans rotten food -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='11']" name="size">7,5</setattribute>
+    <!-- frozen or refrigerated food, spoiled food (Helper) -->
+    <setattribute xpath="/lootcontainers/lootcontainer[@id='47']" name="size">7,8</setattribute>
+
+ 
+</PG-ContainerPlus>

@@ -1,0 +1,3 @@
+<config>
+	 <append xpath="/buffs/buff[@name='buffDrugAntivenom']/effect_group[3]/triggered_effect[1]/@buff">,buffSnakeVenom</append>
+</config>

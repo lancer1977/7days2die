@@ -1,0 +1,72 @@
+<VanillaPlus>
+
+
+
+
+
+TABLE OF CONTENTS
+Section 1 = NEW ITEMS
+Section 2 = FARMING PLUS
+Section 3 = MODIFICATIONS
+Section 4 = COSMETICS PLUS
+
+
+
+
+<!--Section 1 = NEW ITEMS-->		
+		<!--Armor Nightvision Mod Schematic in World Loot-->	
+		<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+			<item name="modArmorHelmetNightvisionSchematic"/>	
+		</append>
+
+
+
+<!--Section 2 = FARMING PLUS-->
+		<!--Plantable Birdnest and its schematic in World Loot-->
+		<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+			<item name="birdsNestEmptySchematic"/>
+		</append>
+		<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+			<item name="birdsNestEmpty" prob="0.2"/>
+		</append>
+
+
+		<!--Favorite Flower of Bees in World Loot-->
+		<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+			<item name="beeFlowerSchematic"/>
+		</append>
+		<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+			<item name="beeFlower" prob="0.2"/>
+		</append>
+
+
+
+
+
+<!--Section 3 = MODIFICATIONS-->
+		<!--Birdnest Egg Finding Improvement.-->
+		<!--<setattribute xpath="/lootcontainers/lootgroup[@name='groupBirdNest']/item[@name='foodEgg']" name="count">1,2</setattribute>
+		<set xpath="/lootcontainers/lootgroup[@name='groupBirdNest']/item[@name='foodEgg']/@prob">0.4</set>-->
+
+		<!--Rolling Toolbox to have a little larger container size than the small toolbox-->
+		<set xpath="lootcontainers/lootcontainer[@name='rollingToolBox']/@size">6,4</set>
+
+		<!--larger basic storages, to max size (DO NOT MAKE BIGGER THAN 9,10!!!!)-->
+		<set xpath="/lootcontainers/lootcontainer[@name='playerStorage']/@size">8,9</set>
+		<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">9,10</set>
+		<set xpath="/lootcontainers/lootcontainer[@name='storageCrate']/@size">9,10</set>
+		<set xpath="/lootcontainers/lootcontainer[@name='gunSafe']/@size">9,10</set>
+
+		<!--Plus 1 row of storage in vehicles (DO NOT MAKE BIGGER THAN 9,10!!!!)-->
+		<set xpath="/lootcontainers/lootcontainer[@name='vehicleBicycle']/@size">9,2</set>  <!--bicycle-->
+		<set xpath="/lootcontainers/lootcontainer[@name='vehicleMinibike']/@size">9,4</set>  <!--minibike-->
+		<set xpath="/lootcontainers/lootcontainer[@name='vehicleMotorcycle']/@size">9,5</set>  <!--motorcycle-->
+		<set xpath="/lootcontainers/lootcontainer[@name='vehicle4x4Truck']/@size">9,10</set> <!--Truck-->
+		<set xpath="/lootcontainers/lootcontainer[@name='vehicleGyrocopter']/@size">9,6</set>  <!--Gyro-->
+		
+
+
+
+ 
+		
+</VanillaPlus>

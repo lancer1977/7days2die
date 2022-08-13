@@ -1,0 +1,55 @@
+<config>
+ 
+ 
+		<set xpath="/vehicles/vehicle[@name='vehicleMarauder']/property[@name='hornSound']/@value" >Enemies/Scout_Zombie/zombiefemalescoutalert</set> 
+ 	    <set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax']/@value">20,25</set>
+		<append xpath="/vehicles/vehicle[@name='vehicleGyrocopter']">
+ 
+
+            		<property class="seat1">
+			<property name="class" value="Seat"/>
+			<property name="position" value="0.3, -.2, -.9"/> <!-- Left/Right, Down/Up, Back/Front --> 
+			<property name="rotation" value="-27, 0, 0"/>
+			<property name="exit" value="-3,0,.9 ~ 3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property name="mod" value="0"/>			
+			<property name="IKFootLPosition" value="-.11, .28, .38"/>
+			<property name="IKFootLRotation" value="-22.5, 0, 0"/>
+			<property name="IKFootRPosition" value=".11, .28, .38"/>
+			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
+			<property name="IKHandLPosition" value="-.27, .87, .14"/>
+			<property name="IKHandLRotation" value="41, -30, 18"/>
+			<property name="IKHandRPosition" value=".27, .87, .14"/>
+			<property name="IKHandRRotation" value="41, 30, -18"/>			
+		</property>
+		
+		<property class="seat2">
+			<property name="class" value="Seat"/>
+			<property name="position" value="-0.3, -.2, -.9"/> <!-- Left/Right, Down/Up, Back/Front --> 
+			<property name="rotation" value="-27, 0, 0"/>
+			<property name="exit" value="-3,0,.9 ~ 3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property name="mod" value="1"/>			
+			<property name="IKFootLPosition" value="-.11, .28, .38"/>
+			<property name="IKFootLRotation" value="-22.5, 0, 0"/>
+			<property name="IKFootRPosition" value=".11, .28, .38"/>
+			<property name="IKFootRRotation" value="-22.5, 0, 0"/>
+			<property name="IKHandLPosition" value="-.27, .87, .14"/>
+			<property name="IKHandLRotation" value="41, -30, 18"/>
+			<property name="IKHandRPosition" value=".27, .87, .14"/>
+			<property name="IKHandRRotation" value="41, 30, -18"/>			
+		</property>	
+		</append>
+ 
+		<append xpath="/vehicles/vehicle[@name='vehicleBicycle']">
+			<property class="seat1">
+				<property name="class" value="Seat"/>
+				<property name="mod" value="1"/>
+				<property name="position" value="0, .472, -.33"/>
+				<property name="rotation" value="0, 0, 0"/>
+				<property name="exit" value="-.8,0,0 ~ .8,0,0 ~ 0,0,-1.4 ~ 0,0,1.4 ~ 0,1.5,0"/>
+			</property>
+		</append>
+	
+ 
+ 
+</config>
+
