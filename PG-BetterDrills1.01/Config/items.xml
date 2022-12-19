@@ -1,0 +1,4 @@
+<PG-BetterDrills>
+	<!-- Ensure repair kits repair a lot of value-->
+	<append xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='Tags']/@value">,longShaft</append>
+</PG-BetterDrills>

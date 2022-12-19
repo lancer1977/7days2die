@@ -1,0 +1,56 @@
+<VanillaPlus>
+<!--Note about adding/removing block codes... It could crash you game or do weird replacement of any blocks you have placed in your world.-->
+<!--If wishing to remove blocks from your game WITHOUT crashing, there are 2 ways to remove them. 
+	A. If they are part of a variant block, delete the name of the block(s) from those lists.
+	B. If they exist under recipes.xml, delete those-->
+
+
+
+ <!--Better Blade Traps --> 
+
+
+ 
+<!--Section 2 = STACK SIZES PLUS--><!--other xml parts: items, recipes-->
+		<!--Stack size increase that is more of an increase from vanilla proportionally and play style reasons-->
+		<!--blocks now stacks of 500--> 
+			<set xpath="/blocks/block[@name='bedroll']/property[@name='MultiBlockDim']/@value">2,1,1</set><!--Default = 20-->
+			<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Stacknumber']/@value">500</set><!--Default = 20-->
+			<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->			
+			<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Stacknumber']/@value">500</set><!--Default = 25-->		
+			<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Stacknumber']/@value">500</set><!--Default = 25-->		
+			<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Stacknumber']/@value">500</set><!--Default = 25-->		
+			<set xpath="/blocks/block[@name='bedroll']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='dartTrap']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='flamethrowerTrap']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+ 
+			<set xpath="/blocks/block[@name='barracksChair']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->
+			<set xpath="/blocks/block[@name='oldChair1']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->		
+			<set xpath="/blocks/block[@name='oldChair1Broken']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='barStool']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='woodChair1']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='officeChair01']/property[@name='Stacknumber']/@value">500</set><!--Default = 10-->	
+			<set xpath="/blocks/block[@name='batterybank']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='solarbank']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='generatorbank']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='autoTurret']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='workbench']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='forge']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='campfire']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='cementMixer']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='chemistryStation']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='Stacknumber']/@value">500</set><!--Default = 1-->	
+			<set xpath="/blocks/block/property[@name='Stacknumber' and @value='33']/@value">500</set><!--Default = 33-->	
+			
+		<!--blocks now stacks of 5000-->
+			<append xpath="/blocks/block[@name='cropsGrowingMaster']"><property name="Stacknumber" value="500"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='treePlantedMountainPine1m']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='treePlantedWinterPine1m']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='treePlantedOak1m']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+			<append xpath="/blocks/block[@name='plantedtreeGrassSeed1']"><property name="Stacknumber" value="5000"/></append><!--Default = 500-->	
+
+ 
+			
+
+
+</VanillaPlus>

@@ -1,0 +1,32 @@
+<PG-MoreBullets>
+ <!--Better Blade Traps --> 
+
+<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammo9mmBulletHP']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammo9mmBulletAP']/@count">5</set> 
+
+<set xpath="/recipes/recipe[@name='ammo44MagnumBulletBall']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammo44MagnumBulletHP']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammo44MagnumBulletAP']/@count">5</set> 
+
+<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammo762mmBulletHP']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammo762mmBulletAP']/@count">5</set> 
+
+
+<set xpath="/recipes/recipe[@name='ammoShotgunShell']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']/@count">5</set> 
+
+<set xpath="/recipes/recipe[@name='ammoArrowFlaming']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoArrowExploding']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoArrowIron']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoArrowSteelAP']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoArrowStone']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/@count">5</set> 
+
+<set xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']/@count">5</set> 
+<set xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/@count">5</set> 
+</PG-MoreBullets>
