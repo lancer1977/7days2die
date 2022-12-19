@@ -1,0 +1,7 @@
+<PGOther>
+	<append xpath="//item[@name='vehicleGyrocopterPlaceable']/property[@name='Tags']/@value">,vseat</append>
+	
+	<!-- Ensure repair kits repair a lot of value-->	
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">32000</set>
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairTime']/@value">3</set>
+</PGOther>

@@ -1,0 +1,47 @@
+<VanillaPlus>
+<!--Section 3 = FIXES and MODIFICATIONS-->
+	
+	<!--a. Pick up lanterns and such--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<append xpath="/blocks/block[@name='lanternDecorLight']">
+			<property name="CanPickup" value="true" param1="lanternLight_player"/>
+			<property name="TakeDelay" value="2"/>		
+			<property name="Class" value=""/>
+		</append>
+		<append xpath="/blocks/block[@name='flashlightDecor']"><!--yellow flashlight as a block does not work code wise at this time (A19)-->
+			<property name="CanPickup" value="true" param1="meleeToolFlashlight02"/>
+			<property name="TakeDelay" value="2"/>	
+			<property name="Class" value=""/>
+		</append>
+		<append xpath="/blocks/block[@name='burningBarrel']"> 
+			<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
+			<property name="TakeDelay" value="2"/>		
+			<property name="Class" value=""/>
+		</append>	
+			
+	<!--b. FIX of car salvaging. Removed pass through damage on vehicles as it negates harvesting potential.--><!--NOTE: This is a FIX, don't delete unless you have something to replace it-->
+		<set xpath="/blocks/block[@name='cntCar03SedanDamage0Master']/property[@name='PassThroughDamage']/@value">false</set>
+		<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/property[@name='PassThroughDamage']/@value">false</set>
+
+ 
+	<!--d. Electricity Plus, getting more out of single banks, GOOD FOR SERVERS to have less wires--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">2000</set>
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='MaxPower']/@value">2000</set>
+		<set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">250</set>
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='OutputPerStack']/@value">250</set>
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='ChargePerInput']/@value">5</set>
+
+		<set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">1000</set>
+		<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">10000</set>
+		<!--also edited the windows.xml for easier veiwing of the gas amount in the generator bank-->
+
+	<!--e. Drawbridge Placement Plus, can now be placed in all sorts of directions, including upside down--><!--NOTE: This section is standalone, if you don't want this feature, delete this section-->
+		<set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='OnlySimpleRotations']/@value">false</set>
+
+
+ 
+ 
+
+
+ 
+
+</VanillaPlus>

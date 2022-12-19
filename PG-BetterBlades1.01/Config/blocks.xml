@@ -1,0 +1,10 @@
+<PG-BetterBlades>
+ <!--Better Blade Traps --> 
+
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='MaxDamage']/@value">3000</set> 
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Damage']/@value">25</set> 
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='DamageReceived']/@value">1</set> 
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='BrokenPercentage']/@value">.10</set>  
+<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Collide']/@value">movement,melee,rocket</set>   
+<set xpath="/blocks/block[@name='barbedFence']/property[@name='Damage_received']/@value">1</set>   
+</PG-BetterBlades>
