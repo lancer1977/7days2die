@@ -1,30 +1,101 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 
-zombieArlene,entityclasses,Entity,,,Kathy,,Bettina
-zombieArleneFeral,entityclasses,Entity,,,Feral Kathy,,Wilde Bettina
-zombieArleneRadiated,entityclasses,Entity,,,Radiated Kathy,,Verstrahlte Bettina
+zombieMutated,entityclasses,Entity,,,Poldi,,Poldi
+zombieMutatedFeral,entityclasses,Entity,,,Feral Poldi,,Wilder Poldi
+zombieMutatedRadiated,entityclasses,Entity,,,Radiated Poldi,,Verstrahlter Poldi
 
-zombieBiker,entityclasses,Entity,,,Breadcrumb,,Breadcrumb
-zombieBikerFeral,entityclasses,Entity,,,Feral Breadcrumb,,Wilder Breadcrumb
-zombieBikerRadiated,entityclasses,Entity,,,Radiated Breadcrumb,,Verstrahlter Breadcrumb
+zombiePartyGirl,entityclasses,Entity,,,Monique,,Monique
+zombiePartyGirlFeral,entityclasses,Entity,,,Feral Monique,,Wilde Monique
+zombiePartyGirlRadiated,entityclasses,Entity,,,Radiated Monique,,Verstrahlte Monique
 
-zombieBoe,entityclasses,Entity,,,Torben,,Torben
-zombieBoeFeral,entityclasses,Entity,,,Feral Torben,,Wilder Torben
-zombieBoeRadiated,entityclasses,Entity,,,Radiated Torben,,Verstrahlter Torben
+zombieSpider,entityclasses,Entity,,,Peter,,Peter
+zombieSpiderFeral,entityclasses,Entity,,,Feral Peter,,Wilder Peter
+zombieSpiderRadiated,entityclasses,Entity,,,Radiated Peter,,Verstrahlter Peter
 
-zombieBurnt,entityclasses,Entity,,,Johnny,,Johnny
-zombieBurntFeral,entityclasses,Entity,,,Feral Johnny,,Wilder Johnny
-zombieBurntRadiated,entityclasses,Entity,,,Radiated Johnny,,Verstrahlter Johnny
+zombieUtilityWorker,entityclasses,Entity,,,Bob,,Bob
+zombieUtilityWorkerFeral,entityclasses,Entity,,,Feral Bob,,Wilder Bob
+zombieUtilityWorkerRadiated,entityclasses,Entity,,,Radiated Bob,,Verstrahlter Bob
 
-zombieBusinessMan,entityclasses,Entity,,,Bill,,Bill
-zombieBusinessManFeral,entityclasses,Entity,,,Feral Bill,,Wilder Bill
-zombieBusinessManRadiated,entityclasses,Entity,,,Radiated Bill,,Verstrahlter Bill
+zombieWightFeral,entityclasses,Entity,,,Feral Roger,,Wildes Roger
+zombieWightRadiated,entityclasses,Entity,,,Radiated Roger,,Verstrahltes Roger
 
-zombieDarlene,entityclasses,Entity,,,Zora,,Zora
-zombieDarleneFeral,entityclasses,Entity,,,Feral Zora,,Wilde Zora
-zombieDarleneRadiated,entityclasses,Entity,,,Radiated Zora,,Verstrahlte Zora
+zombieBoe,entityclasses,Entity,,,Jesse,,Jesse
+zombieBoeFeral,entityclasses,Entity,,,Feral Jesse,,Wilder Jesse
+zombieBoeRadiated,entityclasses,Entity,,,Radiated Jesse,,Verstrahlter Jesse
 
-zombieDemolition,entityclasses,Entity,,,Demolisher,,Demolisher
+zombieBurnt,entityclasses,Entity,,,Rittman,,Rittman
+zombieBurntFeral,entityclasses,Entity,,,Feral Rittman,,Wilder Rittman
+zombieBurntRadiated,entityclasses,Entity,,,Radiated Rittman,,Verstrahlter Rittman
+
+zombieBusinessMan,entityclasses,Entity,,,Jimmy,,Jimmy
+zombieBusinessManFeral,entityclasses,Entity,,,Feral Jimmy,,Wilder Jimmy
+zombieBusinessManRadiated,entityclasses,Entity,,,Radiated Jimmy,,Verstrahlter Jimmy
+
+zombieDarlene,entityclasses,Entity,,,Jobell,,Jobell
+zombieDarleneFeral,entityclasses,Entity,,,Feral Jobell,,Wilde Jobell
+zombieDarleneRadiated,entityclasses,Entity,,,Radiated Jobell,,Verstrahlte Jobell
+
+zombieDemolition,entityclasses,Entity,,,Chubbs,,Chubbs
+
+zombieJoe,entityclasses,Entity,,,Donald,,Donald
+zombieJoeFeral,entityclasses,Entity,,,Feral Donald,,Wilder Donald
+zombieJoeRadiated,entityclasses,Entity,,,Radiated Donald,,Verstrahlter Donald
+
+zombieLab,entityclasses,Entity,,,Jamie,,Jamie
+zombieLabFeral,entityclasses,Entity,,,Feral Jamie,,Wilde Jamie
+zombieLabRadiated,entityclasses,Entity,,,Radiated Jamie,,Verstrahlte Jamie
+
+zombieLumberjack,entityclasses,Entity,,,Andy,,Andy
+zombieLumberjackFeral,entityclasses,Entity,,,Feral Andy,,Wilder Andy
+zombieLumberjackRadiated,entityclasses,Entity,,,Radiated Andy,,Verstrahlter Andy
+
+zombieMaleHazmat,entityclasses,Entity,,,Dustin,,Dustin
+zombieMaleHazmatFeral,entityclasses,Entity,,,Feral Dustin,,Wilder Dustin
+zombieMaleHazmatRadiated,entityclasses,Entity,,,Radiated Dustin,,Verstrahlter Dustin
+
+zombieMarlene,entityclasses,Entity,,,Maggie,,Maggie
+zombieMarleneFeral,entityclasses,Entity,,,Feral Maggie,,Wilde Maggie
+zombieMarleneRadiated,entityclasses,Entity,,,Radiated Maggie,,Verstrahlte Maggie
+
+
+
+
+
+zombieYo,entityclasses,Entity,,,Shrader,,Shrader
+zombieYoFeral,entityclasses,Entity,,,Feral Shrader,,Wilder Shrader
+zombieYoRadiated,entityclasses,Entity,,,Radiated Shrader,,Verstrahlter Shrader
+
+zombieSteve,entityclasses,Entity,,,JR,,JR
+zombieSteveFeral,entityclasses,Entity,,,Feral JR,,Wilder JR
+zombieSteveRadiated,entityclasses,Entity,,,Radiated JR,,Verstrahlter JR
+
+zombieSteveCrawler,entityclasses,Entity,,,Leah,,Leah
+zombieSteveCrawlerFeral,entityclasses,Entity,,,Feral Leah,,Wilder Leah
+zombieSteveCrawlerRadiated,entityclasses,Entity,,,Radiated Leah,,Verstrahlter Leah
+
+zombieTomClark,entityclasses,Entity,,,Lance,,Lance
+zombieTomClarkFeral,entityclasses,Entity,,,Feral Lance,,Wilder Lance
+zombieTomClarkRadiated,entityclasses,Entity,,,Radiated Lance,,Verstrahlter Lance
+
+zombieScreamer,entityclasses,Entity,,,Ariel,,Ariel
+zombieScreamerFeral,entityclasses,Entity,,,Feral Ariel,,Wilder Ariel
+zombieScreamerRadiated,entityclasses,Entity,,,Radiated Ariel,,Verstrahlter Ariel
+
+zombieSkateboarder,entityclasses,Entity,,,Green Matt,,Green Matt
+zombieSkateboarderFeral,entityclasses,Entity,,,Feral Green Matt,,Wilder Green Matt
+zombieSkateboarderRadiated,entityclasses,Entity,,,Radiated Green Matt,,Verstrahlter Green Matt
+
+zombieSoldier,entityclasses,Entity,,,BroJosh,,BroJosh
+zombieSoldierFeral,entityclasses,Entity,,,Feral BroJosh,,Wilder BroJosh
+zombieSoldierRadiated,entityclasses,Entity,,,Radiated BroJosh,,Verstrahlter BroJosh
+
+zombieNurse,entityclasses,Entity,,,Christa,,Christa
+zombieNurseFeral,entityclasses,Entity,,,Feral Christa,,Wilde Christa
+zombieNurseRadiated,entityclasses,Entity,,,Radiated Christa,,Verstrahlte Christa
+
+zombieMoe,entityclasses,Entity,,,Aaron,,Aaron
+zombieMoeFeral,entityclasses,Entity,,,Feral Aaron,,Wilder Aaron
+zombieMoeRadiated,entityclasses,Entity,,,Radiated Aaron,,Verstrahlter Aaron
 
 zombieFatCop,entityclasses,Entity,,,Scott,,Scott
 zombieFatCopFeral,entityclasses,Entity,,,Feral Scott,,Wilder Scott
@@ -41,77 +112,10 @@ zombieFemaleFatRadiated,entityclasses,Entity,,,Radiated Very Nice Lady,,Verstrah
 zombieJanitor,entityclasses,Entity,,,Corwin,,Corwin
 zombieJanitorFeral,entityclasses,Entity,,,Feral Corwin,,Wilder Corwin
 
-zombieJoe,entityclasses,Entity,,,Donald,,Donald
-zombieJoeFeral,entityclasses,Entity,,,Feral Donald,,Wilder Donald
-zombieJoeRadiated,entityclasses,Entity,,,Radiated Donald,,Verstrahlter Donald
+zombieArlene,entityclasses,Entity,,,Kathy,,Kathy
+zombieArleneFeral,entityclasses,Entity,,,Feral Kathy,,Wilde Kathy
+zombieArleneRadiated,entityclasses,Entity,,,Radiated Kathy,,Verstrahlte Kathy
 
-zombieLab,entityclasses,Entity,,,Marie,,Marie
-zombieLabFeral,entityclasses,Entity,,,Feral Marie,,Wilde Marie
-zombieLabRadiated,entityclasses,Entity,,,Radiated Marie,,Verstrahlte Marie
-
-zombieLumberjack,entityclasses,Entity,,,Jack,,Jack
-zombieLumberjackFeral,entityclasses,Entity,,,Feral Jack,,Wilder Jack
-zombieLumberjackRadiated,entityclasses,Entity,,,Radiated Jack,,Verstrahlter Jack
-
-zombieMaleHazmat,entityclasses,Entity,,,Dustin,,Dustin
-zombieMaleHazmatFeral,entityclasses,Entity,,,Feral Dustin,,Wilder Dustin
-zombieMaleHazmatRadiated,entityclasses,Entity,,,Radiated Dustin,,Verstrahlter Dustin
-
-zombieMarlene,entityclasses,Entity,,,Maggie,,Maggie
-zombieMarleneFeral,entityclasses,Entity,,,Feral Maggie,,Wilde Maggie
-zombieMarleneRadiated,entityclasses,Entity,,,Radiated Maggie,,Verstrahlte Maggie
-
-zombieMoe,entityclasses,Entity,,,Aaron,,Erik
-zombieMoeFeral,entityclasses,Entity,,,Feral Aaron,,Wilder Erik
-zombieMoeRadiated,entityclasses,Entity,,,Radiated Aaron,,Verstrahlter Erik
-
-zombieMutated,entityclasses,Entity,,,Poldi,,Poldi
-zombieMutatedFeral,entityclasses,Entity,,,Feral Poldi,,Wilder Poldi
-zombieMutatedRadiated,entityclasses,Entity,,,Radiated Poldi,,Verstrahlter Poldi
-
-zombieNurse,entityclasses,Entity,,,Christa,,Christa
-zombieNurseFeral,entityclasses,Entity,,,Feral Christa,,Wilde Christa
-zombieNurseRadiated,entityclasses,Entity,,,Radiated Christa,,Verstrahlte Christa
-
-zombiePartyGirl,entityclasses,Entity,,,Monique,,Monique
-zombiePartyGirlFeral,entityclasses,Entity,,,Feral Monique,,Wilde Monique
-zombiePartyGirlRadiated,entityclasses,Entity,,,Radiated Monique,,Verstrahlte Monique
-
-zombieScreamer,entityclasses,Entity,,,Leah,,Leah
-zombieScreamerFeral,entityclasses,Entity,,,Feral Leah,,Wilder Leah
-zombieScreamerRadiated,entityclasses,Entity,,,Radiated Leah,,Verstrahlter Leah
-
-zombieSkateboarder,entityclasses,Entity,,,Green Matt,,Green Matt
-zombieSkateboarderFeral,entityclasses,Entity,,,Feral Green Matt,,Wilder Green Matt
-zombieSkateboarderRadiated,entityclasses,Entity,,,Radiated Green Matt,,Verstrahlter Green Matt
-
-zombieSoldier,entityclasses,Entity,,,BroJosh,,BroJosh
-zombieSoldierFeral,entityclasses,Entity,,,Feral BroJosh,,Wilder BroJosh
-zombieSoldierRadiated,entityclasses,Entity,,,Radiated BroJosh,,Verstrahlter BroJosh
-
-zombieSpider,entityclasses,Entity,,,Peter,,Peter
-zombieSpiderFeral,entityclasses,Entity,,,Feral Peter,,Wilder Peter
-zombieSpiderRadiated,entityclasses,Entity,,,Radiated Peter,,Verstrahlter Peter
-
-zombieSteve,entityclasses,Entity,,,JR,,JRp
-zombieSteveFeral,entityclasses,Entity,,,Feral JR,,Wilder JRp
-zombieSteveRadiated,entityclasses,Entity,,,Radiated JR,,Verstrahlter JRp
-
-zombieSteveCrawler,entityclasses,Entity,,,Heather,,Heather
-zombieSteveCrawlerFeral,entityclasses,Entity,,,Feral Heather,,Wilder Heather
-zombieSteveCrawlerRadiated,entityclasses,Entity,,,Radiated Heather,,Verstrahlter Heather
-
-zombieTomClark,entityclasses,Entity,,,Lance,,Lance
-zombieTomClarkFeral,entityclasses,Entity,,,Feral Lance,,Wilder Lance
-zombieTomClarkRadiated,entityclasses,Entity,,,Radiated Lance,,Verstrahlter Lance
-
-zombieUtilityWorker,entityclasses,Entity,,,Bob,,Bob
-zombieUtilityWorkerFeral,entityclasses,Entity,,,Feral Bob,,Wilder Bob
-zombieUtilityWorkerRadiated,entityclasses,Entity,,,Radiated Bob,,Verstrahlter Bob
-
-zombieWightFeral,entityclasses,Entity,,,Feral Roger,,Wildes Roger
-zombieWightRadiated,entityclasses,Entity,,,Radiated Roger,,Verstrahltes Roger
-
-zombieYo,entityclasses,Entity,,,Shrader,,Shrader
-zombieYoFeral,entityclasses,Entity,,,Feral Shrader,,Wilder Shrader
-zombieYoRadiated,entityclasses,Entity,,,Radiated Shrader,,Verstrahlter Shrader
+zombieBiker,entityclasses,Entity,,,Breadcrumb,,Breadcrumb
+zombieBikerFeral,entityclasses,Entity,,,Feral Breadcrumb,,Wilder Breadcrumb
+zombieBikerRadiated,entityclasses,Entity,,,Radiated Breadcrumb,,Verstrahlter Breadcrumb

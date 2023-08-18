@@ -65,16 +65,16 @@
 			<set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='Stacknumber']/@value">1000</set>
 			<set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">1000</set>
 			<set xpath="/items/item[@name='resourceSpring']/property[@name='Stacknumber']/@value">1000</set>
-			<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">750</set>
-			<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">750</set>
+			<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">2000</set>
+			<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">2000</set>
 			<set xpath="/items/item[@name='drinkCanEmpty']/property[@name='Stacknumber']/@value">500</set>
 			<set xpath="/items/item[@name='foodCornMeal']/property[@name='Stacknumber']/@value">2000</set>
 			<set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Stacknumber']/@value">2000</set>
@@ -185,14 +185,14 @@
 
 
 		<!--c. ammo BUNDLES adjusted to match new stack sizes-->
-			<append xpath="/items/item[contains(@name,'ammoBundle9mm')]/property[@class='Action0']"><property name="Create_item_count" value="750"/></append><!--Default = 100-->
-			<append xpath="/items/item[contains(@name,'ammoBundle44Magnum')]/property[@class='Action0']"><property name="Create_item_count" value="750"/></append><!--Default = 100-->
-			<append xpath="/items/item[contains(@name,'ammoBundle762mm')]/property[@class='Action0']"><property name="Create_item_count" value="750"/></append><!--Default = 100-->
-			<append xpath="/items/item[contains(@name,'ammoBundleShotgun')]/property[@class='Action0']"><property name="Create_item_count" value="750"/></append><!--Default = 100-->
-			<append xpath="/items/item[contains(@name,'ammoBundleArrow')]/property[@class='Action0']"><property name="Create_item_count" value="750"/></append><!--Default = 100-->
-			<set xpath="/items/item[contains(@name,'ammoBundleArrowExploding')]/property[@class='Action0']/property[@name='Create_item_count']/@value">750</set><!--Default = 75-->
-			<append xpath="/items/item[contains(@name,'ammoBundleCrossbowBolt')]/property[@class='Action0']"><property name="Create_item_count" value="750"/></append><!--Default = 100-->
-			<set xpath="/items/item[contains(@name,'ammoBundleCrossbowBoltExploding')]/property[@class='Action0']/property[@name='Create_item_count']/@value">750</set><!--Default = 75-->
+			<append xpath="/items/item[contains(@name,'ammoBundle9mm')]/property[@class='Action0']"><property name="Create_item_count" value="2000"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundle44Magnum')]/property[@class='Action0']"><property name="Create_item_count" value="2000"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundle762mm')]/property[@class='Action0']"><property name="Create_item_count" value="2000"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundleShotgun')]/property[@class='Action0']"><property name="Create_item_count" value="2000"/></append><!--Default = 100-->
+			<append xpath="/items/item[contains(@name,'ammoBundleArrow')]/property[@class='Action0']"><property name="Create_item_count" value="2000"/></append><!--Default = 100-->
+			<set xpath="/items/item[contains(@name,'ammoBundleArrowExploding')]/property[@class='Action0']/property[@name='Create_item_count']/@value">2000</set><!--Default = 75-->
+			<append xpath="/items/item[contains(@name,'ammoBundleCrossbowBolt')]/property[@class='Action0']"><property name="Create_item_count" value="2000"/></append><!--Default = 100-->
+			<set xpath="/items/item[contains(@name,'ammoBundleCrossbowBoltExploding')]/property[@class='Action0']/property[@name='Create_item_count']/@value">2000</set><!--Default = 75-->
 
  
 
