@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<xml>
-		<ModInfo>
-			<Name value="PG-Names"/>
-			<Description value="OP Other!"/>
-			<Author value="Breadcrumb"/> <!--Name changed from RilesPlus-->
-			<Version value="1.01"/>
-			<Website value=""/>
-		</ModInfo>
-	</xml>
+<xml>
+	<ModInfo>
+		<Name value="PG-Names"/>
+		<DisplayName value="Polyhydra Games Names"/>
+		<Description value="OP Other!"/>
+		<Author value="Breadcrumb"/> <!--Name changed from RilesPlus-->
+		<Version value="v1.01"/>
+		<Website value="https://polyhydragames.com"/>
+	</ModInfo>
+</xml>
