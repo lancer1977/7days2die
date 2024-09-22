@@ -1,8 +1,5 @@
 <Configs>
-<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">63</set>
-<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.IsRandom']/@value">true</set>
-<set xpath="/blocks/block[contains(@name, '3HarvestPlayer')]/drop[@event='Destroy']/@prob">0.25</set>
-<set xpath="/blocks/block[contains(@name, 'glass')]/property[@name='LightOpacity']/@value">0</set>
+
 
  
 <append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">

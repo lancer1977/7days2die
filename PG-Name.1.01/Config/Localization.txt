@@ -1,121 +1,130 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
-
-zombieMutated,entityclasses,Entity,,,Poldi,,Poldi
-zombieMutatedFeral,entityclasses,Entity,,,Feral Poldi,,Wilder Poldi
-zombieMutatedRadiated,entityclasses,Entity,,,Radiated Poldi,,Verstrahlter Poldi
-
-zombiePartyGirl,entityclasses,Entity,,,Monique,,Monique
-zombiePartyGirlFeral,entityclasses,Entity,,,Feral Monique,,Wilde Monique
-zombiePartyGirlRadiated,entityclasses,Entity,,,Radiated Monique,,Verstrahlte Monique
-
-zombieSpider,entityclasses,Entity,,,Peter,,Peter
-zombieSpiderFeral,entityclasses,Entity,,,Feral Peter,,Wilder Peter
-zombieSpiderRadiated,entityclasses,Entity,,,Radiated Peter,,Verstrahlter Peter
-
-zombieUtilityWorker,entityclasses,Entity,,,Bob,,Bob
-zombieUtilityWorkerFeral,entityclasses,Entity,,,Feral Bob,,Wilder Bob
-zombieUtilityWorkerRadiated,entityclasses,Entity,,,Radiated Bob,,Verstrahlter Bob
-
-zombieWightFeral,entityclasses,Entity,,,Feral Roger,,Wildes Roger
-zombieWightRadiated,entityclasses,Entity,,,Radiated Roger,,Verstrahltes Roger
-
-zombieBoe,entityclasses,Entity,,,Jesse,,Jesse
-zombieBoeFeral,entityclasses,Entity,,,Feral Jesse,,Wilder Jesse
-zombieBoeRadiated,entityclasses,Entity,,,Radiated Jesse,,Verstrahlter Jesse
-
-zombieBurnt,entityclasses,Entity,,,Rittman,,Rittman
-zombieBurntFeral,entityclasses,Entity,,,Feral Rittman,,Wilder Rittman
-zombieBurntRadiated,entityclasses,Entity,,,Radiated Rittman,,Verstrahlter Rittman
-
-zombieBusinessMan,entityclasses,Entity,,,Jimmy,,Jimmy
-zombieBusinessManFeral,entityclasses,Entity,,,Feral Jimmy,,Wilder Jimmy
-zombieBusinessManRadiated,entityclasses,Entity,,,Radiated Jimmy,,Verstrahlter Jimmy
-
-zombieDarlene,entityclasses,Entity,,,Jobell,,Jobell
-zombieDarleneFeral,entityclasses,Entity,,,Feral Jobell,,Wilde Jobell
-zombieDarleneRadiated,entityclasses,Entity,,,Radiated Jobell,,Verstrahlte Jobell
-
-zombieDemolition,entityclasses,Entity,,,Chubbs,,Chubbs
-
-zombieJoe,entityclasses,Entity,,,Donald,,Donald
-zombieJoeFeral,entityclasses,Entity,,,Feral Donald,,Wilder Donald
-zombieJoeRadiated,entityclasses,Entity,,,Radiated Donald,,Verstrahlter Donald
-
-zombieLab,entityclasses,Entity,,,Jamie,,Jamie
-zombieLabFeral,entityclasses,Entity,,,Feral Jamie,,Wilde Jamie
-zombieLabRadiated,entityclasses,Entity,,,Radiated Jamie,,Verstrahlte Jamie
-
-zombieLumberjack,entityclasses,Entity,,,Andy,,Andy
-zombieLumberjackFeral,entityclasses,Entity,,,Feral Andy,,Wilder Andy
-zombieLumberjackRadiated,entityclasses,Entity,,,Radiated Andy,,Verstrahlter Andy
-
-zombieMaleHazmat,entityclasses,Entity,,,Dustin,,Dustin
-zombieMaleHazmatFeral,entityclasses,Entity,,,Feral Dustin,,Wilder Dustin
-zombieMaleHazmatRadiated,entityclasses,Entity,,,Radiated Dustin,,Verstrahlter Dustin
-
-zombieMarlene,entityclasses,Entity,,,Maggie,,Maggie
-zombieMarleneFeral,entityclasses,Entity,,,Feral Maggie,,Wilde Maggie
-zombieMarleneRadiated,entityclasses,Entity,,,Radiated Maggie,,Verstrahlte Maggie
-
-
-
-
-
-zombieYo,entityclasses,Entity,,,Shrader,,Shrader
-zombieYoFeral,entityclasses,Entity,,,Feral Shrader,,Wilder Shrader
-zombieYoRadiated,entityclasses,Entity,,,Radiated Shrader,,Verstrahlter Shrader
-
-zombieSteve,entityclasses,Entity,,,JR,,JR
-zombieSteveFeral,entityclasses,Entity,,,Feral JR,,Wilder JR
-zombieSteveRadiated,entityclasses,Entity,,,Radiated JR,,Verstrahlter JR
-
-zombieSteveCrawler,entityclasses,Entity,,,Leah,,Leah
-zombieSteveCrawlerFeral,entityclasses,Entity,,,Feral Leah,,Wilder Leah
-zombieSteveCrawlerRadiated,entityclasses,Entity,,,Radiated Leah,,Verstrahlter Leah
-
-zombieTomClark,entityclasses,Entity,,,Lance,,Lance
-zombieTomClarkFeral,entityclasses,Entity,,,Feral Lance,,Wilder Lance
-zombieTomClarkRadiated,entityclasses,Entity,,,Radiated Lance,,Verstrahlter Lance
-
-zombieScreamer,entityclasses,Entity,,,Ariel,,Ariel
-zombieScreamerFeral,entityclasses,Entity,,,Feral Ariel,,Wilder Ariel
-zombieScreamerRadiated,entityclasses,Entity,,,Radiated Ariel,,Verstrahlter Ariel
-
-zombieSkateboarder,entityclasses,Entity,,,Green Matt,,Green Matt
-zombieSkateboarderFeral,entityclasses,Entity,,,Feral Green Matt,,Wilder Green Matt
-zombieSkateboarderRadiated,entityclasses,Entity,,,Radiated Green Matt,,Verstrahlter Green Matt
-
-zombieSoldier,entityclasses,Entity,,,BroJosh,,BroJosh
-zombieSoldierFeral,entityclasses,Entity,,,Feral BroJosh,,Wilder BroJosh
-zombieSoldierRadiated,entityclasses,Entity,,,Radiated BroJosh,,Verstrahlter BroJosh
-
-zombieNurse,entityclasses,Entity,,,Christa,,Christa
-zombieNurseFeral,entityclasses,Entity,,,Feral Christa,,Wilde Christa
-zombieNurseRadiated,entityclasses,Entity,,,Radiated Christa,,Verstrahlte Christa
-
-zombieMoe,entityclasses,Entity,,,Aaron,,Aaron
-zombieMoeFeral,entityclasses,Entity,,,Feral Aaron,,Wilder Aaron
-zombieMoeRadiated,entityclasses,Entity,,,Radiated Aaron,,Verstrahlter Aaron
-
-zombieFatCop,entityclasses,Entity,,,Scott,,Scott
-zombieFatCopFeral,entityclasses,Entity,,,Feral Scott,,Wilder Scott
-zombieFatCopRadiated,entityclasses,Entity,,,Radiated Scott,,Verstrahlter Scott
-
-zombieFatHawaiian,entityclasses,Entity,,,Lee,,Lee
-zombieFatHawaiianFeral,entityclasses,Entity,,,Feral Lee,,Wilder Lee
-zombieFatHawaiianRadiated,entityclasses,Entity,,,Radiated Lee,,Verstrahlter Lee
-
-zombieFemaleFat,entityclasses,Entity,,,Very Nice Lady,,Big Mama
-zombieFemaleFatFeral,entityclasses,Entity,,,Feral Very Nice Lady,,Wilde Big Mama
-zombieFemaleFatRadiated,entityclasses,Entity,,,Radiated Very Nice Lady,,Verstrahlte Big Mama
-
-zombieJanitor,entityclasses,Entity,,,Corwin,,Corwin
-zombieJanitorFeral,entityclasses,Entity,,,Feral Corwin,,Wilder Corwin
-
-zombieArlene,entityclasses,Entity,,,Kathy,,Kathy
-zombieArleneFeral,entityclasses,Entity,,,Feral Kathy,,Wilde Kathy
-zombieArleneRadiated,entityclasses,Entity,,,Radiated Kathy,,Verstrahlte Kathy
-
-zombieBiker,entityclasses,Entity,,,Breadcrumb,,Breadcrumb
-zombieBikerFeral,entityclasses,Entity,,,Feral Breadcrumb,,Wilder Breadcrumb
-zombieBikerRadiated,entityclasses,Entity,,,Radiated Breadcrumb,,Verstrahlter Breadcrumb
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+animalBear,entityclasses,Entity,,,Bear,,Bär,Oso,Ours,Orso,クマ,곰,Niedźwiedź,Urso,Медведь,Ayı,熊,熊
+animalBearSmall,entityclasses,Entity,,,Little Bear,,Kleiner Bär,Osito,Petit ours,Piccolo orso,小熊,작은 곰,Mały niedźwiedź,Ursinho,Медвежонок,Küçük Ayı,小熊,小熊
+animalBoar,entityclasses,Entity,,,Boar,,Wildschwein,Jabalí,Sanglier,Cinghiale,イノシシ,멧돼지,Dzik,Javali,Кабан,Yabandomuzu,野猪,野豬
+animalBossGrace,entityclasses,Entity,,,Grace,,Grace,Grace,Sanglier,Grace,グレース,그레이스,Grace,Graça,Кабан-мутант,Grace,格雷斯,格雷絲
+animalChicken,entityclasses,Entity,,,Chicken,,Huhn,Pollo,Poulet,Pollo,ニワトリ,닭,Kurczak,Galinha,Курица,Tavuk,鸡,雞
+animalCoyote,entityclasses,Entity,,,Coyote,,Kojote,Coyote,Coyote,Coyote,コヨーテ,코요테,Kojot,Coiote,Койот,Çakal,丛林狼,土狼
+animalDeer,entityclasses,Entity,,,Deer,,Hirsch,Ciervo,Cervidé,Cervo,シカ,사슴,Jeleń,Cervo,Олень,Geyik,鹿,鹿
+animalDireWolf,entityclasses,Entity,,,Dire Wolf,,Schreckenswolf,Lobo gigante,Canis dirus,Metalupo,ダイアウルフ,다이어울프,Straszny wilk,Lobo-vil,Ужасный волк,Korkunç Kurt,恐狼,恐狼
+animalDoe,entityclasses,Entity,,,Doe,,Reh,Gama,Biche,Cerva,雌鹿,암사슴,Sarna,Corça,Самка оленя,Dişi Geyik,母鹿,母鹿
+animalMountainLion,entityclasses,Entity,,,Mountain Lion,,Berglöwe,Puma,Puma,Leone di montagna,クーガー,퓨마,Puma,Puma,Пума,Dağ Aslanı,美洲狮,美洲獅
+animalPig,entityclasses,Entity,,,Pig,,Schwein,Cerdo,Cochon,Maiale,ブタ,돼지,Świnia,Porco,Свинья,Domuz,猪,豬
+animalRabbit,entityclasses,Entity,,,Rabbit,,Hase,Conejo,Lapin,Coniglio,ウサギ,토끼,Królik,Coelho,Кролик,Tavşan,兔子,兔子
+animalSnake,entityclasses,Entity,,,Snek,,Schlange,Serpiente,Serpent,Serpente,ヘビ,뱀,Wąż,Cobra,Змея,Yılan,蛇,蛇
+animalStag,entityclasses,Entity,,,Stag,,Hirsch,Ciervo,Cerf,Cervo,雄鹿,수사슴,Dorosły jeleń,Veado,Самец оленя,Erkek Geyik,雄鹿,公鹿
+animalWolf,entityclasses,Entity,,,Wolf,,Wolf,Lobo,Loup,Lupo,オオカミ,늑대,Wilk,Lobo,Волк,Kurt,灰狼,狼
+animalZombieBear,entityclasses,Entity,,,Zombie Bear,,Zombie-Bär,Oso zombi,Ours zombie,Orso zombie,ゾンビクマ,좀비 곰,Niedźwiedź zombie,Urso zumbi,Медведь-зомби,Zombi Ayı,丧尸熊,殭屍熊
+animalZombieDog,entityclasses,Entity,,,Zombie Dog,,Zombie-Hund,Perro zombi,Chien zombie,Cane zombie,ゾンビ犬,좀비 개,Pies zombie,Cão zumbi,Зомби-собака,Zombi Köpek,丧尸犬,殭屍狗
+animalZombieVulture,entityclasses,Entity,,,Zombie Vulture,,Zombie-Geier,Buitre zombi,Vautour zombie,Avvoltoio zombie,ゾンビハゲワシ,좀비 독수리,Sęp zombie,Abutre zumbi,Зомби-стервятник,Zombi Akbaba,丧尸秃鹫,殭屍禿鷲
+animalZombieVultureRadiated,entityclasses,Entity,,,Radiated Vulture,,Verstrahlter Geier,Buitre irradiado,Vautour irradié,Avvoltoio irradiato,被爆したハゲワシ,방사능 독수리,Promieniowany sęp,Abutre com radiação,Облученный стервятник,Radyasyonlu Akbaba,被辐射的秃鹫,被輻射的禿鷲
+entityJunkDrone,entityclasses,Entity,,,Robotic Drone,,Robotik-Drohne,Dron robótico,Drone robotique,Drone robotico,ロボットドローン,로보틱 드론,Robotyczny dron,Drone Robótico,Роботизированный дрон,Robot Drone,机器人无人机,機器人無人機
+junkTurretGun,entityclasses,Entity,,,Robotic Turret,,Robotik-Geschützturm,Torreta robótica,Tourelle robotique,Torretta robotica,ロボット砲台,로보틱 터렛,Robotyczna wieżyczka,Torreta robótica,Роботизированная пушка,Robot Taret,机器人炮塔,機器人炮塔
+junkTurretSledge,entityclasses,Entity,,,Robotic Sledge,,Robotik-Hammer,Mazo robótico,Marteau robotique,Martello robotico,ロボットスレッジ,로보틱 슬레지,Robotyczny młot,Marreta robótica,Роботизированный молот,Robot Kızak,机器人雪橇,機器人大錘
+npcBanditMelee,entityclasses,Entity,,,Melee Bandit,,Nahkampf-Bandit,Bandido cuerpo a cuerpo,Bandit de mêlée,Bandito da mischia,近接バンディット,근거리 강도,Bandyta z bronią białą,Bandido de corpo a corpo,Бандит с оружием ближнего боя,Yakın Dövüş Eşkıyası,近战强盗,近戰強盜
+npcBanditRanged,entityclasses,Entity,,,Ranged Bandit,,Fernkampf-Bandit,Bandido a distancia,Bandit à distance,Bandito a distanza,遠距離バンディット,원거리 강도,Bandyta z bronią dystansową,Bandido à distância,Бандит с оружием дальнего боя,Menzilli Eşkıya,远程强盗,遠攻強盜
+npcSurvivorRanged,entityclasses,Entity,,,Survivor,,Überlebender,Sobreviviente,Survivant,Sopravvissuto,生存者,생존자,Ocalały,Sobrevivente,Выживший,Hayatta Kalan,幸存者,倖存者
+npcTraderBob,entityclasses,Entity,,,Trader Bob,,Händler Bob,"Bob, el vendedor",Bob le marchand,Negoziante Bob,トレーダー・ボブ,상인 밥,Handlarz Bob,Comer. Bob,Торговец Боб,Tüccar Bob,商人鲍勃,商人鮑伯
+npcTraderHugh,entityclasses,Entity,,,Trader Hugh,,Händler Hugh,"Hugh, el vendedor",Hugh le marchand,Negoziante Hugh,トレーダー・ヒュー,상인 휴,Handlarz Hugh,Comer. Hugh,Торговец Хью,Tüccar Hugh,商人休,商人修
+npcTraderJen,entityclasses,Entity,,,Trader Jen,,Händler Jen,"Jen, el vendedor",Jen le marchand,Negoziante Jen,トレーダー・ジェン,상인 젠,Handlarka Jen,Comer. Jen,Торговка Джен,Tüccar Jen,商人杰恩,商人詹
+npcTraderJimmy,entityclasses,Entity,,,Trader Jimmy,,Händler Jimmy,"Jimmy, el vendedor",Jimmy le marchand,Negoziante Jimmy,トレーダー・ジミー,상인 지미,Handlarz Jimmy,Comer. Jimmy,Торговец Джимми,Tüccar Jimmy,商人吉米,商人吉米
+npcTraderJoel,entityclasses,Entity,,,Trader Joel,,Händler Joel,"Joel, el vendedor",Joel le marchand,Negoziante Joel,トレーダー・ジョエル,상인 조엘,Handlarz Joel,Comer. Joel,Торговец Джоэл,Tüccar Joel,商人约珥,商人祖爾
+npcTraderRekt,entityclasses,Entity,,,Trader Rekt,,Händler Rekt,"Rekt, el vendedor",Rekt le marchand,Negoziante Rekt,トレーダー・レクト,상인 렉트,Handlarz Rekt,Comer. Rekt,Торговец Рект,Tüccar Rekt,商人雷克特,商人瑞克特
+npcTraderTest,entityclasses,Entity,,,Trader Test,,Händler Test,Prueba del vendedor,Test du marchand,Negoziante di prova,トレーダーテスト,상인 테스트,Handlarz Test,Comer. Test,Тестовый торговец,Tüccar Testi,商人测试,商人特斯特
+sc_General,entityclasses,Entity,,,Supply Crate,,Versorgungskiste,Embalaje de suministros,Caisse de provisions,Cassa di provviste,物資入りクレート,보급품 상자,Skrzynia z zapasami,Caixote de suprimentos,Ящик снабжения,Erzak Sandığı,补给板条箱,補給箱
+Trader,entityclasses,Entity,,,Trader,,Händler,Vendedor,Marchand,Negoziante,トレーダー,상인,Handlarz,Comerciante,Торговец,Tüccar,商人,商人
+zombieArlene,entityclasses,Entity,,,StreamBean,,Arlene,Niña putrefacta,Fille putride,Arlene,アーリーン,아를린,Arlene,Arlene,Гнилая девушка,Arlene,阿琳,阿琳
+zombieArleneFeral,entityclasses,Entity,,,Feral StreamBean,,Wilde Arlene,Niña putrefacta salvaje,Fille putride féroce,Arlene feroce,残忍なアーリーン,흉포한 아를린,Dzika Arlene,Arlene Feroz,Дикая гнилая девушка,Vahşi Arlene,凶残的阿琳,野蠻的阿琳
+zombieArleneRadiated,entityclasses,Entity,,,Radiated StreamBean,,Verstrahlte Arlene,Niña putrefacta irradiada,Fille putride irradiée,Arlene irradiata,被爆したアーリーン,방사능 아를린,Napromieniowana Arlene,Arlene Radioativa,Облученная гнилая девушка,Radyasyonlu Arlene,被辐射的阿琳,被輻射的阿琳
+zombieBehemoth,entityclasses,Entity,,,Behemoth,,Behemoth,Mastodonte,Béhémoth zombie,Gigante,ベヒーモス,짐승,Behemot,Beemote,Гигант,Dev Yaratık,巨兽,貝西摩斯
+zombieBiker,entityclasses,Entity,,,rudy5453,,Biker,Motociclista,Motard zombie,Motociclista,バイカー,바이커,Motocyklista,Ciclista,Байкер,Motosikletli,摩托车手,拜克
+zombieBikerFeral,entityclasses,Entity,,,Feral rudy5453,,Wilder Biker,Motociclista salvaje,Motard zombie féroce,Motociclista feroce,残忍なバイカー,흉포한 바이커,Dziki motocyklista,Ciclista Feroz,Дикий байкер,Vahşi Motosikletli,凶残的摩托车手,野蠻拜克
+zombieBikerRadiated,entityclasses,Entity,,,Radiated rudy5453,,Verstrahlter Biker,Motociclista irradiado,Motard zombie irradié,Motociclista irradiato,被爆したバイカー,방사능 바이커,Napromieniowany motocyklista,Ciclista Radioativo,Облученный байкер,Radyasyonlu Motosikletli,被辐射的摩托车手,被輻射的拜克
+zombieBoe,entityclasses,Entity,,,Boe,,Boe,Boe,Survivant infecté,Boe,ボウ,보우,Boe,Boe,Зараженный выживший,Avare,布尔,博伊
+zombieBoeFeral,entityclasses,Entity,,,Feral Boe,,Wilder Boe,Boe salvaje,Survivant infecté féroce,Boe feroce,残忍なボウ,흉포한 보,Dziki Boe,Boe Feroz,Дикий зараженный выживший,Vahşi Avare,凶残的布尔,野蠻的博伊
+zombieBoeRadiated,entityclasses,Entity,,,Radiated Boe,,Verstrahlter Boe,Boe irradiado,Survivant infecté irradié,Boe irradiato,被爆したボウ,방사능 보,Napromieniowany Boe,Boe Radioativo,Облученный зараженный выживший,Radyasyonlu Avare,被辐射的布尔,被輻射的博伊
+zombieBowler,entityclasses,Entity,,,Bowler,,Bowler,Lanzador,Joueur de bowling,Giocatore di bowling,ボウラー,투수,Kręglarz,Lançador,Игрок в боулинг,Bovlingci,保龄球丧尸,保齡球殭屍
+zombieBowlerFeral,entityclasses,Entity,,,Feral Bowler,,Wilder Bowler,Lanzador salvaje,Joueur de bowling féroce,Giocatore di bowling feroce,残忍なボウラー,흉포한 투수,Dziki kręglarz,Lançador Feroz,Дикий игрок в боулинг,Vahşi Bovlingci,凶残的保龄球丧尸,兇猛保齡殭屍
+zombieBowlerRadiated,entityclasses,Entity,,,Radiated Bowler,,Verstrahlter Bowler,Lanzador irradiado,Joueur de bowling irradié,Giocatore di bowling irradiato,被爆したボウラー,방사능 투수,Napromieniowany kręglarz,Lançador Radioativo,Облученный игрок в боулинг,Radyasyonlu Bovlingci,被辐射的保龄球丧尸,被輻射的保齡球殭屍
+zombieBurnt,entityclasses,Entity,,,Burnt,,Brandopfer,Quemado,Calciné,Ustionato,焦げたゾンビ,불탄 자,Spalony,Queimado,Тлеющий зомби,Yanmış,被灼烧者,焦炭
+zombieBurntFeral,entityclasses,Entity,,,Feral Burnt,,Wildes Brandopfer,Quemado salvaje,Calciné féroce,Ustionato feroce,残忍な焦げたゾンビ,흉포한 불탄 자,Dziki spalony,Queimado Feroz,Дикий тлеющий зомби,Vahşi Yanmış,凶残的被灼烧者,野蠻的焦炭
+zombieBurntRadiated,entityclasses,Entity,,,Radiated Burnt,,Verstrahltes Brandopfer,Quemado irradiado,Calciné irradié,Ustionato irradiato,被爆した焦げたゾンビ,방사능 불탄 자,Napromieniowany spalony,Queimado Radioativo,Облученный тлеющий зомби,Radyasyonlu Yanmış,被辐射的被灼烧者,被輻射的焦炭
+zombieBusinessMan,entityclasses,Entity,,,Businessman,,Geschäftsmann,Hombre de negocios,Homme d'affaires zombie,Imprenditore,ビジネスマン,회사원,Biznesmen,Empresário,Бизнесмен,İş İnsanı,商人,商人
+zombieBusinessManFeral,entityclasses,Entity,,,Feral Businessman,,Wilder Geschäftsmann,Hombre de negocios salvaje,Homme d'affaires zombie féroce,Imprenditore feroce,残忍なビジネスマン,흉포한 회사원,Dziki biznesmen,Empresário Feroz,Дикий бизнесмен,Vahşi İş İnsanı,凶残的商人,野蠻的商人
+zombieBusinessManRadiated,entityclasses,Entity,,,Radiated Businessman,,Verstrahlter Geschäftsmann,Hombre de negocios irradiado,Homme d'affaires zombie irradié,Imprenditore irradiato,被爆したビジネスマン,방사능 회사원,Napromieniowany biznesmen,Empresário Radioativo,Облученный бизнесмен,Radyasyonlu İş İnsanı,被辐射的商人,被輻射的商人
+zombieDarlene,entityclasses,Entity,,,Darlene,,Darlene,Darlene,Mère décomposée,Darlene,ダーリーン,달린,Darlene,Darlene,Разлагающаяся мать,Darlene,达琳,達琳
+zombieDarleneFeral,entityclasses,Entity,,,Feral Darlene,,Wilde Darlene,Darlene salvaje,Mère décomposée féroce,Darlene feroce,残忍なダーリーン,흉포한 달린,Dzika Darlene,Darlene Feroz,Дикая мать,Vahşi Darlene,凶残的达琳,野蠻的達琳
+zombieDarleneRadiated,entityclasses,Entity,,,Radiated Darlene,,Verstrahlte Darlene,Darlene irradiada,Mère décomposée irradiée,Darlene irradiata,被爆したダーリーン,방사능 달린,Napromieniowana Darlene,Darlene Radioativa,Облученная мать,Radyasyonlu Darlene,被辐射的达琳,被輻射的達琳
+zombieDemolition,entityclasses,Entity,,,Demolition,,Abbrucharbeiter,Demolición,Démolition,Demolitore,デモリション,철거,Rozbiórka,Demolição,Разрушение,Yıkım,爆破丧尸,破壞王
+zombieFatCop,entityclasses,Entity,,,Cop,,Polizist,Policía,Policier infecté,Poliziotto,警官,경찰,Gliniarz,Policial,Зараженный коп,Polis,警察,警察
+zombieFatCopFeral,entityclasses,Entity,,,Feral Cop,,Wilder Polizist,Policía salvaje,Policier infecté féroce,Poliziotto feroce,残忍な警官,흉포한 경찰,Dziki gliniarz,Policial Feroz,Дикий коп,Vahşi Polis,凶残的警察,野蠻的警察
+zombieFatCopRadiated,entityclasses,Entity,,,Radiated Cop,,Verstrahlter Polizist,Policía irradiado,Policier infecté irradié,Poliziotto irradiato,被爆した警官,방사능 경찰,Napromieniowany gliniarz,Policial Radioativo,Облученный коп,Radyasyonlu Polis,被辐射的警察,被輻射的警察
+zombieFatHawaiian,entityclasses,Entity,,,Tourist,,Tourist,Turista,Touriste dérangé,Turista,観光客,관광객,Turysta,Turista,Потревоженный турист,Turist,游客,遊客
+zombieFatHawaiianFeral,entityclasses,Entity,,,Feral Tourist,,Wilder Tourist,Turista salvaje,Touriste féroce,Turista feroce,残忍な観光客,흉포한 관광객,Dziki turysta,Turista Feroz,Дикий турист,Vahşi Turist,凶残的游客,野蠻的遊客
+zombieFatHawaiianRadiated,entityclasses,Entity,,,Radiated Tourist,,Verstrahlter Tourist,Turista irradiado,Touriste dérangé irradié,Turista irradiato,被爆した観光客,방사능 관광객,Napromieniowany turysta,Turista Radioativo,Облученный турист,Radyasyonlu Turist,被辐射的游客,被輻射的遊客
+zombieFemaleFat,entityclasses,Entity,,,Big Mama,,Big Mama,Mamá gorda,Big Mama,Big Mama,ビッグママ,빅 마마,Duża mamcia,Grandona,Толстуха,Evin Hanımı,大妈妈,大媽
+zombieFemaleFatFeral,entityclasses,Entity,,,Feral Big Mama,,Wilde Big Mama,Mamá gorda salvaje,Big Mama féroce,Big Mama feroce,残忍なビッグママ,흉포한 빅 마마,Dzika duża mamcia,Grandona feroz,Дикая толстуха,Vahşi Evin Hanımı,凶残大妈妈,野蠻的大媽
+zombieFemaleFatRadiated,entityclasses,Entity,,,Radiated Big Mama,,Verstrahlte Big Mama,Mamá gorda irradiada,Big Mama irradiée,Big Mama irradiata,被爆したビッグママ,방사능 빅 마마,Napromieniowana duża mamcia,Grandona radioativa,Облученная толстуха,Radyasyonlu Evin Hanımı,被辐射的大妈妈,被輻射的大媽
+zombieInmate,entityclasses,Entity,,,Inmate,,Insasse,Interno,Détenu,Carcerato,囚人,수감자,Więzień,Cativo,Заключенный,Mahkum,囚犯,囚犯
+zombieInmateFeral,entityclasses,Entity,,,Feral Inmate,,Wilder Insasse,Interno salvaje,Détenu féroce,Carcerato feroce,残忍な囚人,흉포한 수감자,Dziki więzień,Cativo Feroz,Дикий заключенный,Vahşi Mahkum,凶残的囚犯,兇猛囚犯
+zombieInmateRadiated,entityclasses,Entity,,,Radiated Inmate,,Verstrahlter Insasse,Interno irradiado,Détenu irradié,Carcerato irradiato,被爆した囚人,방사능 수감자,Napromieniowany więzień,Cativo Radioativo,Облученный заключенный,Radyasyonlu Mahkum,被辐射的囚犯,被輻射的囚犯
+zombieJanitor,entityclasses,Entity,,,Janitor,,Hausmeister,Conserje,Balayeur,Inserviente,用務員,청소부,Woźny,Zelador,Уборщик,Temizlikçi,看门人,看門人
+zombieJanitorFeral,entityclasses,Entity,,,Feral Janitor,,Wilder Hausmeister,Conserje salvaje,Balayeur féroce,Inserviente feroce,残忍な用務員,흉포한 청소부,Dziki woźny,Zelador Feroz,Дикий уборщик,Vahşi Temizlikçi,凶残的看门人,野蠻的看門人
+zombieJanitorRadiated,entityclasses,Entity,,,Radiated Janitor,,Verstrahlter Hausmeister,Conserje irradiado,Balayeur irradié,Inserviente irradiato,被爆した用務員,방사능 청소부,Napromieniowany woźny,Zelador Radioativo,Облученный уборщик,Radyasyonlu Temizlikçi,被辐射的看门人,被輻射的看門人
+zombieJoe,entityclasses,Entity,,,Joe,,Joe,Joe,Cadavre purulent,Joe,ジョー,조,Joe,Joe,Гнойный труп,Joe,乔,喬伊
+zombieJoeFeral,entityclasses,Entity,,,Feral Joe,,Wilder Joe,Joe salvaje,Cadavre purulent féroce,Joe feroce,残忍なジョー,흉포한 조,Dziki Joe,Joe Feroz,Дикий гнойный труп,Vahşi Joe,凶残的乔,野蠻的喬伊
+zombieJoeRadiated,entityclasses,Entity,,,Radiated Joe,,Verstrahlter Joe,Joe irradiado,Cadavre purulent irradié,Joe irradiato,被爆したジョー,방사능 조,Napromieniowany Joe,Joe Radioativo,Облученный гнойный труп,Radyasyonlu Joe,被辐射的乔,被輻射的喬伊
+zombieLab,entityclasses,Entity,,,Lab Worker,,Laborant,Científico,Laborantin,Ricercatore,研究員,연구원 직원,Laborant,Laboratorista,Лаборант-зомби,Laboratuvar Çalışanı,实验室工作人员,勞工
+zombieLabFeral,entityclasses,Entity,,,Feral Lab Worker,,Wilder Laborant,Científico salvaje,Laborantin féroce,Ricercatore feroce,残忍な研究員,흉포한 연구원 직원,Dziki laborant,Laboratorista Feroz,Дикий лаборант-зомби,Vahşi Laboratuvar Çalışanı,凶残的实验室工作人员,野蠻的勞工
+zombieLabRadiated,entityclasses,Entity,,,Radiated Lab Worker,,Verstrahlter Laborant,Científico irradiado,Laborantin irradié,Ricercatore irradiato,被爆した研究員,방사능 연구원 직원,Napromieniowany laborant,Laboratorista Radioativo,Облученный лаборант-зомби,Radyasyonlu Laboratuvar Çalışanı,被辐射的实验室工作人员,被輻射的勞工
+zombieLumberjack,entityclasses,Entity,,,Lumberjack,,Holzfäller,Leñador,Bûcheron zombie,Boscaiolo,木こり,벌목꾼,Drwal,Lenhador,Лесоруб-зомби,Oduncu,伐木工,伐木工
+zombieLumberjackFeral,entityclasses,Entity,,,Feral Lumberjack,,Wilder Holzfäller,Leñador salvaje,Bûcheron féroce,Boscaiolo feroce,残忍な木こり,흉포한 벌목꾼,Dziki drwal,Lenhador Feroz,Безумный лесоруб,Vahşi Oduncu,凶残伐木工,野蠻的伐木工
+zombieLumberjackRadiated,entityclasses,Entity,,,Radiated Lumberjack,,Verstrahlter Holzfäller,Leñador irradiado,Bûcheron irradié,Boscaiolo irradiato,被爆した木こり,방사능 벌목꾼,Napromieniowany drwal,Lenhador Radioativo,Облученный лесоруб,Radyasyonlu Oduncu,被辐射的伐木工,被輻射的伐木工
+zombieMaleHazmat,entityclasses,Entity,,,Hazmat,,Gefahrgutbeauftragter,Material peligroso,Travailleur toxique,Operaio dell'anticontaminazione,危険物処理班,방호복 좀비,HazMat,Macacão de proteção,Ликвидатор,Tehlikeli Madde,穿着防化服的丧尸,壞胚子
+zombieMaleHazmatFeral,entityclasses,Entity,,,Feral Hazmat,,Wilder Gefahrgutbeauftragter,Material peligroso salvaje,Travailleur toxique féroce,Operaio dell'anticontaminazione feroce,残忍な危険物処理班,흉포한 방호복 좀비,Dziki HazMat,Vedado Feroz,Дикий ликвидатор,Vahşi Tehlikeli Madde,凶残的穿着防化服的丧尸,野蠻的壞胚子
+zombieMaleHazmatRadiated,entityclasses,Entity,,,Radiated Hazmat,,Verstrahlter Gefahrgutbeauftragter,Material peligroso irradiado,Travailleur toxique irradié,Operaio dell'anticontaminazione irradiato,被爆した危険物処理班,방사능 방호복 좀비,Napromieniowany HazMat,Vedado Radioativo,Облученный ликвидатор,Radyasyonlu Tehlikeli Madde,被辐射的穿着防化服的丧尸,被輻射的壞胚子
+zombieMarlene,entityclasses,Entity,,,JenniBPizza,,Marlene,Marlene,Défunte,Marlene,マーリーン,말린,Marlene,Marlene,Покойница,Marlene,马琳,瑪琳
+zombieMarleneFeral,entityclasses,Entity,,,Feral JenniBPizza,,Wilde Marlene,Marlene salvaje,Défunte féroce,Marlene feroce,残忍なマーリーン,흉포한 말린,Dzika Marlene,Marlene Feroz,Дикая покойница,Vahşi Marlene,凶残的马琳,野蠻的瑪琳
+zombieMarleneRadiated,entityclasses,Entity,,,Radiated JenniBPizza,,Verstrahlte Marlene,Marlene irradiada,Défunte irradiée,Marlene irradiata,被爆したマーリーン,방사능 말린,Napromieniowana Marlene,Marlene Radioativa,Облученная покойница,Radyasyonlu Marlene,被辐射的马琳,被輻射的瑪琳
+zombieMoe,entityclasses,Entity,,,Moe,,Moe,Moe,Rôdeur obèse,Moe,モー,모,Moe,Moe,Распухший ходок,Moe,莫伊,默
+zombieMoeFeral,entityclasses,Entity,,,Feral Moe,,Wilder Moe,Moe salvaje,Rôdeur obèse féroce,Moe feroce,残忍なモー,흉포한 모,Dziki Moe,Moe Feroz,Дикий распухший ходок,Vahşi Moe,凶残的莫伊,野蠻的默
+zombieMoeRadiated,entityclasses,Entity,,,Radiated Moe,,Verstrahlter Moe,Moe irradiado,Rôdeur obèse irradié,Moe irradiato,被爆したモー,방사능 모,Napromieniowany Moe,Moe Radioativo,Облученный распухший ходок,Radyasyonlu Moe,被辐射的莫伊,被輻射的默
+zombieMutated,entityclasses,Entity,,,Mutated,,Mutierter,Mutante,Mutant,Mutante,ミュータントゾンビ,돌연변이,Zmutowany,Mutante,Мутант,Mutasyonlu,变异丧尸,變種人
+zombieMutatedFeral,entityclasses,Entity,,,Feral Mutated,,Wilder Mutierter,Mutante salvaje,Mutant féroce,Mutante feroce,残忍なミュータントゾンビ,흉포한 돌연변이,Dziki zmutowany,Mutante Feroz,Дикий мутант,Vahşi Mutasyonlu,凶残的变异丧尸,野蠻的變種人
+zombieMutatedRadiated,entityclasses,Entity,,,Radiated Mutated,,Verstrahlter Mutierter,Mutante irradiado,Mutant irradié,Mutante irradiato,被爆したミュータントゾンビ,방사능 돌연변이,Napromieniowany zmutowany,Mutante Radioativo,Облученный мутант,Radyasyonlu Mutasyonlu,被辐射的变异丧尸,被輻射的變種人
+zombieNurse,entityclasses,Entity,,,Nurse,,Krankenschwester,Enfermera,Infirmière pestiférée,Infermiera,看護師,간호사,Pielęgniarka,Enfermeira,Чумная санитарка,Hemşire,护士,護士
+zombieNurseFeral,entityclasses,Entity,,,Feral Nurse,,Wilde Krankenschwester,Enfermera salvaje,Infirmière féroce,Infermiera feroce,残忍な看護師,흉포한 간호사,Dzika pielęgniarka,Enfermeira Feroz,Дикая санитарка,Vahşi Hemşire,凶残的瘟疫感染护士,野蠻的護士
+zombieNurseRadiated,entityclasses,Entity,,,Radiated Nurse,,Verstrahlte Krankenschwester,Enfermera irradiada,Infirmière pestiférée irradiée,Infermiera irradiata,被爆した看護師,방사능 간호사,Napromieniowana pielęgniarka,Enfermeira Radioativa,Облученная чумная санитарка,Radyasyonlu Hemşire,被辐射的护士,被輻射的護士
+zombiePartyGirl,entityclasses,Entity,,,Party Girl,,Partymädchen,Fiestera,Fêtarde zombie,Ragazza festaiola,パーティーガール,파티걸,Imprezowiczka,Baladeira,Тусовщица,Parti Kızı,派对女孩,派對女孩
+zombiePartyGirlFeral,entityclasses,Entity,,,Feral Party Girl,,Wildes Partymädchen,Fiestera salvaje,Fêtarde féroce,Ragazza festaiola feroce,残忍パーティーガール,흉포한 파티걸,Dzika imprezowiczka,Festeira Feroz,Безумная тусовщица,Vahşi Parti Kızı,凶残派对女孩,兇猛派對女孩
+zombiePartyGirlRadiated,entityclasses,Entity,,,Radiated Party Girl,,Verstrahltes Partymädchen,Fiestera irradiada,Fêtarde irradiée,Ragazza festaiola irradiata,被爆パーティーガール,방사능 파티걸,Napromieniowana imprezowiczka,Festeira Radioativa,Облученная тусовщица,Radyasyonlu Parti Kızı,被辐射的派对女孩,被輻射的派對女孩
+zombieScreamer,entityclasses,Entity,,,Screamer,,Schreier,Gritón,Zombie hurleur,Urlatrice,絶叫ゾンビ,비명,Krzykacz,Gritador,Крикуша,Çığırtkan,尖叫丧尸,尖叫者
+zombieScreamerFeral,entityclasses,Entity,,,Feral Screamer,,Wilder Schreier,Gritón salvaje,Hurleur féroce,Urlatore feroce,残忍な絶叫ゾンビ,흉포한 비명 좀비,Dziki krzykacz,Gritador Feroz,Дикая крикуша,Vahşi Çığırtkan,凶残的尖叫丧尸,野蠻的尖叫者
+zombieScreamerRadiated,entityclasses,Entity,,,Radiated Screamer,,Verstrahlter Schreier,Gritón irradiado,Zombie hurleur irradié,Urlatrice irradiata,被爆した絶叫ゾンビ,방사능 비명,Napromieniowany krzykacz,Gritador Radioativo,Облученная крикуша,Radyasyonlu Çığırtkan,被辐射的尖叫丧尸,被輻射的尖叫者
+zombieSkateboarder,entityclasses,Entity,,,Thug,,Gangster,Matón,Skateur punk zombie,Delinquente,悪党,폭력배,Drab,Capanga,Скейтер-зомби,Serseri,暴徒,暴徒
+zombieSkateboarderFeral,entityclasses,Entity,,,Feral Thug,,Wilder Gangster,Matón salvaje,Skateur punk zombie féroce,Delinquente feroce,残忍な悪党,흉포한 폭력배,Dziki drab,Capanga Feroz,Дикий скейтер-зомби,Vahşi Serseri,凶残的暴徒,野蠻的暴徒
+zombieSkateboarderRadiated,entityclasses,Entity,,,Radiated Thug,,Verstrahlter Gangster,Matón irradiado,Skateur punk zombie irradié,Delinquente irradiato,被爆した悪党,방사능 폭력배,Napromieniowany drab,Capanga Radioativo,Облученный скейтер-зомби,Radyasyonlu Serseri,被辐射的暴徒,被輻射的暴徒
+zombieSoldier,entityclasses,Entity,,,Soldier,,Soldat,Soldado,Soldat tombé,Soldato,兵士,군인,Żołnierz,Soldado,Солдат,Asker,士兵,士兵
+zombieSoldierFeral,entityclasses,Entity,,,Feral Soldier,,Wilder Soldat,Soldado salvaje,Soldat féroce,Soldato feroce,残忍な兵士,흉포한 군인,Dziki żołnierz,Soldado Feroz,Дикий солдат,Vahşi Asker,凶残的士兵,野蠻士兵
+zombieSoldierRadiated,entityclasses,Entity,,,Radiated Soldier,,Verstrahlter Soldat,Soldado irradiado,Soldat tombé irradié,Soldato irradiato,被爆した兵士,방사능 군인,Napromieniowany żołnierz,Soldado Radioativo,Облученный солдат,Radyasyonlu Asker,被辐射的士兵,被輻射的士兵
+zombieSpider,entityclasses,Entity,,,Spider,,Spinnenzombie,Araña,Araignée,Ragno,スパイダー,거미,Pająk,Aranha,Паук,Örümcek,蜘蛛,蜘蛛
+zombieSpiderFeral,entityclasses,Entity,,,Feral Spider,,Wilder Spinnenzombie,Araña salvaje,Araignée féroce,Ragno feroce,残忍なスパイダー,흉포한 거미,Dziki pająk,Aranha Feroz,Дикий паук,Vahşi Örümcek,凶残的蜘蛛,野蠻的蜘蛛
+zombieSpiderRadiated,entityclasses,Entity,,,Radiated Spider,,Verstrahlter Spinnenzombie,Araña irradiada,Araignée irradiée,Ragno irradiato,被爆したスパイダー,방사능 거미,Napromieniowany pająk,Aranha Radioativa,Облученный паук,Radyasyonlu Örümcek,被辐射的蜘蛛,被輻射的蜘蛛
+zombieSteve,entityclasses,Entity,,,Steve,,Steve,Steve,Corps réanimé,Steve,スティーブ,스티브,Steve,Steve,Оживший труп,Steve,史蒂夫,史帝夫
+zombieSteveCrawler,entityclasses,Entity,,,Crawler,,Kriecher,Oruga,Rampant,Essere strisciante,クローラー,크롤러,Pełzacz,Rastejante,Ползающий зомби,Sürüngen,爬行者,爬蟲
+zombieSteveCrawlerFeral,entityclasses,Entity,,,Feral Crawler,,Wilder Kriecher,Oruga salvaje,Rampant féroce,Essere strisciante feroce,残忍なクローラー,흉포한 크롤러,Dziki pełzacz,Rastejante Feroz,Дикий ползающий зомби,Vahşi Sürüngen,凶残的爬行者,野蠻的爬蟲
+zombieSteveCrawlerRadiated,entityclasses,Entity,,,Radiated Crawler,,Verstrahlter Kriecher,Zombi rastrero irradiado,Rampant irradié,Essere strisciante irradiato,被爆したクローラー,방사능 크롤러,Napromieniowany pełzacz,Rastejante Radioativo,Облученный ползун,Radyasyonlu Sürüngen,被辐射的爬行者,被輻射的爬蟲
+zombieSteveFeral,entityclasses,Entity,,,Feral Steve,,Wilder Steve,Steve salvaje,Corps réanimé féroce,Steve feroce,残忍なスティーブ,흉포한 스티브,Dzikie Steve,Steve Feroz,Дикий труп,Vahşi Steve,凶残的史蒂夫,野蠻的史帝夫
+zombieSteveRadiated,entityclasses,Entity,,,Radiated Steve,,Verstrahlter Steve,Steve irradiado,Corps réanimé irradié,Steve irradiato,被爆したスティーブ,방사능 스티브,Napromieniowany Steve,Steve Radioativo,Облученный труп,Radyasyonlu Steve,被辐射的史蒂夫,被輻射的史帝夫
+zombieTomClark,entityclasses,Entity,,,Tom Clark,,Tom Clark,Tom Clark,Tom Clark,Tom Clark,トム・クラーク,톰 클락,Tom Clark,Tom Clark,Том Кларк,Tom Clark,汤姆·克拉克,湯姆克拉克
+zombieTomClarkFeral,entityclasses,Entity,,,Feral Tom Clark,,Wilder Tom Clark,Tom Clark salvaje,Tom Clark féroce,Tom Clark feroce,残忍なトム・クラーク,흉포한 톰 클락,Dziki Tom Clark,Tom Clark Feroz,Дикий Том Кларк,Vahşi Tom Clark,凶残的汤姆·克拉克,野蠻的湯姆克拉克
+zombieTomClarkRadiated,entityclasses,Entity,,,Radiated Tom Clark,,Verstrahlter Tom Clark,Tom Clark irradiado,Tom Clark irradié,Tom Clark irradiato,被爆したトム・クラーク,방사능 톰 클락,Napromieniowany Tom Clark,Tom Clark Radioativo,Облученный Том Кларк,Radyasyonlu Tom Clark,被辐射的汤姆·克拉克,被輻射的湯姆克拉克
+zombieUtilityWorker,entityclasses,Entity,,,Utility Worker,,Wartungstechniker,Trabajador público,Ouvrier zombie,Operaio,作業員,전기공,Robotnik,Operário,Разнорабочий-зомби,Kamu İşçisi,公用事业工人,雜工
+zombieUtilityWorkerFeral,entityclasses,Entity,,,Feral Utility Worker,,Wilder Wartungstechniker,Trabajador público salvaje,Ouvrier féroce,Operaio feroce,残忍な作業員,흉포한 좀비 전기공,Dziki robotnik zombie,Trabalhador de Manutenção Feroz,Дикий разнорабочий-зомби,Vahşi Kamu İşçisi,凶残的公用事业工人,野蠻的雜工
+zombieUtilityWorkerRadiated,entityclasses,Entity,,,Radiated Utility Worker,,Verstrahlter Wartungstechniker,Trabajador público irradiado,Ouvrier zombie irradié,Operaio irradiato,被爆した作業員,방사능 전기공,Napromieniowany robotnik,Operário Radioativo,Облученный разнорабочий-зомби,Radyasyonlu Kamu İşçisi,被辐射的公用事业工人,被輻射的雜工
+zombieWight,entityclasses,Entity,,,Wight,,Wesen,Criatura,Esprit,Creatura,ワイト,유령,Istota,Aparição,Упырь,Yaratık,恶灵,屍妖
+zombieWightFeral,entityclasses,Entity,,,Feral Wight,,Wildes Wesen,Criatura salvaje,Créature féroce,Creatura feroce,ワイトゾンビ,흉포한 혼령,Dzika istota,Pessoa Feroz,Дикий упырь,Vahşi Yaratık,凶残的怀特,野蠻的幽靈
+zombieWightRadiated,entityclasses,Entity,,,Radiated Wight,,Verstrahltes Wesen,Criatura irradiada,Esprit irradié,Creatura irradiata,被爆したワイト,방사능 유령,Napromieniowana istota,Aparição Radioativa,Облученный упырь,Radyasyonlu Yaratık,被辐射的恶灵,被輻射的屍妖
+zombieYo,entityclasses,Entity,,,Yo,,Yo,Yo,Carcasse pourrie,Yo,ヨー,요,Yo,Yo,Разлагающаяся туша,Yo,幽,幽
+zombieYoFeral,entityclasses,Entity,,,Feral Yo,,Wilder Yo,Yo salvaje,Carcasse pourrie féroce,Yo feroce,残忍なヨー,흉포한 요,Dziki Yo,Yo Feroz,Дикая туша,Vahşi Yo,凶残的幽,野蠻的幽
+zombieYoRadiated,entityclasses,Entity,,,Radiated Yo,,Verstrahlter Yo,Yo irradiado,Carcasse pourrie irradiée,Yo irradiato,被爆ヨー,방사능 요,Napromieniowany Yo,Yo Radioativo,Облученная туша,Radyasyonlu Yo,被辐射的幽,被輻射的幽

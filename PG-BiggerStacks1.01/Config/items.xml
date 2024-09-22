@@ -1,6 +1,6 @@
-<VanillaPlus>
+<PG-BiggerStacks>
  
- 
+<!--<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">2500</set>-->
 <!--Section 1 = STACKS PLUS-->
 		<!--a. Bundles to represent larger stack sizes-->
 			<set xpath="/items/item[@name='ammoGasCanBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">30000</set><!--Default = 10000-->
@@ -101,7 +101,7 @@
 			<set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">2000</set>
 			<set xpath="/items/item[@name='foodCropCorn']/property[@name='Stacknumber']/@value">2000</set>
 			<set xpath="/items/item[@name='foodCropBlueberries']/property[@name='Stacknumber']/@value">2000</set>
-			<set xpath="/items/item[@name='resourceTrophy2']/property[@name='Stacknumber']/@value">500</set>
+			
 			<set xpath="/items/item[@name='resourceOil']/property[@name='Stacknumber']/@value">500</set>
 			
 			<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">50</set>
@@ -198,4 +198,4 @@
 
 
 
-</VanillaPlus>
+</PG-BiggerStacks>

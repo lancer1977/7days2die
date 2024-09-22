@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<xml>
-		<ModInfo>
+		
 			<Name value="PG-BiggerStacks"/>
-			<Description value="OP Blades!"/>
-			<Author value="Breadcrumb"/> <!--Name changed from RilesPlus-->
+			<DisplayName value="Polyhydra Games - Bigger Stacks" />
+			<Description value="Bigger stacks of Bullets!"/>
+			<Author value="DreadBreadcrumb"/> <!--Name changed from RilesPlus-->
 			<Version value="1.01"/>
 			<Website value=""/>
-		</ModInfo>
+		
 	</xml>
