@@ -1,0 +1,1 @@
+Adjusts the auger sound to be the dirt sound to make it less annoying to use.

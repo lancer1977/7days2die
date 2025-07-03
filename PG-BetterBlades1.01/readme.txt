@@ -1,3 +1,1 @@
-Better spinners
-Stacks
-Better repair kits
+Makes Blade traps much harder to destroy

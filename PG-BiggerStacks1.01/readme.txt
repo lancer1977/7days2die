@@ -1,3 +1,1 @@
-Better spinners
-Stacks
-Better repair kits
+Increase the stacks of a bunch of stuff.

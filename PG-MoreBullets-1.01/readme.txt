@@ -1,3 +1,1 @@
-Better spinners
-Stacks
-Better repair kits
+More bullets when crafting
