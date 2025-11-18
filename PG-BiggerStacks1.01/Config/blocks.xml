@@ -16,14 +16,14 @@
 			<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Stacknumber']/@value">100</set><!--Default = 20-->
 			<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->			
 			<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Stacknumber']/@value">125</set><!--Default = 25-->		
-			<set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Stacknumber']/@value">125</set><!--Default = 25-->		
-			<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Stacknumber']/@value">125</set><!--Default = 25-->		
+			
+			
 			<set xpath="/blocks/block[@name='bedroll']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->	
 			<set xpath="/blocks/block[@name='dartTrap']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->	
-			<set xpath="/blocks/block[@name='flamethrowerTrap']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->	
+			
 			<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->	
  
-			<set xpath="/blocks/block[@name='barracksChair']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->
+			
 			<set xpath="/blocks/block[@name='oldChair1']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->		
 			<set xpath="/blocks/block[@name='oldChair1Broken']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->	
 			<set xpath="/blocks/block[@name='barStool']/property[@name='Stacknumber']/@value">50</set><!--Default = 10-->	

@@ -2,14 +2,13 @@ import csv
 
 # ====== CONFIGURATION ======
 LOOKUP_FILE = 'custom.csv'
-#LOCALIZATION_FILE = 'Config\Localization.txt'
-LOCALIZATION_FILE = 'Config/Localization.txt'
+LOCALIZATION_FILE = 'Localization.txt'
 
 OUTPUT_FILE = 'Localization_updated.txt'
 
 # Column indexes (0-based)
 KEY_COLUMN = 0          # Column with the key in both files
-LOOKUP_VALUE_COLUMN = 5 # Column with the English text in lookup.csv
+LOOKUP_VALUE_COLUMN = 1 # Column with the English text in lookup.csv
 TARGET_VALUE_COLUMN = 5 # Column to update in Localization.txt
 # ============================
 
@@ -22,7 +21,11 @@ with open(LOOKUP_FILE, newline='', encoding='utf-8') as f:
         if len(row) > max(KEY_COLUMN, LOOKUP_VALUE_COLUMN):
             key = row[KEY_COLUMN].strip()
             value = row[LOOKUP_VALUE_COLUMN].strip()
+            if( not key or not value):
+                print(f"Skipping empty key or value in row: {row}")
+                continue
             lookup[key] = value
+            print(f"Loaded key: {key} with value: {value}")
 
 # Step 2: Process Localization.txt and replace column value where keys match
 with open(LOCALIZATION_FILE, newline='', encoding='utf-8') as infile, \
@@ -34,8 +37,10 @@ with open(LOCALIZATION_FILE, newline='', encoding='utf-8') as infile, \
     for row in reader:
         if len(row) > max(KEY_COLUMN, TARGET_VALUE_COLUMN):
             key = row[KEY_COLUMN].strip()
+            #print(f"Processing key: {key}")
             if key in lookup:
                 row[TARGET_VALUE_COLUMN] = lookup[key]
+                print(f"Updated {key} to {row[TARGET_VALUE_COLUMN]}")
         writer.writerow(row)
 
 print(f"Done. Output written to {OUTPUT_FILE}")
